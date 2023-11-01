@@ -6,6 +6,7 @@
   font-family:Montserrat;
   src: url(../Fonts/Montserrat-Medium.ttf);
 }
+
 #collapseTwo,#collapseThree,#collapseFour,#collapseFive,#collapseSix, #collapseSeven
 {
   display: none;
