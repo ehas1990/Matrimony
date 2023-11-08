@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+        <title>
+            <style>
+ .fancybox-thumbs {
+                top: auto;
+                width: auto;
+                bottom: 10px;
+                left: 0;
+                right : 0;
+                height: 80px;
+                background: transparent;
+              }
+              
+              .fancybox-thumbs > ul > li {
+                border-color: transparent;
+              }
+              
+              .fancybox-container--thumbs .fancybox-caption-wrap, 
+              .fancybox-container--thumbs .fancybox-controls, 
+              .fancybox-container--thumbs .fancybox-slider-wrap {
+                right: 0;
+                bottom: 90px;
+              }
+              
+              @media all and (max-width: 800px) {
+              
+                  .fancybox-thumbs {
+                      display: none !important;
+                  }
+              
+                  .fancybox-container--thumbs .fancybox-controls,
+                  .fancybox-container--thumbs .fancybox-slider-wrap,
+                  .fancybox-container--thumbs .fancybox-caption-wrap {
+                      bottom: 0;
+                  }
+              }
+              
+              .fancybox-image {
+                max-width:50%; max-height:auto;
+              }
+            </style>
+           
+        </title>
+    </head>
+    <body>
+        
+<p>
+    <a href="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" data-fancybox="images">
+        <img src="https://c1.staticflickr.com/9/8148/29324593462_f890687b7a_m.jpg" />
+    </a>
+  
+    <a href="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" data-fancybox="images">
+        <img src="https://c2.staticflickr.com/6/5499/30972532232_e9a298a0c5_m.jpg" />
+    </a>
+  
+    <a href="https://c1.staticflickr.com/9/8021/29345513551_0c565462d8_k.jpg" data-fancybox="images">
+        <img src="https://c1.staticflickr.com/9/8021/29345513551_16024a89e3_m.jpg" />
+    </a>
+    
+    <a href="https://c1.staticflickr.com/1/357/31876784275_12286240d4_h.jpg" data-fancybox="images">
+        <img src="https://c1.staticflickr.com/1/357/31876784275_fbc9696913_m.jpg" />
+      </a>
+    
+    <a href="https://farm1.staticflickr.com/481/31675815133_70120d7a13_k_d.jpg" data-fancybox="images">
+      <img src="https://farm1.staticflickr.com/481/31675815133_c5c2935c04_m_d.jpg" />
+    </a>
+    
+    <a href="https://farm1.staticflickr.com/634/32032792255_bb579dee39_k_d.jpg" data-fancybox="images">
+    <img src="https://farm1.staticflickr.com/634/32032792255_7a599d6cb9_m_d.jpg" />
+    </a>
+  </p>
+  <script>
+    $('[data-fancybox="images"]').fancybox({
+  loop : false,
+  thumbs : {
+    showOnStart : true
+  }
+})
+
+
+  </script>
+    </body>
+</html>

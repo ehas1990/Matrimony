@@ -424,13 +424,13 @@
                  </div>
                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 col-xs-6" id="mt_5">
                    <span class="textMobile_number" id="errorMobile_number"></span>
-                       <input type="text" class="form-control Mobile_number" placeholder="Enter Mobile number" name="mobile number">
+                       <input type="number" class="form-control Mobile_number" placeholder="Enter Mobile number" name="mobile number">
                  </div>
          </div>
                 <div class="row mt-4">
                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-xs-12">
                          <span class="textE_mail" id="errorE_mail"></span>
-                             <input type="email" class="form-control E_mail" placeholder="Enter Email" name="E-mail">
+                             <input type="email" class="form-control E_mail" placeholder="Enter Email" name="E-mail" required>
                        </div>
                </div>
                <!-- <div class="row mt4">
@@ -757,8 +757,9 @@
             </div> 
             <div class="row mt-4">
               <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-xs-12">
+                <span class="text-fill" id="errorpassword"></span>
                 <input type="password" class="form-control password" id="password" placeholder="Create Password" required>
-                <i class="toggle-password fa fa-fw fa-eye-slash"></i><span class="text-fill" id="errorpassword"></span>
+                <i class="toggle-password fa fa-fw fa-eye-slash"></i>
               </div>
               
             </div>
@@ -902,7 +903,7 @@
                <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
                 <span class="text-height" id="errorheight"></span>  
                    <select class="form-control height" id="dropdown_8" required>
-                       <option value="" disabled selected="disabled">Select Height Feet/Inches</option>
+                       <option value=""  disabled selected="disabled">Select Height Feet/Inches</option>
                        <option value="4ft 6in">4ft 6in</option>
                        <option value="4ft 7in">4ft 7in</option>
                        <option value="4ft 8in">4ft 8in</option>
@@ -936,8 +937,8 @@
                 <span class="text-Disbaility" id="errorDisbaility"></span>  
                 <select class="form-control Disbaility" required>
                   <option value="" disabled selected="disabled">Select Disbaility</option>
-                  <option>Normal</option>
-                  <option>Disabled</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
                  
                 </select>
                </div>
@@ -1158,7 +1159,7 @@
           <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
            <!-- depending dropdown -->
            <span class="text-WorkState" id="errorWorkState"></span>
-           <select class="form-control select2 WorkState" id="dropdown_16">
+           <select class="form-control select2 WorkState" id="dropdown_16" required>
              <option value="" disabled selected="disabled">Select Work State</option>
              <option value="Tamil Nadu">Tamil Nadu</option>
              <option value="Kerala">Kerala</option>
@@ -1172,7 +1173,7 @@
           
             <div class="row mt-6">
                <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 text-center">
-                  <input type="button" class="btn btn-primary profilebtn4" id="Register-btn" value="Continue">
+                  <input type="button" class="btn btn-primary profilebtn4" id="Register-btn" value="Continue" required>
                </div>
             </div>
                
@@ -1241,7 +1242,7 @@
             <div class="row">
                <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
                 <span class="text-YourCountry" id="errorYourCountry"></span>
-                   <select class="form-control select2 YourCountry" id="dropdown_9">
+                   <select class="form-control select2 YourCountry" id="dropdown_9" required>
                        <option value="" disabled selected="disabled">Select Your Country</option>
                        <option value="India">India</option>
                       <option value="China">China</option>
@@ -1265,7 +1266,7 @@
             <div class="row mt5">
                <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
                 <span class="text-YourState" id="errorYourState"></span>
-                <select class="form-control select2 YourState" id="dropdown_10">
+                <select class="form-control select2 YourState" id="dropdown_10" required>
                   <option value="" selected="disabled">Select Your State</option>
                   <option value="Tamil Nadu">Tamil Nadu</option>
                   <option value="Kerala">Kerala</option>
@@ -1278,7 +1279,7 @@
                <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
                  <!-- depending dropdown -->
                  <span class="text-District" id="errorDistrict"></span>
-                <select class="form-control select2 District" id="dropdown_11">
+                <select class="form-control select2 District" id="dropdown_11" required>
                  
                   <option value="" disabled selected="disabled">Select District</option>
                   <option value="Alappuzha">Alappuzha</option>
@@ -1293,7 +1294,7 @@
                   <option value="Palakkad">Palakkad</option>
                   <option value="Pathanamthitta">Pathanamthitta</option>
                   <option value="Thiruvananthapuram">	Thiruvananthapuram</option>
-                  <option value="		Thrissur">		Thrissur</option>
+                  <option value="	Thrissur">		Thrissur</option>
                   <option value="	Wayanad">	Wayanad</option>
                   
                   
@@ -1308,7 +1309,7 @@
               <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
                <!-- depending dropdown -->
                <span class="text-pincode" id="errorpincode"></span>
-              <input type="number" name="pincode" placeholder="Enter pincode" class="form-control pincode"> 
+              <input type="number" name="pincode" placeholder="Enter Location" class="form-control pincode" required> 
               </div>
            </div>
           

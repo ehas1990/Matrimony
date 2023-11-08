@@ -17,6 +17,61 @@
   <link rel="stylesheet" href="assets_1/css/style.css">
   <link rel="stylesheet" href="assets_1/css/bootstrap.min.css">
  <style>
+  /*  */
+  .custom-slider{
+  width: 90%;
+  margin: auto;
+}
+.custom-box{
+  width: 200px;
+  height: 100px;
+  text-align:center;
+  box-shadow: 2px 2px 3px gray;
+  margin: 15px;
+  font-size: 5em;
+  padding: 50px;
+}
+.slick-prev, .slick-next{
+  position: absolute;
+  line-height: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: #043e46;
+}
+.slick-slider{
+  user-select: none;
+}
+.slick-next{
+  right: -30px;
+}
+.slick-prev{
+  left: -30px;
+}
+.slick-next:before{
+  content: '\003e';
+  font-size: 1.2em;
+  font-weight: 1000;
+  padding-left: 12px;
+  color: white;
+}
+.slick-prev:before{
+  content: '\003c';
+  font-size: 1.2em;
+  font-weight: 1000;
+  padding-left: 9px;
+  color: white;
+}
+  /* end */
   .btn{
   width: 90px;
   font-size: 12px;
@@ -25,13 +80,322 @@
 {
   width: 100px;
 }
+
+
+/* poppup */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap');
+
+/* transparent fullscreen background */
+.my-popup-background-layer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.7);
+  font-size: 100%;
+  font-family: 'Quicksand', Arial, sans-serif;
+  z-index: 9999;
+} 
+
+/* master popup div container */
+.my-popup-container {
+  position: fixed;
+  left: 50%;
+  margin-left: -460px;
+  top: 50%;
+  margin-top: -260px;
+  width: 890px;
+  min-height: 533px;
+  background: url("assets_1/img/Bkg\ copy.png") center top no-repeat;
+  padding: 74px 60px 0 510px;
+  text-align: left;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+.mlctr-close {
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 118px;
+  width: 26px;
+  height: 26px;
+  background: url("assets_1/img/Bkg\ copy.png") center center no-repeat;
+  background-size: 10px 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s, background-size 0.5s, opacity ease-in-out .25s;
+  -moz-transition: -moz-transform 0.5s, background-size 0.5s, opacity ease-in-out .25s;
+  -o-transition: -o-transform 0.5s, background-size 0.5s, opacity ease-in-out .25s;
+  transition: transform 0.5s, background-size 0.5s, opacity ease-in-out .25s;
+}
+.mlctr-close:hover {
+  background-size: 12px 12px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.my-popup-container h1 {
+  width: count(100% + 50px);
+  height: 90px;
+  font-size: 35px;
+  line-height: 38px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0;
+  margin: 0 0 0 -50px;
+  box-sizing: border-box;
+}
+.my-popup-container h1.mlctr-h1dz {
+  width: 100%;
+  height: 38px;
+  font-weight: 700;
+  color: #cc9933;
+  margin: 0;
+}
+.my-popup-container h1 b {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.my-popup-container h2 {
+  width: 100%;
+  height: 42px;
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 400;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.my-popup-container h2 span {
+  color: #219022;
+  font-weight: 700;
+}
+.my-popup-container p {
+  width: 100%;
+  height: 72px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  padding: 14px 0 0 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mlctr-message-error {
+  display: block;
+  width: 100%;
+  height: 15px;
+  font-size: 10.5px;
+  margin: 10px 0px;
+  padding: 0;
+  font-weight: bold;
+  text-align: center;
+  color: #ca2834;
+  box-sizing: border-box;
+}
+.mlctr-verification-alert {
+  display: none;
+}
+.mlctr-verification-alert.display {
+  display: block;
+}
+.my-popup-container input[type="text"] {
+  position: absolute;
+  top: 443px;
+  left: 396px;
+  width: 260px;
+  height: 43px;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 5px 15px;
+  background-color: RGBA(255,255,255,0.95);
+	border: 2px solid #ffcc00;
+  color: #313131;
+  text-align: center;
+  margin: 0;
+   -webkit-border-radius: 10px 0px;
+  -moz-border-radius: 10px 0px;
+  border-radius: 10px 0px;
+  -webkit-transition: border ease-in-out .15s;
+  -moz-transition: border ease-in-out .15s;
+  transition: border ease-in-out .15s;
+  box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+  -moz-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+  -webkit-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+  box-sizing: border-box;
+}
+.my-popup-container input[type="text"]:focus {
+  background-color: RGBA(255,255,255,1);
+	border: 1px solid #4ca12e;
+  outline: 0;
+}
+.my-popup-container input[type="submit"], .my-popup-container input[type="button"] {
+  position: absolute;
+  top: 443px;
+  left: 666px;
+  width: 200px;
+  height: 43px;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  border: 0px;
+  background-color: #219022;
+  color: #ffffff;
+   -webkit-border-radius: 10px 0px;
+  -moz-border-radius: 10px 0px;
+  border-radius: 10px 0px;
+  -webkit-transition: background-color ease-in-out .15s;
+  -moz-transition: background-color ease-in-out .15s;
+  -o-transition: background-color ease-in-out .15s;
+  transition: background-color ease-in-out .15s;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+  -moz-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+  -webkit-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+  outline: 0;
+}
+.my-popup-container input[type="submit"]:hover, .my-popup-container input[type="button"]:hover {
+  background-color: #176718;
+}
+.my-popup-container input[type="submit"]:active, .my-popup-container input[type="button"]:active {
+  top: 444px;
+  font-size: 15.5px;
+  box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+  -moz-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+  -webkit-box-shadow: 1px 2px 4px RGBA(0,0,0,0.3);
+}
+.my-popup-container form .mlctr-check {
+  position: relative;
+	width: count(100% + 22px);
+  text-align: left;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+  margin: 8px 0 0 -22px;
+}
+.my-popup-container form .mlctr-check a{
+  color: #ca2834;
+  font-weight: 700;
+}
+.my-popup-container form .mlctr-check input[type="checkbox"] {
+  position: absolute;
+	visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.my-popup-container form .mlctr-check label {
+  display: inline-block;
+	cursor: pointer;
+  color: #000000;
+  font-size: 10px;
+  text-align: left;
+	font-weight: 500;
+  padding: 0 0 0 22px;
+}
+.my-popup-container form .mlctr-check label:before {
+  position: absolute;
+  display: inline-block;
+	content: '';
+	background: #cc9933;
+  border: 0;
+	width: 14px;
+	height: 14px;
+   -webkit-border-radius: 5px 0px;
+  -moz-border-radius: 5px 0px;
+  border-radius: 5px 0px;
+  left: 0px;
+  top: 4px;
+}
+.my-popup-container form .mlctr-check label:after {
+	position: absolute;
+	background: #ffffff;
+	content: '';
+	width: 6px;
+	height: 6px;
+  border: 1px solid #ffffff;
+	left: 3px;
+	top: 7px;
+   -webkit-border-radius: 3px 0px;
+  -moz-border-radius: 3px 0px;
+  border-radius: 3px 0px;
+	opacity: 0.3;
+}
+.my-popup-container form .mlctr-check label:hover::after {
+	background: #000;
+	opacity: 0.5;
+}
+.my-popup-container form .mlctr-check input[type="checkbox"]:checked + label:after {
+	background: #000;
+	opacity: 1;
+}
+.mlctr-privacy {
+  display: block;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 300;
+  color: #cacaca;
+  padding: 0;
+  margin: 0;
+}
 </style>
 </head>
 <body>
+  <!-- transparent fullscreen background -->
+<div class="my-popup-background-layer" id="myModal1">
+ 
+  <!-- master popup div container -->
+  <div class="my-popup-container mlctr-popup">
+ 
+    <a class="mlctr-close" onclick="closePopup()"></a>
+    <!-- following onsubmit event is required -->
+    <form onsubmit="return mailocator.action.do('subscribe:1')" id="MailocatorForm">
+       <!-- following div will be overwritten with success message -->
+       <div class="mlctr-message-success" style="display:block">
+         <h1>MILÝ NÁVŠTĚVNÍKU...</h1>
+         <h2>...máme pro Vás malý dárek:</h2>
+         <h1 class="mlctr-h1dz">SLEVU <b>120</b> Kč</h1>
+         <h2><span>na 1. objednávku po celé ČR</span></h2>
+         <p>Stačí se přihlásit k odběru novinek a slevový kód Vám pošleme přímo na Váš e-mail.</p>
+         <div class="mlctr-check">
+           <input type="checkbox" id="mlctr-check" name="mlctr-verification"><label for="mlctr-check">Souhlasím se <a href="https://www.floreana.cz/ochrana-osobnich-udaju" target="_blank">zpracováním osobních údajů</a> pro účely zasílání novinek.</label>
+         </div>
+         <div class="mlctr-message-error"><!-- all customized error messages will be placed here --><div class="mlctr-verification-alert">Nevyslovili jste souhlas se zpracováním osobních údajů.</div>
+         </div>
+         <label></label>
+         <!-- input with attribute name="email" is required -->
+         <input type="text" name="email" value="" placeholder="Váš e-mail" /><input type="submit" value="Chci SLEVU" />
+         <div class="mlctr-privacy">
+         </div>
+       </div>
+       <!-- following div will replace the "mlctr-message-success" div -->
+       <div class="mlctr-message-thanks" style="display:none">
+         <h1>MILÝ NÁVŠTĚVNÍKU...</h1>
+         <h2>&nbsp;</h2>
+         <h1 class="mlctr-h1dz" style="padding:0 10px;">DĚKUJEME</h1>
+         <h2 style="padding:0 10px;"><span>za registraci</span></h2>
+         <p style="padding:14px 10px 0 10px;">Slevový kód jsme Vám právě odeslali na uvedený e-mail.</p>
+         <!-- following event closes popup by users action -->
+         <input type="button" value="Zavřít okno" onclick="mailocator.action.do('close')" />
+         <div class="mlctr-privacy">
+         </div>
+       </div>
+    </form>
+
+   </div><!--/end of my-popup-container -->
+
+</div><!--/end of my-popup-background-layer -->
   <!--  -->
-  <div id="myModal1" class="modal fade" role="dialog">
+  <!-- <div id="myModal1" class="modal fade" role="dialog">
     <div class="modal-dialog">
-      <!-- Modal content-->
+
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" id="closeButton" data-dismiss="modal">&times;</button>
@@ -44,7 +408,7 @@
       </div>
   
     </div>
-  </div>
+  </div> -->
   <!--  -->
   <header id="header">
     <div class="container-fluid">
@@ -63,22 +427,28 @@
                             <a class="nav-link text-dark" href="userpage.html"><span class="mx-2"><i
                                   class="fa-solid fa-house"></i></span>Home </a>
                           </li>
+                          <li style="background-color: #fdfdfd;width: 1px;"></li>
                           <li class="nav-item ">
                             <a class="nav-link text-dark" id="nav-link" href="inbox.html"><span class="mx-2"><i
                                   class="fa-solid fa-envelope"></i></span>Inbox</a>
                           </li>
+                          
+                          <li style="background-color: #fdfdfd;width: 1px;"></li>
                           <li class="nav-item ">
                             <a class="nav-link text-dark" href="#"><span class="mx-2"><i
                                   class="ri-user-search-fill"></i></span>Partner Preference</a>
                           </li>
+                          <li style="background-color: #fdfdfd;width: 1px;"></li>
                           <li class="nav-item ">
                             <a class="nav-link text-dark" href="plans.html"><span class="mx-2"><i
                                   class="fa-solid fa-user-shield"></i></span>Upgrade to Premium</a>
                           </li>
+                          <li style="background-color: #fdfdfd;width: 1px;"></li>
                           <li class="nav-item ">
                             <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
                                   class="fa-solid fa-users"></i></span>Matches</a>
                           </li>
+                          <li style="background-color: #fdfdfd;width: 1px;"></li>
                           <!-- <li class="nav-item ">
                               <a class="nav-link text-dark" href="#"><span class="ml-2"><i class="fa-solid fa-bell"></i></span>Notification</a>
                             </li>  -->
@@ -385,7 +755,7 @@
                                   <h5>Premium Matches</h5>
                                        <!--  -->
                                        <div class="swiper-container">
-                                        <div class="swiper mySwiper">
+                                        <div class="swiper mySwiper" id="mySwiper">
                                           <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                               <div class="card1">
@@ -593,16 +963,16 @@
                                           </div>
                                         </div>
                                         <!-- If we need pagination -->
-                                        <div class="swiper-pagination"></div>
+                                        <div class="swiper-pagination" id="swiper-pagination"></div>
                                     
                                         <!-- If we need navigation buttons -->
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev" id="swiper-button-prev"></div>
+                                        <div class="swiper-button-next" id="swiper-button-next"></div>
                                     
                                         <!-- If we need scrollbar -->
                                       
                                       </div>
-                                       <!--  -->
+                                      
                                 </div>
                            </div>
                      </div>
@@ -655,17 +1025,18 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 <script>
-  var swiper = new Swiper('.mySwiper', {
+  var swiper = new Swiper('#mySwiper', {
   slidesPerView: 4,
   spaceBetween: 10,
   pagination: {
-    el: '.swiper-pagination',
+    el: '#swiper-pagination',
     clickable: true,    
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#swiper-button-next',
+    prevEl: '#swiper-button-prev',
   },
   breakpoints: {
     210: {
@@ -686,7 +1057,6 @@
   },
 });
 </script>
-
 <script>
   // Initialize Bootstrap components
   $(document).ready(function () {
@@ -714,7 +1084,7 @@ $(document).ready(function(){
 <script src="assets_1/js/bootstrap.min.js"></script>
 <script src="assets_1/js/normalize.js"></script>
 <script src="assets_1/js/normalize1.js"></script>
-
+<script src="assets_1/js/slider.js"></script>
    <script>
   $(document).ready(function(){       
    $('#myModal1').modal('show');
@@ -730,6 +1100,7 @@ $(document).ready(function(){
   }
   document.getElementById('closeButton').addEventListener('click', closePopup)
 </script>
+<script src="assets_1/js/swipper.js"></script>
 </body>
 </html>
 

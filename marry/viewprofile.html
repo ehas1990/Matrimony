@@ -343,6 +343,74 @@
                    
                 </div>
            </div>
+           <!-- gallery -->
+           <div class="mt-3"></div>
+              <div class="card card-headerline justify-content-start">
+                <div class="card-header">
+                     <h2>gallery</h2>
+                     <div class="container_1">   
+                      <!-- Slider main container -->
+                      <div class="gallery-container">
+                           <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                    <div class="galler-box">
+                                          
+                                          <img id="myImg" src="assets_1/img/user.jpg" alt="Snow">
+
+                                          <!-- The Modal -->
+                                          <div id="myModal" class="modal">
+                                            <span class="close">&times;</span>
+                                            <img class="modal-content" id="img01">
+                                            <div id="caption"></div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                      <div class="galler-box">
+                                              
+                                        <img id="myImg02" src="assets_1/img/user.jpg" alt="Snow">
+
+                                        <!-- The Modal -->
+                                        <div id="myModal02" class="modal">
+                                          <span class="close">&times;</span>
+                                          <img class="modal-content" id="img02">
+                                          <div id="caption"></div>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                      <div class="galler-box">
+                                                  
+                                        <img id="myImg03" src="assets_1/img/user.jpg" alt="Snow" >
+
+                                        <!-- The Modal -->
+                                        <div id="myModal03" class="modal">
+                                          <span class="close">&times;</span>
+                                          <img class="modal-content" id="img03">
+                                          <div id="caption"></div>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                                  <div class="galler-box">
+                                                  
+                                    <img id="myImg04" src="assets_1/img/user.jpg" alt="Snow">
+
+                                    <!-- The Modal -->
+                                    <div id="myModal04" class="modal">
+                                      <span class="close">&times;</span>
+                                      <img class="modal-content" id="img04">
+                                      <div id="caption"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                           </div>
+                      </div>
+                  </div> 
+                   
+                </div>
+           </div>
+           <!--  -->
            <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
                 <div class="card-header">
@@ -405,6 +473,7 @@
                    
                 </div>
            </div>
+           
            <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
                 <div class="card-header">
@@ -613,30 +682,11 @@
                      
                      </div>
                      <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 col-12">
-                           <div class="">
-                              <ul class="profile-nav">
-                                  <li>NUMBER OF CHILDREN <span class="ml-2">:</span></li>
-                                  <li>Myself</li>
-                              </ul>
-                             
-                           </div>
-                            
-                        </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 col-12">
-                         
-                          <div class="">
-                              <ul class="profile-nav">
-                                  <li>	
-                                      Altrnate Number <span class="ml-2 text-danger">*</span><span class="ml-2">:</span></li>
-                                  <li>9756435689</li>
-                              </ul>
-                             
-                           </div>
-
-                        </div>
-                     
-                     </div>
+                      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                           <input type="submit" class="btn btn-primary" value="save">
+                      </div>
+                      
+                </div>
 
                    
                 </div>
@@ -2379,10 +2429,99 @@ $(document).ready(function(){
     });
   });
 </script>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal02");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg02");
+  var modalImg = document.getElementById("img02");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[1];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal03");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg03");
+    var modalImg = document.getElementById("img03");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[2];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal04");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg04");
+        var modalImg = document.getElementById("img04");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[3];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
 <script src="assets_1/jquery.dataTables.js"></script>
 <script src="assets_1/jquery.dataTables.min.js"></script>
 <script src="assets_1/dataTables.bootstrap4.js"></script>
 <script src="assets_1/dataTables.bootstrap4.min.js"></script>
+
 </body>
 </html>
 

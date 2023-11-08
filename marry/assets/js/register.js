@@ -140,7 +140,7 @@ $(document).ready(function () {
       
       if (password == "") {
         $("#password").addClass("is-invalid");
-        $("#errorpassword").html("Enter the Contact Number!");
+        $("#errorpassword").html("Enter the Password!");
         $("#errorpassword").css("color", "red");
         event.preventDefault();
       } else {
@@ -549,12 +549,12 @@ $(document).ready(function () {
      
     ){
       if ( IDproof1 == "") {
-        $(".IDproof").addClass("is-invalid");
-        $("#errorIDproof1").html("Select Your Country!");
+        $(".IDproof1").addClass("is-invalid");
+        $("#errorIDproof1").html("Select Your ID Proof!");
         $("#errorIDproof1").css("color", "red");
         event.preventDefault();
       } else {
-        $(".IDproo1f").removeClass("is-invalid");
+        $(".IDproof1").removeClass("is-invalid");
         $(".IDproof1").addClass("is-valid");
 
         $("#errorIDproof1").html("Looks good!");
@@ -563,7 +563,7 @@ $(document).ready(function () {
       }
     }
       else{
-alert("suceesss ");
+
    
       }
   });
