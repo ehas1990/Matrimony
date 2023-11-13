@@ -275,18 +275,15 @@
   }
   
   @media (max-width: 900px) {
-    body {
-      margin: 0 20px;
-    }
   
     .profile-header {
       display: flex;
       height: 100%;
       flex-direction: column;
       text-align: center;
-      padding-bottom: 20px;
+      padding: 0px 20px;
     }
-  
+    
     .profile-img {
       float: left;
       width: 100%;

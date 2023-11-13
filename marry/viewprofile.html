@@ -17,6 +17,7 @@
  <link rel="stylesheet" href="assets_1/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets_1/css/profile.css">
 <link rel="stylesheet" href="assets_1/dataTables.bootstrap4.css">
+<link rel="stylesheet" href="assets_1/css/media.css">
 <!-- <link rel="stylesheet" href="assets_1/dataTables.bootstrap4.min.css"> -->
 <!-- <link rel="stylesheet" href="assets_1/responsive.bootstrap4.css"> -->
 <!-- <linl rel="stylesheet" href="assets_1/responsive.bootstrap4.min.css"> -->
@@ -93,23 +94,23 @@
                       </button>
                       <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                         <ul class="navbar-nav" id="navbarnav">
-                          <li class="nav-item ">
+                          <li class="nav-item">
                             <a class="nav-link text-dark" href="userpage.html"><span class="mx-2"><i
                                   class="fa-solid fa-house"></i></span>Home </a>
                           </li>
-                          <li class="nav-item ">
+                          <li class="nav-item">
                             <a class="nav-link text-dark" id="nav-link" href="inbox.html"><span class="mx-2"><i
                                   class="fa-solid fa-envelope"></i></span>Inbox</a>
                           </li>
-                          <li class="nav-item ">
+                          <li class="nav-item">
                             <a class="nav-link text-dark" href="#"><span class="mx-2"><i
                                   class="ri-user-search-fill"></i></span>Partner Preference</a>
                           </li>
-                          <li class="nav-item ">
+                          <li class="nav-item">
                             <a class="nav-link text-dark" href="plans.html"><span class="mx-2"><i
                                   class="fa-solid fa-user-shield"></i></span>Upgrade to Premium</a>
                           </li>
-                          <li class="nav-item ">
+                          <li class="nav-item">
                             <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
                                   class="fa-solid fa-users"></i></span>Matches</a>
                           </li>
@@ -123,7 +124,9 @@
                             <span class="caret"></span></a>
                             <ul class="dropdown-menu viewer-menu">
               
-                              <li class="nav-item"><a class="nav-link" id="display-flex" href="#"><img src="assets_1/img/user.jpg"
+                              <li class="nav-item">
+                                <a class="nav-link" id="display-flex" href="#">
+                                  <img src="assets_1/img/user.jpg"
                                     class="viewer"><span class="ml-2 viewer-content">Akhil viewed your profile.<span
                                       class="mx-3 text-primary">4h</span><br><a href="#" class="float_right text-danger">View
                                       all</a></span> </a></li>
@@ -197,7 +200,7 @@
       </div>
       <div class="profile-option">
         <div class="notification">
-          <i class="fa fa-bell"></i>
+          <i class="fa fa-message"></i>
           <span class="alert-message">3</span>
         </div>
       </div>
@@ -206,9 +209,9 @@
     <div class="main-bd">
       <div class="left-side">
         <div class="profile-side">
-            <p class="mobile-no"><i class="fa-solid fa-venus"></i> Male</p>
-          <p class="mobile-no"><i class="fa-solid fa-phone-alt"></i> +23470xxxxx700</p>
-          <p class="user-mail"><i class="fa fa-envelope"></i>akhilalpha@gmail.com</p>
+          <p class="mobile-no"> <i class="fa-solid fa-venus"></i> Male</p>
+          <p class="mobile-no"> <i class="fa-solid fa-phone-alt"></i> +23470xxxxx700</p>
+          <p class="mobile-no"> <i class="fa-solid fa-envelope"></i> ehasgmail.com </p>
           <div class="user-bio">
             <h3>Introduction</h3>
             <p class="bio">
@@ -216,7 +219,7 @@
             </p>
           </div>
           <div class="profile-btn">
-            <button class="chatbtn" id="chatBtn"><i class="fa fa-comment"></i> Chat</button>
+            <button class="chatbtn" id="chatBtn"><i class="fa fa-comment"></i> </button>
             <button class="createbtn" id="Create-post"><i class="fa fa-plus"></i> Create</button>
           </div>
           <div class="user-rating">
@@ -257,7 +260,7 @@
              
               <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
-                <div class="card-header">
+                <div class="cardheader1">
                      <div class="row">
                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <h5 class="text-left">Basic Information </h5>
@@ -287,6 +290,7 @@
                              </div>
 
                           </div>
+                        
                        
                      </div>
                      <div class="row">
@@ -343,77 +347,9 @@
                    
                 </div>
            </div>
-           <!-- gallery -->
            <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
-                <div class="card-header">
-                     <h2>gallery</h2>
-                     <div class="container_1">   
-                      <!-- Slider main container -->
-                      <div class="gallery-container">
-                           <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                                    <div class="galler-box">
-                                          
-                                          <img id="myImg" src="assets_1/img/user.jpg" alt="Snow">
-
-                                          <!-- The Modal -->
-                                          <div id="myModal" class="modal">
-                                            <span class="close">&times;</span>
-                                            <img class="modal-content" id="img01">
-                                            <div id="caption"></div>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                                      <div class="galler-box">
-                                              
-                                        <img id="myImg02" src="assets_1/img/user.jpg" alt="Snow">
-
-                                        <!-- The Modal -->
-                                        <div id="myModal02" class="modal">
-                                          <span class="close">&times;</span>
-                                          <img class="modal-content" id="img02">
-                                          <div id="caption"></div>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                                      <div class="galler-box">
-                                                  
-                                        <img id="myImg03" src="assets_1/img/user.jpg" alt="Snow" >
-
-                                        <!-- The Modal -->
-                                        <div id="myModal03" class="modal">
-                                          <span class="close">&times;</span>
-                                          <img class="modal-content" id="img03">
-                                          <div id="caption"></div>
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                                  <div class="galler-box">
-                                                  
-                                    <img id="myImg04" src="assets_1/img/user.jpg" alt="Snow">
-
-                                    <!-- The Modal -->
-                                    <div id="myModal04" class="modal">
-                                      <span class="close">&times;</span>
-                                      <img class="modal-content" id="img04">
-                                      <div id="caption"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                           </div>
-                      </div>
-                  </div> 
-                   
-                </div>
-           </div>
-           <!--  -->
-           <div class="mt-3"></div>
-              <div class="card card-headerline justify-content-start">
-                <div class="card-header">
+                <div class="cardheader1">
                      <div class="row">
                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <h5 class="text-left">Present Address </h5>
@@ -473,10 +409,9 @@
                    
                 </div>
            </div>
-           
            <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
-                <div class="card-header">
+                <div class="cardheader1">
                      <div class="row">
                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <h5 class="text-left">ID Proof </h5>
@@ -485,10 +420,10 @@
                      </div>
                      <div class="row">
                           <div class="col-xxl-12 col-xl-12 col-lg-12 col-sm-12 col-12">
-                             <div class="">
-                                <img src="assets_1/img/Virtual-ID.png.webp">
+                        
+                                <img src="assets_1/img/Virtual-ID.png.webp" class="proof-id">
                                
-                             </div>
+                           
                               
                           </div>
                           
@@ -500,7 +435,7 @@
               </div>
               <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
-                <div class="card-header">
+                <div class="cardheader1">
                      <div class="row">
                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <h5 class="text-left">Education And Career </h5>
@@ -562,7 +497,7 @@
              </div>
              <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
-                <div class="card-header">
+                <div class="cardheader1">
                      <div class="row">
                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <h5 class="text-left">Physical Attributes </h5>
@@ -624,7 +559,7 @@
              </div>
              <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
-                <div class="card-header">
+                <div class="cardheader1">
                      <div class="row">
                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <h5 class="text-left">Language</h5>
@@ -682,11 +617,30 @@
                      
                      </div>
                      <div class="row">
-                      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                           <input type="submit" class="btn btn-primary" value="save">
-                      </div>
-                      
-                </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+                           <div class="">
+                              <ul class="profile-nav">
+                                  <li>NUMBER OF CHILDREN <span class="ml-2">:</span></li>
+                                  <li>Myself</li>
+                              </ul>
+                             
+                           </div>
+                            
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12 col-12">
+                         
+                          <div class="">
+                              <ul class="profile-nav">
+                                  <li>	
+                                      Altrnate Number <span class="ml-2 text-danger">*</span><span class="ml-2">:</span></li>
+                                  <li>9756435689</li>
+                              </ul>
+                             
+                           </div>
+
+                        </div>
+                     
+                     </div>
 
                    
                 </div>
@@ -1007,7 +961,7 @@
                        
                     </div>
                     <ul id="pagination" class="pagination">
-                      <!-- Pagination links will be added dynamically with JavaScript -->
+                    
                     </ul>
                             
                      </div>
@@ -1365,11 +1319,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn" id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn " id="inbox-btn">
                             <i class="fas fa fa-paper-plane"  id="fa-fas"></i>
                           </label>
                           <input type="submit" id="fileinput" style="display: none;" >
@@ -1447,11 +1401,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn" id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn " id="inbox-btn">
                             <!-- <i class="fas fa-envelope"  id="fa-fas"></i> -->
                             <i class="fas fa fa-paper-plane" id="fa-fas"></i>
                           </label>
@@ -1531,11 +1485,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn " id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn " id="inbox-btn">
                             <!-- <i class="fas fa-envelope"  id="fa-fas"></i> -->
                             <i class="fas fa fa-paper-plane" id="fa-fas"></i>
                           </label>
@@ -1614,11 +1568,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn" id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn " id="inbox-btn">
                             <!-- <i class="fas fa-envelope"  id="fa-fas"></i> -->
                             <i class="fas fa fa-paper-plane" id="fa-fas"></i>
                           </label>
@@ -1697,11 +1651,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn " id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn " id="inbox-btn">
                             <!-- <i class="fas fa-envelope"  id="fa-fas"></i> -->
                             <i class="fas fa fa-paper-plane" id="fa-fas"></i>
                           </label>
@@ -1780,11 +1734,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn " id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn " id="inbox-btn">
                             <!-- <i class="fas fa-envelope"  id="fa-fas"></i> -->
                             <i class="fas fa fa-paper-plane" id="fa-fas"></i>
                           </label>
@@ -1864,11 +1818,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn " id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn " id="inbox-btn">
                             <!-- <i class="fas fa-envelope"  id="fa-fas"></i> -->
                             <i class="fas fa fa-paper-plane" id="fa-fas"></i>
                           </label>
@@ -1946,11 +1900,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn" id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn" id="inbox-btn">
                             <!-- <i class="fas fa-envelope"  id="fa-fas"></i> -->
                             <i class="fas fa fa-paper-plane" id="fa-fas"></i>
                           </label>
@@ -2029,11 +1983,11 @@
                       </div>
                       <div class="col-lg-3 col-sm-3 col-3">
                         <div id="btn-col">
-                          <label for="file-input" class="btn btn-danger" id="inbox-btn1">
+                          <label for="file-input" class="btn" id="inbox-btn1">
                             <i class="fas fa-upload" id="fa-fas"></i>
                           </label>
                           <input type="file" id="file-input" style="display: none;">
-                          <label for="fileinput" class="btn btn-danger" id="inbox-btn">
+                          <label for="fileinput" class="btn" id="inbox-btn">
                             <!-- <i class="fas fa-envelope"  id="fa-fas"></i> -->
                             <i class="fas fa fa-paper-plane" id="fa-fas"></i>
                           </label>
@@ -2051,13 +2005,13 @@
                 </div>
                 </div>
                 </div>
-                 <!--  -->
+             
             </div>
           </div>
           <div class="profile-settings tab" id="profiletab">
             <div class="account-setting">
               <h1>Ignored List</h1>
-              <!-- table -->
+             
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -2108,7 +2062,7 @@
                 </tr>
                 </tfoot>
               </table>
-              <!--  -->
+            
             </div>
           </div>
         </div>
@@ -2180,7 +2134,7 @@ $(document).ready(function(){
 });
 
 </script>
-<!--  -->
+
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/bootstrap.esm.js"></script>
@@ -2429,101 +2383,9 @@ $(document).ready(function(){
     });
   });
 </script>
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-  
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById("myImg");
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-  </script>
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal02");
-  
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById("myImg02");
-  var modalImg = document.getElementById("img02");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[1];
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-  </script>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal03");
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg03");
-    var modalImg = document.getElementById("img03");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[2];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
-    </script>
-      <script>
-        // Get the modal
-        var modal = document.getElementById("myModal04");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg04");
-        var modalImg = document.getElementById("img04");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[3];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-          modal.style.display = "none";
-        }
-        </script>
 <script src="assets_1/jquery.dataTables.js"></script>
 <script src="assets_1/jquery.dataTables.min.js"></script>
 <script src="assets_1/dataTables.bootstrap4.js"></script>
 <script src="assets_1/dataTables.bootstrap4.min.js"></script>
-
 </body>
 </html>
-
-
-
