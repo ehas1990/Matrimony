@@ -6,6 +6,24 @@
   font-family:poppins;
   src: url('../Fonts/Poppins-Regular.ttf');
 }
+.translate-middle
+{
+  margin-top:-24%;
+}
+#timer {
+  font-family: poppins;
+  font-size:10px;
+  color: #999999;
+  letter-spacing: -1px;
+}
+#timer span {
+  font-size:20px;
+  color: #333;
+  margin: 0 3px 0 6px;
+}
+#timer span:first-child {
+  margin-left: 0;
+}
 .table.table-bordered.dataTable tbody td
 {
   font-family: Montserrat;

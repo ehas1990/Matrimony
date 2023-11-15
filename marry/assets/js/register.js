@@ -514,7 +514,7 @@ $(document).ready(function () {
       }
       if (  pincode == "") {
         $(".pincode").addClass("is-invalid");
-        $("#errorpincode").html("Select Your Pincode!");
+        $("#errorpincode").html("Enter The Location!");
         $("#errorpincode").css("color", "red");
         event.preventDefault();
       } else {

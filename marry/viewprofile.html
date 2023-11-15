@@ -18,10 +18,7 @@
 <link rel="stylesheet" href="assets_1/css/profile.css">
 <link rel="stylesheet" href="assets_1/dataTables.bootstrap4.css">
 <link rel="stylesheet" href="assets_1/css/media.css">
-<link rel="stylesheet" href="assets_1/dataTables.bootstrap4.min.css">
-<link rel="stylesheet" href="assets_1/responsive.bootstrap4.css">
-<linl rel="stylesheet" href="assets_1/responsive.bootstrap4.min.css">
- <link rel="stylesheet" href="assets_1/adminlte.min.css"> 
+
 <style>
   .profile_shortlist
   {
@@ -89,28 +86,32 @@
                   <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="#"><img src="assets_1/img/LOGO ANIM.gif" class="navbar-brand"></a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99
+                         
+                        </span>
                       </button>
                       <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                         <ul class="navbar-nav" id="navbarnav">
-                          <li class="nav-item">
+                          <li class="nav-item ">
                             <a class="nav-link text-dark" href="userpage.html"><span class="mx-2"><i
                                   class="fa-solid fa-house"></i></span>Home </a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item ">
                             <a class="nav-link text-dark" id="nav-link" href="inbox.html"><span class="mx-2"><i
                                   class="fa-solid fa-envelope"></i></span>Inbox</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-dark" href="#"><span class="mx-2"><i
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
                                   class="ri-user-search-fill"></i></span>Partner Preference</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item ">
                             <a class="nav-link text-dark" href="plans.html"><span class="mx-2"><i
                                   class="fa-solid fa-user-shield"></i></span>Upgrade to Premium</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item ">
                             <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
                                   class="fa-solid fa-users"></i></span>Matches</a>
                           </li>
@@ -124,9 +125,7 @@
                             <span class="caret"></span></a>
                             <ul class="dropdown-menu viewer-menu">
               
-                              <li class="nav-item">
-                                <a class="nav-link" id="display-flex" href="#">
-                                  <img src="assets_1/img/user.jpg"
+                              <li class="nav-item"><a class="nav-link" id="display-flex" href="#"><img src="assets_1/img/user.jpg"
                                     class="viewer"><span class="ml-2 viewer-content">Akhil viewed your profile.<span
                                       class="mx-3 text-primary">4h</span><br><a href="#" class="float_right text-danger">View
                                       all</a></span> </a></li>
@@ -143,10 +142,17 @@
                   </nav>
                  </div>
                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                 
+                   
+                 
                   <div class="user-menu">
+                  
                     <ul class="navbar-nav">
+                
                       <li class="nav-item dropdown">
+                       
                         <a class="nav-link" type="button" data-toggle="dropdown">
+                          
                           <img src="assets_1/img/user.jpg" id="user-icon">
                           <span class="caret"></span></a>
                         <ul class="dropdown-menu" id="dropdownmenu">
@@ -154,9 +160,9 @@
                             <a class=" nav-link test" href="#"><span class="mx-2"> Account Setting</span> <span
                                 class="caret"></span></a>
                             <ul class="dropdown-menu">
-                              <li class="nav-item"><a class="nav-link" href="#">Edit profile</a></li>
+                              <li class="nav-item"><a class="nav-link" href="editprofile.html">Edit profile</a></li>
                               <li class="nav-item"><a class="nav-link" href="#">Privacy Settings</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">Change Password</a></li>
+                              <li class="nav-item"><a class="nav-link" href="password_setting.html">Change Password</a></li>
             
                             </ul>
                           </li>
@@ -170,18 +176,23 @@
                             </ul>
                           </li>
                           <li class="nav-item"><a class="nav-link" href="#"><span class="mx-2">Help & Support</span></a></li>
-                          <li class="nav-item"><a class="nav-link" href="#"><span class="mx-2">Logout</span></a></li>
+                          <li class="nav-item"><a class="nav-link" href="login.html"><span class="mx-2">Logout</span></a></li>
                         </ul>
                       </li>
                     </ul>
                   </div>
                  </div>
           </div>
+          
     </div>
+
 </header>
 <div class="mt-4"></div>
+
 <section>
+
   <div>
+   
     <div class="profile-header">
       <div class="profile-img">
         <img src="assets_1/img/user.jpg" width="200" alt="Profile Image">
@@ -199,6 +210,7 @@
   
       </div>
       <div class="profile-option">
+        
         <div class="notification">
           <i class="fa fa-message"></i>
           <span class="alert-message">3</span>
@@ -209,6 +221,12 @@
     <div class="main-bd">
       <div class="left-side">
         <div class="profile-side">
+          <p class="mobile-no"> <span id="timer">
+            <span id="days"></span>days
+            <span id="hours"></span>hours
+            <span id="minutes"></span>minutes
+            <span id="seconds"></span>seconds
+          </span></p>
           <p class="mobile-no"> <i class="fa-solid fa-venus"></i> Male</p>
           <p class="mobile-no"> <i class="fa-solid fa-phone-alt"></i> +23470xxxxx700</p>
           <p class="mobile-no"> <i class="fa-solid fa-envelope"></i> ehas@gmail.com </p>
@@ -219,10 +237,10 @@
             </p>
           </div>
           <div class="profile-btn">
-            <button class="chatbtn" id="chatBtn"><i class="fa fa-comment"></i> </button>
-            <button class="createbtn" id="Create-post"><i class="fa fa-plus"></i> Create</button>
+            <!-- <button class="chatbtn" id="chatBtn"><i class="fa fa-comment"></i> </button> -->
+            <button class="createbtn" id="Create-post"><i class="fa fa-plus"></i> Marriage Support</button>
           </div>
-          <div class="user-rating">
+          <!-- <div class="user-rating">
             <h3 class="rating">4.5</h3>
             <div class="rate">
               <div class="star-outer">
@@ -237,7 +255,7 @@
               <span class="no-of-user-rate"><span>123</span>&nbsp;&nbsp;reviews</span>
             </div>
   
-          </div>
+          </div> -->
         </div>
   
       </div>
@@ -410,7 +428,7 @@
                 </div>
            </div>
            <div class="mt-3"></div>
-              <div class="card card-headerline justify-content-start">
+              <!-- <div class="card card-headerline justify-content-start">
                 <div class="cardheader1">
                      <div class="row">
                            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -432,7 +450,7 @@
                     
                    
                 </div>
-              </div>
+              </div> -->
               <div class="mt-3"></div>
               <div class="card card-headerline justify-content-start">
                 <div class="cardheader1">
@@ -2337,7 +2355,16 @@ $(".chat-icon").click(function() {
 
 });
 </script>
+<script>
+  $(document).ready(function () {
+    $('.dropdown-submenu a.test').on("click", function (e) {
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
 
+</script>
 <script>
 function openCity(evt, cityName) {
 var i, tabcontent, tablinks;
@@ -2382,6 +2409,44 @@ $(document).ready(function(){
       "responsive": true,
     });
   });
+</script>
+<script>
+  var timer;
+
+var compareDate = new Date();
+compareDate.setDate(compareDate.getDate() + 7); //just for this demo today + 7 days
+
+timer = setInterval(function() {
+  timeBetweenDates(compareDate);
+}, 1000);
+
+function timeBetweenDates(toDate) {
+  var dateEntered = toDate;
+  var now = new Date();
+  var difference = dateEntered.getTime() - now.getTime();
+
+  if (difference <= 0) {
+
+    // Timer done
+    clearInterval(timer);
+  
+  } else {
+    
+    var seconds = Math.floor(difference / 1000);
+    var minutes = Math.floor(seconds / 60);
+    var hours = Math.floor(minutes / 60);
+    var days = Math.floor(hours / 24);
+
+    hours %= 24;
+    minutes %= 60;
+    seconds %= 60;
+
+    $("#days").text(days);
+    $("#hours").text(hours);
+    $("#minutes").text(minutes);
+    $("#seconds").text(seconds);
+  }
+}
 </script>
 <script src="assets_1/jquery.dataTables.js"></script>
 <script src="assets_1/jquery.dataTables.min.js"></script>

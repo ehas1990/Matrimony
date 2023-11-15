@@ -2,6 +2,22 @@
   and (min-device-width: 210px) 
   and (max-device-width:320px)
 {
+ 
+     /* inbox */
+     #inbox-user-image {
+      width: 7%;
+      border-radius: 100%;
+      margin-left: 27% !important;
+  }
+  .inbox-message-text {
+    background: blanchedalmond;
+    margin-top: -11%;
+    width: 57%;
+    padding: 2%;
+    height: max-content;
+    margin-left: 48% !important;
+}
+    /* end */
   #card-memberleft span {
     font-family: poppins;
     font-size: 16px !important;
@@ -69,6 +85,25 @@
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
 {
+  .my-popup-container
+  {
+    display: none !important;
+  }
+        /* inbox */
+        #inbox-user-image {
+          width: 7%;
+          border-radius: 100%;
+          margin-left: 7% !important;
+      }
+      .inbox-message-text {
+        background: blanchedalmond;
+        margin-top: -11%;
+        width: 47%;
+        padding: 2%;
+        height: max-content;
+        margin-left: 19% !important;
+    }
+        /* end */
   #btn-col {
     display: flex;
     margin-left: -99%;
@@ -182,7 +217,92 @@
   and (min-device-width:480px) 
   and (max-device-width:620px)
 {
- 
+  .my-popup-container input[type="submit"], .my-popup-container input[type="button"] {
+    position: absolute;
+    top: 443px;
+    left: 561px !important;
+    width: 200px;
+    height: 43px;
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    border: 0px;
+    background-color: #219022;
+    color: #ffffff;
+    -webkit-border-radius: 10px 0px;
+    -moz-border-radius: 10px 0px;
+    border-radius: 10px 0px;
+    -webkit-transition: background-color ease-in-out .15s;
+    -moz-transition: background-color ease-in-out .15s;
+    -o-transition: background-color ease-in-out .15s;
+    transition: background-color ease-in-out .15s;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+    -moz-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+    -webkit-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+    outline: 0;
+}
+  .my-popup-container input[type="text"] {
+    position: absolute;
+    top: 443px;
+    left: 327px !important;
+    width: 226px !important;
+    height: 43px;
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 15px;
+    background-color: RGBA(255,255,255,0.95);
+    border: 2px solid #ffcc00;
+    color: #313131;
+    text-align: center;
+    margin: 0;
+    -webkit-border-radius: 10px 0px;
+    -moz-border-radius: 10px 0px;
+    border-radius: 10px 0px;
+    -webkit-transition: border ease-in-out .15s;
+    -moz-transition: border ease-in-out .15s;
+    transition: border ease-in-out .15s;
+    box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+    -moz-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+    -webkit-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+    box-sizing: border-box;
+}
+  .my-popup-container {
+    position: fixed;
+    left: 53% !important;
+    margin-left: -378px;
+    top: 50%;
+    margin-top: -260px !important;
+    width: 890px;
+    min-height: 533px;
+    background: url("assets_1/img/Bkg\ copy.png");
+    padding: 74px 60px 0 510px;
+    text-align: left;
+    border-radius: 0px;
+    box-sizing: border-box;
+    background-size: 520px 516px !important;
+    background-repeat: no-repeat !important;
+}
+       /* inbox */
+       #inbox-user-image {
+        width: 7%;
+        border-radius: 100%;
+        margin-left: 7% !important;
+    }
+    .inbox-message-text {
+      background: blanchedalmond;
+      margin-top: -7%;
+      width: 47%;
+      padding: 2%;
+      height: max-content;
+      margin-left: 3.5rem !important;
+  }
+      /* end */
   .tabcontent {
     float: left;
     padding: 0px 12px;
@@ -292,6 +412,92 @@
   and (min-device-width:620px) 
   and (max-device-width:720px)
   {
+    .my-popup-container input[type="submit"], .my-popup-container input[type="button"] {
+      position: absolute;
+      top: 443px;
+      left: 561px !important;
+      width: 200px;
+      height: 43px;
+      font-family: 'Quicksand', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+      border: 0px;
+      background-color: #219022;
+      color: #ffffff;
+      -webkit-border-radius: 10px 0px;
+      -moz-border-radius: 10px 0px;
+      border-radius: 10px 0px;
+      -webkit-transition: background-color ease-in-out .15s;
+      -moz-transition: background-color ease-in-out .15s;
+      -o-transition: background-color ease-in-out .15s;
+      transition: background-color ease-in-out .15s;
+      cursor: pointer;
+      box-sizing: border-box;
+      box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+      -moz-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+      -webkit-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+      outline: 0;
+  }
+    .my-popup-container input[type="text"] {
+      position: absolute;
+      top: 443px;
+      left: 327px !important;
+      width: 226px !important;
+      height: 43px;
+      font-family: 'Quicksand', Arial, sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 5px 15px;
+      background-color: RGBA(255,255,255,0.95);
+      border: 2px solid #ffcc00;
+      color: #313131;
+      text-align: center;
+      margin: 0;
+      -webkit-border-radius: 10px 0px;
+      -moz-border-radius: 10px 0px;
+      border-radius: 10px 0px;
+      -webkit-transition: border ease-in-out .15s;
+      -moz-transition: border ease-in-out .15s;
+      transition: border ease-in-out .15s;
+      box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+      -moz-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+      -webkit-box-shadow: 2px 3px 10px RGBA(0,0,0,0.3);
+      box-sizing: border-box;
+  }
+    .my-popup-container {
+      position: fixed;
+      left: 53% !important;
+      margin-left: -378px;
+      top: 50%;
+      margin-top: -260px !important;
+      width: 890px;
+      min-height: 533px;
+      background: url("assets_1/img/Bkg\ copy.png");
+      padding: 74px 60px 0 510px;
+      text-align: left;
+      border-radius: 0px;
+      box-sizing: border-box;
+      background-size: 700px 516px !important;
+      background-repeat: no-repeat !important;
+  }
+        /* inbox */
+        #inbox-user-image {
+          width: 7%;
+          border-radius: 100%;
+          margin-left: 7% !important;
+      }
+      .inbox-message-text {
+        background: blanchedalmond;
+        margin-top: -7%;
+        width: 47%;
+        padding: 2%;
+        height: max-content;
+        margin-left: 3.5rem !important;
+    }
+        /* end */
     .tabcontent {
       float: left;
       padding: 0px 12px;
@@ -403,6 +609,35 @@
   and (min-device-width:720px) 
   and (max-device-width:820px)
   {
+    .my-popup-container {
+      position: fixed;
+      left: 50%;
+      margin-left: -497px !important;
+      top: 50%;
+      margin-top: -260px;
+      width: 849px !important;
+      min-height: 533px;
+      background: url("assets_1/img/Bkg\ copy.png") center top no-repeat;
+      padding: 74px 60px 0 510px;
+      text-align: left;
+      border-radius: 0px;
+      box-sizing: border-box;
+  }
+     /* inbox */
+     #inbox-user-image {
+      width: 7%;
+      border-radius: 100%;
+      margin-left:9% !important;
+  }
+    .inbox-message-text {
+      background: blanchedalmond;
+      margin-top: -7%;
+      width: 47%;
+      padding: 2%;
+      height: max-content;
+     margin-left: 4.5rem !important
+  }
+    /* end */
     .tabcontent {
       float: left;
       padding: 0px 12px;
@@ -514,6 +749,35 @@
   and (min-device-width:820px) 
   and (max-device-width:1200px)
   {
+    .my-popup-container {
+      position: fixed;
+      left:54% !important;
+      margin-left: -460px !important;
+      top: 50%;
+      margin-top: -260px;
+      width: 890px;
+      min-height: 533px;
+      background: url("assets_1/img/Bkg\ copy.png") center top no-repeat;
+      padding: 74px 60px 0 510px;
+      text-align: left;
+      border-radius: 0px;
+      box-sizing: border-box;
+  }
+    /* inbox */
+    #inbox-user-image {
+      width: 7%;
+      border-radius: 100%;
+      margin-left: 6%;
+  }
+    .inbox-message-text {
+      background: blanchedalmond;
+      margin-top: -7%;
+      width: 47%;
+      padding: 2%;
+      height: max-content;
+      margin-left: 15% !important;
+  }
+    /* end */
     .tabcontent {
       float: left;
       padding: 0px 12px;
