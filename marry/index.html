@@ -15,6 +15,12 @@
   <link rel="stylesheet" href="assets/css/stylemedia.css">
 </head>
 <style>
+  .select2-search__field
+  {
+    background-image:url("assets/img/search.png");
+    background-repeat: no-repeat;
+    background-position: 97% 40%;
+  }
  #collapseTwo,#collapseThree,#collapseFour,#collapseFive,#collapseSix, #collapseSeven,  #collapseOne,.header_1
   {
     display: none;
@@ -33,7 +39,7 @@
                       <ul id="nav-lang">
                          <li><a href="login.html" class="btn btn-primary" id="login-btn">LOG IN</a></li>
                         
-                         <li class="nav-item dropdown">
+                         <li class="nav-item dropdown bg-white">
                            <form action="" method="post">
                             <select id="lang-dropdown">
                               <option disabled selected="disabled">Language</option>
@@ -148,7 +154,7 @@
             <form action="" method="post">
                 <div class="row">
                          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-xs-12" id="row">
-                           <span class="textSelect_Profile" id="errorSelect_Profile"></span>
+                           <span class="textSelect_Profile" id="errorSelect_Profile">
                                 <select class="form-control select2 Select_Profile" id="dropdown_111">
                                        <option value="" disabled selected="disable">Select Profile</option>
                                        <option value="My Self">MY Self</option>
@@ -446,14 +452,14 @@
                </div>  
              <div class="row mt-4">
                      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-xs-12 textcenter">
-                     <h6 class="text-condition"> By Clicking Register Free , I Agree <br>
+                     <h6 class="text-account"> By Clicking Register Free , I Agree <br>
                        to the terms & Conditions and privacy policy
                      </h6> 
                     </div>
              </div>
              <div class="row mt-4">
                      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-xs-12 textcenter">
-                     <h6><span class="text-account">Already have an account? <a href="login.html">Login</a></span>
+                     <h6><span class="text-condition ">Already have an account? <a href="login.html" class="text-account">Login</a></span>
                      </h6> 
                    </div>
              </div>
@@ -825,7 +831,7 @@
                         <option value="" disabled selected="disabled">Select Religion</option>
                         <option value="Christianity">Christianity</option>
                         <option value="Islam">Islam</option>
-                        <option value="Hinduism">Hinduism</option>
+                        <option value="Hindu">Hindu</option>
                         <option value="Buddhism">Buddhism</option>
                         <option value="Sikhism">Sikhism</option>
                         <option value="Judaism">Judaism</option>
@@ -868,6 +874,51 @@
                      
                     </div>
                  </div>
+                 <div class="row mt5">
+                  <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                    <span class="text-SelectProfile" id="errorSelectProfile"></span> 
+                      <select class="form-control SelectProfile" required>
+                          <option value="" selected="disabled">Select Birth Star</option>
+                          <option value="Aswathy">Aswathy</option>
+                         <option value="Bharani">Bharani</option>
+                         <option value="Karthika">Karthika</option>
+                         <option value="Rohini">Rohini</option>
+                         <option value="makayiram">makayiram</option>
+                         <option value="Ardra">Ardra</option>
+                         <option value="Puyam">Puyam</option>
+                        
+                        
+                        
+                     </select>
+                  </div>
+               </div>       
+           <div class="row mt5">
+            <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                  <!--  -->
+                  <div class="profile-pic-wrapper">
+                    <div class="pic-holder">
+                      <!-- uploaded pic shown here -->
+                      <img id="profilePic" class="pic" src="assets/img/upload.png">
+                    
+                      <Input class="uploadProfileInput" type="file" name="profile_pic" id="uploadjadhagam" accept="image/*" style="opacity: 0;" />
+                      <label for="newuploadjadhagam" class="upload-file-block">
+                        <div class="text-center">
+                          <div class="mb-2">
+                            <i class="fa fa-camera fa-2x"></i>
+                          </div>
+                          <div class="text-uppercase">
+                            Update <br /> Jadhagam
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  
+                   
+                  </div>
+                  <!--  -->
+            </div>
+        </div>
+      
                   <div class="row mt5">
                          <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
                               <!-- depending dropdown -->   
@@ -1339,7 +1390,7 @@
                 <span class="text-IDproof1" id="errorIDproof1"></span>
                   <select class="form-control IDproof1" required>
                       <option value="" disabled selected="disabled">Select ID</option>
-                      <option value="Aadhar Card">Aadhar Card</option>
+                      <!-- <option value="Aadhar Card">Aadhar Card</option> -->
                      <option value="Pan Card">Pan Card</option>
                      <option value="Driving License">Driving License</option>
                      <option value="Passport">Passport</option>

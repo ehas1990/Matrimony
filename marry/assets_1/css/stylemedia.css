@@ -6,6 +6,12 @@
   font-family:poppins;
   src: url('../Fonts/Poppins-Regular.ttf');
 }
+#member-social .btn-primary1 {
+  margin-top: 4px;
+  font-size: 12px;
+  width: 130px;
+  font-size:9px;
+}
 .translate-middle
 {
   margin-top:-24%;
