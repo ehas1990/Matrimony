@@ -359,10 +359,8 @@
     <!-- following onsubmit event is required -->
     <form onsubmit="return mailocator.action.do('subscribe:1')" id="MailocatorForm">
        <!-- following div will be overwritten with success message -->
-       <div class="mlctr-message-success" style="display:block">
-         <h1>MILÝ NÁVŠTĚVNÍKU...</h1>
-         <h2>...máme pro Vás malý dárek:</h2>
-         <h1 class="mlctr-h1dz">SLEVU <b>120</b> Kč</h1>
+       <div class="mlctr-message-success mt-5" style="display:block">
+         <br><br>
          <h2><span>na 1. objednávku po celé ČR</span></h2>
          <p>Stačí se přihlásit k odběru novinek a slevový kód Vám pošleme přímo na Váš e-mail.</p>
          <div class="mlctr-check">
@@ -372,7 +370,8 @@
          </div>
          <label></label>
          <!-- input with attribute name="email" is required -->
-         <input type="text" name="email" value="" placeholder="Váš e-mail" /><input type="submit" value="Chci SLEVU" />
+         <!-- <input type="text" name="email" value="" placeholder="Váš e-mail" /> -->
+         <input  type="button"  onclick="closePopup()" value="Completed" />
          <div class="mlctr-privacy">
          </div>
        </div>
@@ -384,7 +383,7 @@
          <h2 style="padding:0 10px;"><span>za registraci</span></h2>
          <p style="padding:14px 10px 0 10px;">Slevový kód jsme Vám právě odeslali na uvedený e-mail.</p>
          <!-- following event closes popup by users action -->
-         <input type="button" value="Zavřít okno" onclick="mailocator.action.do('close')" />
+         <input type="button" value="Completed" onclick="mailocator.action.do('close')" />
          <div class="mlctr-privacy">
          </div>
        </div>
@@ -419,7 +418,7 @@
                  <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
                   <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><img src="assets_1/img/LOGO ANIM.gif" class="navbar-brand"></a>
+                      <a class="navbar-brand" href="#"><img src="assets_1/img/logo_1.png" class="navbar-brand"></a>
                       <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">

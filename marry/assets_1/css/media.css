@@ -2,7 +2,14 @@
   and (min-device-width: 210px) 
   and (max-device-width:320px)
 {
- 
+  .inbox-name {
+    margin-left: 5%;
+    display: none;
+}
+.inbox-user-image {
+  width: 99%;
+  border-radius: 100%;
+}
      /* inbox */
      #inbox-user-image {
       width: 7%;
@@ -85,6 +92,14 @@
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
 {
+  .inbox-name {
+    margin-left: 5%;
+    display: none;
+}
+.inbox-user-image {
+  width: 99%;
+  border-radius: 100%;
+}
   .my-popup-container
   {
     display: none !important;
