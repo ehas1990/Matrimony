@@ -874,7 +874,7 @@
                      
                     </div>
                  </div>
-                 <div class="row">
+                 <div class="row mt-5">
                   <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
                         <!--  -->
                         <div class="profile-pic-wrapper">
@@ -882,14 +882,14 @@
                             <!-- uploaded pic shown here -->
                             <img id="profilePic" class="pic" src="assets/img/upload.png">
                           
-                            <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
+                            <Input class="uploadProfileInput" type="file" name="jadhagam_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
                             <label for="newProfilePhoto" class="upload-file-block">
                               <div class="text-center">
                                 <div class="mb-2">
                                   <i class="fa fa-camera fa-2x"></i>
                                 </div>
                                 <div class="text-uppercase">
-                                  Update <br /> Profile Photo
+                                  Upload <br /> jadhagam
                                 </div>
                               </div>
                             </label>
@@ -1243,19 +1243,19 @@
            <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
                       <!--  -->
-                      <div class="profile-pic-wrapper">
-                        <div class="pic-holder">
+                      <div class="hello-11">
+                        <div class="hello-22">
                           <!-- uploaded pic shown here -->
-                          <img id="profilePic" class="pic" src="assets/img/upload.png">
-                        
-                          <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
-                          <label for="newProfilePhoto" class="upload-file-block">
+                          <img id="hello-33" class="hello-33" src="assets/img/upload.png">
+                      
+                          <Input class="hello-44" type="file" name="profile_pic" id="hello-55" accept="image/*" style="opacity: 0;" />
+                          <label for="hello-55" class="hello-66">
                             <div class="text-center">
                               <div class="mb-2">
                                 <i class="fa fa-camera fa-2x"></i>
                               </div>
                               <div class="text-uppercase">
-                                Update <br /> Profile Photo
+                              Please  Upload <br />  Photo ID
                               </div>
                             </div>
                           </label>
@@ -1392,7 +1392,7 @@
                 <span class="text-IDproof1" id="errorIDproof1"></span>
                   <select class="form-control IDproof1" required>
                       <option value="" disabled selected="disabled">Select ID</option>
-                      <option value="Aadhar Card">Aadhar Card</option>
+                      <!-- <option value="Aadhar Card">Aadhar Card</option> -->
                      <option value="Pan Card">Pan Card</option>
                      <option value="Driving License">Driving License</option>
                      <option value="Passport">Passport</option>
@@ -1849,8 +1849,75 @@ document.addEventListener("change", function (event) {
     }
   }
 });
+// 
+document.addEventListener("change", function (event) {
+  if (event.target.classList.contains("hello-44")) {
+    var triggerInput = event.target;
+    var currentImg = triggerInput.closest(".hello-22").querySelector(".hello-33")
+      .src;
+    var holder = triggerInput.closest(".hello-22");
+    var wrapper = triggerInput.closest(".hello-11");
 
+    var alerts = wrapper.querySelectorAll('[role="alert"]');
+    alerts.forEach(function (alert) {
+      alert.remove();
+    });
 
+    triggerInput.blur();
+    var files = triggerInput.files || [];
+    if (!files.length || !window.FileReader) {
+      return;
+    }
+
+    if (/^image/.test(files[0].type)) {
+      var reader = new FileReader();
+      reader.readAsDataURL(files[0]);
+
+      reader.onloadend = function () {
+        holder.classList.add("uploadInProgress");
+        holder.querySelector(".hello-33").src = this.result;
+
+        var loader = document.createElement("div");
+        loader.classList.add("upload-loader");
+        loader.innerHTML =
+          '<div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>';
+        holder.appendChild(loader);
+
+        setTimeout(function () {
+          holder.classList.remove("uploadInProgress");
+          loader.remove();
+
+          var random = Math.random();
+          if (random < 0.9) {
+            wrapper.innerHTML +=
+              '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i> Profile image updated successfully</div>';
+            triggerInput.value = "";
+            setTimeout(function () {
+              wrapper.querySelector('[role="alert"]').remove();
+            }, 3000);
+          } else {
+            holder.querySelector(".hello-33").src = currentImg;
+            wrapper.innerHTML +=
+              '<div class="snackbar show" role="alert"><i class="fa fa-times-circle text-danger"></i> There is an error while uploading! Please try again later.</div>';
+            triggerInput.value = "";
+            setTimeout(function () {
+              wrapper.querySelector('[role="alert"]').remove();
+            }, 3000);
+          }
+        }, 1500);
+      };
+    } else {
+      wrapper.innerHTML +=
+        '<div class="alert alert-danger d-inline-block p-2 small" role="alert">Please choose a valid image.</div>';
+      setTimeout(function () {
+        var invalidAlert = wrapper.querySelector('[role="alert"]');
+        if (invalidAlert) {
+          invalidAlert.remove();
+        }
+      }, 3000);
+    }
+  }
+});
 </script>
 
 <script src="assets/js/register.js"></script>

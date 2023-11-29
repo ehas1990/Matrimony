@@ -589,6 +589,74 @@ margin-top: 2.8rem;
   .hello-2.uploadInProgress .upload-loader {
     opacity: 1;
   }
+  /*  */
+  .hello-11{
+  
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hello-22 {
+    text-align: center;
+    position: relative;
+    border-radius: 2%;
+    width:250px;
+    height:250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .hello-22 .hello-33 {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+  }
+  
+  .hello-22 .hello-66,
+  .hello-22 .upload-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(90, 92, 105, 0.7);
+    color: #f8f9fc;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  
+  .hello-22 .hello-66 {
+    cursor: pointer;
+  }
+  
+  .hello-22:hover .hello-66,
+  .hello-44:focus ~ .hello-66 {
+    opacity: 1;
+  }
+  
+  .hello-22.uploadInProgress .hello-6 {
+    display: none;
+  }
+  
+  .hello-22.uploadInProgress .upload-loader {
+    opacity: 1;
+  }
+  /*  */
   .id-text {
     font-family: Poppins;
     width:60%;
@@ -1019,9 +1087,32 @@ and (max-device-width:820px)
 and (min-device-width:820px) 
 and (max-device-width:1200px)
 {#mt_5 {
-  margin-top: -8%;
+  margin-top: -7%;
 }
-
+#mt6 {
+  margin-top: -6%;
+}
+.text-fill, .text-filed, .text-gender, .text-jadhagam, .text-caste, .text-religions, .text-Marital, .text-MotherTongue, .text-height, .text-Disbaility, .text-familystatus, .text-familytype, .text-Education, .text-Occupation, .text-Income, .text-Employed, .text-Work, .text-WorkState, .text-SelectProfile, .text-YourCountry, .text-District, .text-pincode, .text-YourState, .text-IDproof, .textSelect_Profile, .textEnterName, .textMobile_number, .textE_mail, .text-IDproof1, .text-SelectBirthStar {
+  color: red;
+  font-size: small;
+  margin-left: 3%;
+  font-size: 9px;
+}
+.select2-container--open .select2-dropdown--below {
+  border: none !important;
+  background-color: #ebf2f4;
+  font-family: Montserrat;
+  box-shadow: 1px 0px 2px 2px #e7e7e7;
+  width: 300px !important;
+}
+input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control,#Register .form-control
+{
+  
+  border: none !important;
+  background-color: #ebf2f4;
+  font-family: Montserrat;
+  box-shadow: 1px 0px 2px 2px #e7e7e7;
+}
 }
 
 

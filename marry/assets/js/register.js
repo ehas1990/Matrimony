@@ -32,7 +32,7 @@ $(document).ready(function () {
       } else {
         $(".EnterName").removeClass("is-invalid");
         $(".EnterName").addClass("is-valid");
-        $("#errorEnterName").html("LOOks good!");
+        $("#errorEnterName").html("Looks good!");
         $("#errorEnterName").css("color", "green");
       }
       // if (code == "") {
@@ -48,7 +48,7 @@ $(document).ready(function () {
       } else {
         $(".Mobile_number").removeClass("is-invalid");
         $(".Mobile_number").addClass("is-valid");
-        $("#errorMobile_number").html("LOOks good!");
+        $("#errorMobile_number").html("Looks good!");
         $("#errorMobile_number").css("color", "green");
         }
        
@@ -61,7 +61,7 @@ $(document).ready(function () {
       } else {
         $(".E_mail").removeClass("is-invalid");
         $("..E_mail").addClass("is-valid");
-        $("#errorE_mail").html("LOOks good!");
+        $("#errorE_mail").html("Looks good!");
         $("#errorE_mail").css("color", "green");
       }
     } else {
@@ -117,7 +117,7 @@ $(document).ready(function () {
       } else {
         $("#dob").removeClass("is-invalid");
         $("#dob").addClass("is-valid");
-        $("#errordob").html("LOOks good!");
+        $("#errordob").html("Looks good!");
         $("#errordob").css("color", "green");
       }
       // if (code == "") {
@@ -133,7 +133,7 @@ $(document).ready(function () {
       } else {
         $("#mobile").removeClass("is-invalid");
         $("#mobile").addClass("is-valid");
-        $("#errormobile").html("LOOks good!");
+        $("#errormobile").html("Looks good!");
         $("#errormobile").css("color", "green");
         }
        
@@ -146,7 +146,7 @@ $(document).ready(function () {
       } else {
         $("#password").removeClass("is-invalid");
         $("#password").addClass("is-valid");
-        $("#errorpassword").html("LOOks good!");
+        $("#errorpassword").html("Looks good!");
         $("#errorpassword").css("color", "green");
       }
     } else {
@@ -192,17 +192,17 @@ $(document).ready(function () {
         $("#errorMotherTongue").html("Looks good!");
         $("#errorMotherTongue").css("color", "green");
       }
-      if ( marital == "") {
+      if (marital == "") {
         $(".marital").addClass("is-invalid");
-        $("#errorMarital").html("Select The Marital Status!");
+        $("#errorMarital").html("Select The Marital!");
         $("#errorMarital").css("color", "red");
         event.preventDefault();
       } else {
         $(".marital").removeClass("is-invalid");
         $(".marital").addClass("is-valid");
 
-        $("errorMarital").html("Looks good!");
-        $("errorMarital").css("color", "green");
+        $("#errorMarital").html("Looks good!");
+        $("#errorMarital").css("color", "green");
       }
       if (religion == "") {
         $(".religion").addClass("is-invalid");
