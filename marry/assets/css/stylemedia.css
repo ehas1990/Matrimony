@@ -14,13 +14,25 @@
 .text-fill,.text-filed,.text-gender,.text-jadhagam,.text-caste,.text-religions,.text-Marital,.text-MotherTongue,.text-height,
 .text-Disbaility,.text-familystatus,.text-familytype,.text-Education,.text-Occupation,.text-Income,.text-Employed,.text-Work ,
 .text-WorkState,.text-SelectProfile,.text-YourCountry,.text-District,.text-pincode,.text-YourState,.text-IDproof,.textSelect_Profile,
-.textEnterName,.textMobile_number,.textE_mail,.text-IDproof1,.text-SelectBirthStar
+.textEnterName,.textMobile_number,.textE_mail,.text-IDproof1,.text-SelectBirthStar,.text-password,.idtext
 
 {
   color: red;
   font-size: small;
   margin-left: 3%;
   
+}
+.pic-holder .pic_1
+{
+
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain !important;
+    object-fit: contain !important;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+
 }
 .translate-middle
 {
@@ -1116,3 +1128,9 @@ input[type=date].form-control, input[type=datetime-local].form-control, input[ty
 }
 
 
+.value {
+  font-size: 150px;
+  display: block;
+  font-weight: bold;
+  color: #473c3c;
+}

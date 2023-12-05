@@ -6,6 +6,48 @@
   font-family:poppins;
   src: url('../Fonts/Poppins-Regular.ttf');
 }
+/* .info 
+{
+
+
+  background-image: url("../img/doli-resize.gif");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position:left;
+  animation-name: resize;
+  animation-duration:100s;
+  animation-iteration-count: infinite;
+} 
+@keyframes resize {
+  0%{
+    background-position:right;
+  }
+ 100%{
+    background-position:left;
+  }
+  
+}
+*/
+.info-head a{
+  text-decoration: none !important;
+  color: rgba(233, 18, 18, 0.829) !important;
+  font-weight: 900 !important;
+  font-size:x-small;
+}
+
+.info-head a:hover{
+  text-decoration: none !important;
+  color: rgba(233, 18, 18, 0.829) !important;
+  font-weight: 900 !important;
+  font-size:x-small;
+}
+.info-head {
+  text-decoration: none !important;
+  color: rgba(233, 18, 18, 0.829) !important;
+  font-weight: 900 !important;
+  font-size:x-small;
+}
+
 #member-social .btn-primary1 {
   margin-top: 4px;
   font-size: 12px;
@@ -36,7 +78,7 @@
 }
 #card-memberleft span{
   font-family: poppins;
-  font-size: 30px !important;
+  font-size: 20px !important;
 }
 .Interests-text h5, .shortlist-text h5{
   font-family: poppins;
@@ -186,6 +228,7 @@ body
 p{
   font-family: poppins;
 }
+
 .btn-primary1
 {
   background: linear-gradient(90deg, rgba(93,206,214,1) 0%, rgba(67,201,213,1) 35%, rgba(7,188,215,1) 100%);
@@ -197,6 +240,15 @@ p{
   background: linear-gradient(90deg, rgba(93,206,214,1) 0%, rgba(67,201,213,1) 35%, rgba(7,188,215,1) 100%);
   border:none !important;
 }
+.btn-primary11
+{
+  background: linear-gradient(90deg, rgba(93,206,214,1) 0%, rgba(67,201,213,1) 35%, rgba(7,188,215,1) 100%);
+  border:none !important;
+  font-family:poppins;
+  width:180px;
+  margin: 2px;
+}
+
 .btn-primary
 {
   background: #18bdff !important;
@@ -761,6 +813,7 @@ foot a{
   height:46px;
   border-radius: 100%;
   display: inline;
+  margin-top: -12%;
 }
 /* matches */
 

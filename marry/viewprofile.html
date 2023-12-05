@@ -55,8 +55,10 @@
     padding: 10px;
     display: none;
 }
-
-
+.view
+{
+  margin-top: 120px;
+}
     .profile-nav
     {
         display: flex;
@@ -197,7 +199,20 @@
     </div>
 
 </header>
-<div class="mt-4"></div>
+
+<section class="info mt-1">
+  <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-sm-12 col-12">
+          <div class="p-5">
+            <h2 class="text-center font-weight-bold ">Profile</h2>
+            <h6 class="text-center info-head"><a href="userpage.html" class="text-black">Home</a> <span class="me-2">/</span><span class="ml-1">Profile</span></h6>
+          </div>
+            
+        </div>
+      </div>
+  </div>
+</section>
 
 <section>
 
@@ -208,7 +223,7 @@
         <img src="assets_1/img/user.jpg" width="200" alt="Profile Image">
       </div>
       <div class="profile-nav-info">
-        <h3 class="user-name">Akhil</h3>
+        <h3 class="user-name">Akhil <span class="ml-2"><img src="./assets_1/img/crown.png" width="45px" height="45px"></span></h3>
         <div class="address">
           <p id="state" class="state">21yrs </p>
           <span id="country" class="country">(12-Oct-1990)</span>
@@ -247,9 +262,10 @@
             </p>
           </div>
           <div class="profile-btn">
-            <!-- <button class="chatbtn" id="chatBtn"><i class="fa fa-comment"></i> </button> -->
-            <button class="createbtn" id="Create-post"><i class="fa fa-plus"></i> Marriage Support</button>
+            <button class="chatbtn" id="chatBtn">Request Button </button>
+            <button class="createbtn" id="Create-post"> Marriage Support</button>
           </div>
+        
           <!-- <div class="user-rating">
             <h3 class="rating">4.5</h3>
             <div class="rate">
@@ -271,14 +287,14 @@
       </div>
       <div class="right-side">
   
-        <div class="nav">
+        <div class="nav mt-1">
           <ul>
-            <li  onclick="tabs(0)" class="user-post active "><span class="mr-2"><i class="fa fa-user"></i></span>Profile</li>
-            <li onclick="tabs(1)" class="user-review"><span class="mr-2"><i class="fa fa-heart"></i></span>MY Interests</li>
-            <li onclick="tabs(2)" class="user-setting"><span class="mr-2"><i class="fa fa-list-ul"></i></span> Shortlist</li>
+            <li  onclick="tabs(0)" class="user-post  btn btn-primary11 active "><span class="mr-2"><i class="fa fa-user"></i></span>Profile</li>
+            <li onclick="tabs(1)" class="user-review btn btn-primary11"><span class="mr-2"><i class="fa fa-heart"></i></span>MY Interests</li>
+            <li onclick="tabs(2)" class="user-setting btn btn-primary11"><span class="mr-2"><i class="fa fa-list-ul"></i></span> Shortlist</li>
             <!-- <li onclick="tabs(3)" class="user-followed"><span class="mr-2"><i class="fa fa-star"></i></span>Followed Users</li> -->
-            <li onclick="tabs(3)" class="user-messaging"><span class="mr-2"><i class="fa fa-comments"></i></span>Messaging</li>
-            <li onclick="tabs(4)" class="user-ignored"><span class="mr-2"><i class="fa fa-ban"></i></span>Ignored List</li>
+            <li onclick="tabs(3)" class="user-messaging btn btn-primary11"><span class="mr-2"><i class="fa fa-comments"></i></span>Messaging</li>
+            <li onclick="tabs(4)" class="user-ignored btn btn-primary11"><span class="mr-2"><i class="fa fa-ban"></i></span>Ignored List</li>
           </ul>
         </div>
         <div class="profile-body">
@@ -1596,9 +1612,8 @@
   </div>
 </section>
                           
-    <div class="mt-4"></div>                   
-
-    <footer class="mt-5" id="footer">
+    <div class="view"></div>                     
+    <footer  class="mt-5" id="footer">
   
       <div class="container">
             <div class="row">
@@ -1614,15 +1629,16 @@
                    <h5 class="text-center">Quick Link</h5>
                       <ul>
                          <li><a href="#">Help & Support </a></li>
-                         <li><a href="#">Terms & Conditions</a></li>
-                         <li><a href="#">Privacy Policy</a></li>
+                         <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                         <li><a href="privacy_policy.html">Privacy Policy</a></li>
                       </ul>
                       
                  </div>
                  <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
                   
                     <h5 class="text-center">Contact Us</h5>
-                    <p>No.1 marry.com<br>Thiruvananthapuram</p>
+                    <p>AP/X1/73 Agasthyacodu,<br>Anchal, Kollam,<br> India, Kerala
+    </p>
                  
                    
                  </div>

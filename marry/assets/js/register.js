@@ -84,19 +84,21 @@ $(document).ready(function () {
   $(".profilebtn1").click(function (event) {
     var gender = $(".form-select").find(":selected").val();
 
-    var dob = $("#dob").val();
+    var datepicker = $("#datepicker").val();
 
     // const code = $(".code").val();
     const mobile = $(".mobile").val();
   
     const password = $(".password").val();
+    const conformpassword = $(".conformpassword").val();
     if (
       gender == "" ||
-      dob == "" ||
+      datepicker == "" ||
       // code == "" ||
       mobile == "" ||
-      password == ""
-    ) {
+      password == "" ||
+      conformpassword == "" 
+     ) {
       if (gender == "") {
         $(".form-select").addClass("is-invalid");
         $("#errorgender").html("Select The Gender!");
@@ -109,14 +111,14 @@ $(document).ready(function () {
         $("#errorgender").html("Looks good!");
         $("#errorgender").css("color", "green");
       }
-      if (dob == "") {
-        $("#dob").addClass("is-invalid");
+      if (datepicker == "") {
+        $("#datepicker").addClass("is-invalid");
         $("#errordob").html("Enter the Date of Birth!");
         $("#errordob").css("color", "red");
         event.preventDefault();
       } else {
-        $("#dob").removeClass("is-invalid");
-        $("#dob").addClass("is-valid");
+        $("#datepicker").removeClass("is-invalid");
+        $("#datepicker").addClass("is-valid");
         $("#errordob").html("Looks good!");
         $("#errordob").css("color", "green");
       }
@@ -149,7 +151,20 @@ $(document).ready(function () {
         $("#errorpassword").html("Looks good!");
         $("#errorpassword").css("color", "green");
       }
+    
+    if (conformpassword == "") {
+      $("#conformpassword").addClass("is-invalid");
+      $("#errorconformpassword").html("Enter the conform password!");
+      $("#errorconformpassword").css("color", "red");
+      event.preventDefault();
     } else {
+      $("#conformpassword").removeClass("is-invalid");
+      $("#conformpassword").addClass("is-valid");
+      $("#errorconformpassword").html("Looks good!");
+      $("#errorconformpassword").css("color", "green");
+    }
+  } 
+    else {
       $("#collapse_One").hide();
       $("#collapseOne").hide();
       $("#collapseThree").hide();
@@ -553,6 +568,7 @@ $(document).ready(function () {
         $("#errorIDproof1").html("Select Your ID Proof!");
         $("#errorIDproof1").css("color", "red");
         event.preventDefault();
+        alert("sucessfully registered Account");
       } else {
         $(".IDproof1").removeClass("is-invalid");
         $(".IDproof1").addClass("is-valid");

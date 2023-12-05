@@ -125,6 +125,7 @@
     font-family: "Bree Serif", serif;
     margin-left: 10px;
     z-index: 99;
+    height: 480px;
   }
   
   .profile-side p {
@@ -245,7 +246,14 @@
   .tab {
     display: none;
   }
-  
+  .bio{
+     height: 90px;
+     overflow-y: scroll;
+     display: block;
+     scrollbar-width: 1px !important;
+     scroll-behavior: auto !important;
+     
+  }
   .tab {
     padding: 20px;
     width: 100%;
@@ -253,17 +261,19 @@
   }
   #profiletab {
     float: left;
-    border: none !important;
+    
     background-color: #ffffffff !important;
-    height: 450px;
+    height:419px;
     overflow-y: scroll;
      margin-left: 14px;
+     scrollbar-width: 1px;
     
 }
   @media (max-width: 1100px) {
     .profile-side {
       width: 250px;
       padding: 90px 15px 20px;
+      height: 367px;
     }
   
     .profile-img img {
