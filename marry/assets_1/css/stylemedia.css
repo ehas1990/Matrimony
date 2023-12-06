@@ -1623,8 +1623,8 @@ footer p{
 }
 .user-menu {
   text-align: end;
-  margin-top: 27px;
-  margin-left: -56%;
+  margin-top: 15px;
+  margin-left: -55% !important;
 }
 #dropdownmenu {
   margin-left: -270%;
@@ -1784,6 +1784,7 @@ footer p{
   height: 38px;
   border-radius: 100%;
   display: inline;
+  margin-top: -59%;
 }
 #dropdownmenu
 {
@@ -1903,6 +1904,10 @@ footer p{
 .filter-item 
 {
   display: none !important;
+}
+.inbox-user-image {
+  width: 38%;
+  border-radius: 100%;
 }
 }
 @media only screen 

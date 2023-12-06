@@ -97,7 +97,7 @@
     display: none;
 }
 .inbox-user-image {
-  width: 99%;
+  width: 59% !important;
   border-radius: 100%;
 }
   .my-popup-container
@@ -106,7 +106,7 @@
   }
         /* inbox */
         #inbox-user-image {
-          width: 7%;
+          width:10%;
           border-radius: 100%;
           margin-left: 7% !important;
       }
@@ -140,10 +140,10 @@
   overflow-y: scroll;
 }
 #img-message2 {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  margin-left: 120%;
+  width: 32px;
+    height: 39px;
+    border-radius: 100%;
+    margin-right: -5%;
 }
 .message-text2 {
   margin-top: -50px;
@@ -168,8 +168,8 @@
     height: max-content !important;
 }
 #img-message {
-  width: 45px;
-  height: 45px;
+  width: 31px;
+  height: 39px;
   border-radius: 100%;
   margin-right: -5%;
 }
@@ -226,6 +226,11 @@
 .cardheader1 h5
 {
   font-size: 12px;
+}
+#inbox-user-image1 {
+  width: 18%;
+  border-radius: 100%;
+  margin-left: 142%;
 }
 }
 @media only screen 
