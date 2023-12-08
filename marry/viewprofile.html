@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="assets_1/css/profile.css">
 <link rel="stylesheet" href="assets_1/dataTables.bootstrap4.css">
 <link rel="stylesheet" href="./assets_1/css/media.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 <style>
@@ -1971,6 +1972,17 @@ function timeBetweenDates(toDate) {
   }
 }
 </script>
+<script>
+  $(document).ready(function(){
+  $("#Create-post").click(function(){
+    Swal.fire({
+  title: "Contact Admin!",
+  text: "You clicked the button!",
+  icon: "success"
+});
+  });
+  });
+  </script>
 <script src="assets_1/jquery.dataTables.js"></script>
 <script src="assets_1/jquery.dataTables.min.js"></script>
 <script src="assets_1/dataTables.bootstrap4.js"></script>
