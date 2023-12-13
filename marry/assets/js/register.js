@@ -5,12 +5,14 @@ $(document).ready(function () {
     const EnterName= $(".EnterName").val();
     const Mobile_number= $(".Mobile_number").val();
     const  E_mail= $(".E_mail").val();
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (
       Select_Profile == "" ||
       EnterName == "" ||
       Mobile_number == "" ||
-      E_mail == ""
-     
+      E_mail == "" ||
+      IsEmail(E_mail) == false
+      
     ) {
       if (Select_Profile== "") {
         $(".Select_Profile").addClass("is-invalid");
@@ -55,15 +57,21 @@ $(document).ready(function () {
       
       if (E_mail == "") {
         $(".E_mail").addClass("is-invalid");
-        $("#errorE_mail").html("Enter the E-mail!");
+        $("#errorE_mail").html("Enter  the E-mail!");
         $("#errorE_mail").css("color", "red");
         event.preventDefault();
-      } else {
-        $(".E_mail").removeClass("is-invalid");
-        $("..E_mail").addClass("is-valid");
-        $("#errorE_mail").html("Looks good!");
-        $("#errorE_mail").css("color", "green");
+      }else if(IsEmail(E_mail) == false){
+        $(".E_mail").addClass("is-invalid");
+        $("#errorE_mail").html("Enter the valid E-mail!");
+        $("#errorE_mail").css("color", "red");
+        event.preventDefault();
+      }else{ 
+          $(".E_mail").removeClass("is-invalid");
+          $(".E_mail").addClass("is-valid");
+          $("#errorE_mail").html("Looks good!");
+          $("#errorE_mail").css("color", "green");
       }
+      
     } else {
       $("#collapse_One").hide();
       $("#collapseTwo").hide();
@@ -585,3 +593,13 @@ $(document).ready(function () {
   });
 });
 
+function IsEmail(email) {
+  var regex =
+/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (!regex.test(email)) {
+      return false;
+  }
+  else {
+      return true;
+  }
+}

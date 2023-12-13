@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/stylemedia.css">
 <!-- new  script -->
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
- <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -454,13 +454,14 @@
                </div>
                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 col-xs-6" id="mt_5">
                  <span class="textMobile_number" id="errorMobile_number"></span>
-                     <input type="number" class="form-control Mobile_number" placeholder="Enter Mobile number" name="mobile number">
+                     <input type="number" class="form-control Mobile_number" placeholder="Enter Mobile number" name="mobile number" oninput="validateMobileNumber(this)" required>
+
                </div>
        </div>
               <div class="row mt-4">
                      <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-xs-12">
                        <span class="textE_mail" id="errorE_mail"></span>
-                           <input type="email" class="form-control E_mail" placeholder="Enter Email" name="E-mail" required>
+                           <input type="email" class="form-control E_mail" placeholder="Enter Email" name="E-mail"  required>
                      </div>
              </div>
              <!-- <div class="row mt4">
@@ -782,7 +783,7 @@
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 col-xs-6" id="mt6">
               <span class="text-fill" id="errormobile"></span>
-                  <input type="number" pattern="/^(\+[0-9]{1,4})?([0-9](8,14))$/" class="form-control mobile" id="mobile" placeholder="Alternate Number" name="Alternate number" required>
+                  <input type="number" pattern="/^(\+[0-9]{1,4})?([0-9](8,14))$/" class="form-control mobile" id="mobile" placeholder="Alternate Number" name="Alternate number" oninput="validateMobileNumber(this)" required>
               
             </div>
           </div> 
@@ -806,6 +807,8 @@
             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-xs-12 textcenter">
               <!-- <input type="submit" class="btn btn-primary" id="Register-btn"  value="Continue"> -->
               <input type="button" class="btn btn-primary profilebtn1" value="Continue" id="Register-btn">
+              
+  <!-- <button type="button" id="submitBtn" class="btn btn-primary mt-3">Submit</button> -->
             </div>
           </div>  
       
@@ -974,8 +977,10 @@
         
           <div class="row mt-5">
              <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 text-center">
+              <button type="submit">
               <input type="button" class="btn btn-primary profilebtn2" id="Register-btn" value="Continue">
-             </div>
+            </button>
+            </div>
           </div>
              
       </form>
@@ -1526,6 +1531,7 @@
      } else {
          input.attr("type", "password");
      }
+     
  });
  </script>
 <script>
@@ -1788,8 +1794,38 @@ window.location.href ="./userpage.html";
   });
   </script>
 
+<script>
+  function validateMobileNumber(input) {
+    // Remove non-numeric characters
+    var numericValue = input.value.replace(/\D/g, '');
+
+    // Ensure the length is not more than 10 digits
+    if (numericValue.length > 11) {
+        numericValue = numericValue.slice(0, 11);
+    }
+
+    // Update the input value
+    input.value = numericValue;
+}
+
+  </script>
+<script>
+  $(document).ready(function() {
+    $("#Register-btn").click(function() {
+      var password = $("#password").val();
+      var conformpassword = $("#conformpassword").val();
+
+      // Reset previous error messages
+      $("#errorpassword, #errorconformpassword").text("");
+
+      if (password !== conformpassword) {
+        $("#errorconformpassword").text("Passwords do not match");
+      }
+    });
+  });
+</script>
 
 
-<!-- end code -->
+
 </body>
 </html>
