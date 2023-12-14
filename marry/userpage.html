@@ -763,8 +763,8 @@
                                         <div class="swiper-pagination"></div>
                                     
                                         <!-- If we need navigation buttons -->
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-2"></div>
+                                        <div class="swiper-button-next swiper-button-next-2"></div>
                                     
                                         <!-- If we need scrollbar -->
                                       
@@ -777,7 +777,7 @@
                                   <h5>Premium Matches</h5>
                                        <!--  -->
                                        <div class="swiper-container">
-                                        <div class="swiper mySwiper">
+                                        <div class="swiper mySwiper-1">
                                           <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                               <div class="card1">
@@ -988,8 +988,8 @@
                                         <div class="swiper-pagination" id="swiper-pagination"></div>
                                     
                                         <!-- If we need navigation buttons -->
-                                        <div class="swiper-button-prev" id="swiper-button-prev"></div>
-                                        <div class="swiper-button-next" id="swiper-button-next"></div>
+                                        <div class="swiper-button-prev-1 swiper-button-prev" id="swiper-button-prev"></div>
+                                        <div class="swiper-button-next-1 swiper-button-next" id="swiper-button-next"></div>
                                     
                                         <!-- If we need scrollbar -->
                                       
@@ -1048,60 +1048,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  // Initialize Swiper
-  var mySwiper = new Swiper('#mySwiper4', {
-    // Optional: Set the direction (horizontal or vertical)
-    direction: 'horizontal',
-    
-    // Optional: Set the speed of the slider
-    speed: 500,
-    
-    // Optional: Add pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    
-    // Optional: Add navigation buttons
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    
-    // Optional: Add scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
 
-    // Optional: Enable responsive breakpoints
-    breakpoints: {
-      // When window width is >= 320px
-      320: {
-        slidesPerView: 1,
-      },
-      // When window width is >= 480px
-      480: {
-        slidesPerView: 2,
-      },
-      // When window width is >= 640px
-      640: {
-        slidesPerView: 3,
-      },
-    },
-
-    // Optional: Enable autoplay
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-  });
-
-  // Handle window resize event
-  window.addEventListener('resize', function () {
-    mySwiper.update(); // Recalculate swiper dimensions
-  });
-</script>
 
 
 <script>

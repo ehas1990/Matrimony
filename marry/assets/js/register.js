@@ -83,6 +83,7 @@ $(document).ready(function () {
       $("#collapseOne").show();
       $(".header_1").show();
       $("#header_1").hide();
+      $(".progressbar").attr("style","--value:12");
     }
   });
 });
@@ -105,7 +106,9 @@ $(document).ready(function () {
       // code == "" ||
       mobile == "" ||
       password == "" ||
-      conformpassword == "" 
+      conformpassword == "" ||
+      password != conformpassword
+
      ) {
       if (gender == "") {
         $(".form-select").addClass("is-invalid");
@@ -148,7 +151,7 @@ $(document).ready(function () {
         }
        
       
-      if (password == "") {
+      if (password ==="") {
         $("#password").addClass("is-invalid");
         $("#errorpassword").html("Enter the Password!");
         $("#errorpassword").css("color", "red");
@@ -158,21 +161,32 @@ $(document).ready(function () {
         $("#password").addClass("is-valid");
         $("#errorpassword").html("Looks good!");
         $("#errorpassword").css("color", "green");
+      
       }
     
-    if (conformpassword == "") {
+    if (conformpassword === "") {
       $("#conformpassword").addClass("is-invalid");
       $("#errorconformpassword").html("Enter the conform password!");
       $("#errorconformpassword").css("color", "red");
       event.preventDefault();
-    } else {
-      $("#conformpassword").removeClass("is-invalid");
-      $("#conformpassword").addClass("is-valid");
-      $("#errorconformpassword").html("Looks good!");
-      $("#errorconformpassword").css("color", "green");
+    } else if(password != conformpassword){
+      $("#conformpassword").addClass("is-invalid");
+      $("#errorconformpassword").html("The conform password is not matching!");
+      $("#errorconformpassword").css("color", "red");
+      event.preventDefault();
+    }else{
+        $("#conformpassword").removeClass("is-invalid");
+        $("#conformpassword").addClass("is-valid");
+        $("#errorconformpassword").html("Looks good!");
+        $("#errorconformpassword").css("color", "green");
     }
   } 
     else {
+      // if(password!==conformpassword){
+      //  alert("match your paswword")
+      //   event.preventDefault()
+      // }
+      
       $("#collapse_One").hide();
       $("#collapseOne").hide();
       $("#collapseThree").hide();
@@ -181,11 +195,11 @@ $(document).ready(function () {
       $("#collapseSix").hide();
       $("#collapseSeven").hide();
       $("#collapseTwo").show();
-     
-     
-    }
+      $(".progressbar").attr("style","--value:26");
+      }
+    })
   });
-});
+
 
 $(document).ready(function () {
   $(".profilebtn2").click(function (event) {
@@ -272,6 +286,7 @@ $(document).ready(function () {
       $("#collapseSix").hide();
       $("#collapseSeven").hide();
       $("#collapseThree").show();
+      $(".progressbar").attr("style","--value:38");
     }
   });
 });
@@ -345,6 +360,7 @@ $(document).ready(function () {
     $("#collapseSix").hide();
     $("#collapseSeven").hide();
     $("#collapseFour").show();
+    $(".progressbar").attr("style","--value:50");
     }
   });
 });
@@ -447,6 +463,7 @@ $(document).ready(function () {
     $("#collapseSix").hide();
     $("#collapseSeven").hide();
     $("#collapseFive").show();
+    $(".progressbar").attr("style","--value:64");
     }
   });
 });
@@ -481,6 +498,7 @@ $(document).ready(function () {
     $("#collapseTwo").hide();
     $("#collapseSeven").hide();
     $("#collapseSix").show();
+    $(".progressbar").attr("style","--value:76");
       }
   });
 });
@@ -557,6 +575,7 @@ $(document).ready(function () {
     $("#collapseSix").hide();
     $("#collapseTwo").hide();
     $("#collapseSeven").show();
+    $(".progressbar").attr("style","--value:88");
       }
   });
 });
@@ -583,7 +602,7 @@ $(document).ready(function () {
 
         $("#errorIDproof1").html("Looks good!");
         $("#errorIDproof1").css("color", "green");
-
+        $(".progressbar").attr("style","--value:100");
       }
     }
       else{

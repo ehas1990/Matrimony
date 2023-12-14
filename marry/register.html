@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/stylemedia.css">
 <!-- new  script -->
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script> -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -116,7 +116,7 @@
                         
                             <!--  --><span class="wrapper">  
                               <span id="progress-text">You Have completed </span>
-                              <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value:100"></div>
+                              <div class="progressbar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="" style="--value:50"></div>
                            </span>
                             <!--  -->
                           </div>
@@ -977,9 +977,9 @@
         
           <div class="row mt-5">
              <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 text-center">
-              <button type="submit">
+              
               <input type="button" class="btn btn-primary profilebtn2" id="Register-btn" value="Continue">
-            </button>
+        
             </div>
           </div>
              
@@ -1809,11 +1809,11 @@ window.location.href ="./userpage.html";
 }
 
   </script>
-<script>
+<!-- <script>
   $(document).ready(function() {
     $("#Register-btn").click(function() {
-      var password = $("#password").val();
-      var conformpassword = $("#conformpassword").val();
+    let password = $("#password").val();
+      let conformpassword = $("#conformpassword").val();
 
       // Reset previous error messages
       $("#errorpassword, #errorconformpassword").text("");
@@ -1823,7 +1823,7 @@ window.location.href ="./userpage.html";
       }
     });
   });
-</script>
+</script> -->
 
 
 
