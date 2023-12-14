@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NO:1 MARRY.COM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>NO:1 MARRY.COM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="assets_1/css/stylemedia.css">
+ <link rel="stylesheet" href="assets_1/css/style.css">
+ <link rel="stylesheet" href="assets_1/css/bootstrap.min.css">
+<!--  -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/select2.min.js"></script>
+<!--  -->
+<style>
+ 
+  .btn
+  {
+    width:147px;
+    font-size: 12px;
+    font-family:Montserrat;
+  }
+  .btn:hover
+  {
+    width:147px;
+    font-size: 12px;
+    font-family:Montserrat;
+  }
+</style>
+</head>
+<body>
+  <header id="header">
+    <div class="container-fluid">
+          <div class="row">
+           
+                 <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                  <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="assets_1/img/logo_1.png" class="navbar-brand"></a>
+                      <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99
+                         
+                        </span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                        <ul class="navbar-nav" id="navbarnav">
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" href="userpage.html"><span class="mx-2"><i
+                                  class="fa-solid fa-house"></i></span>Home </a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" id="nav-link" href="inbox.html"><span class="mx-2"><i
+                                  class="fa-solid fa-envelope"></i></span>Inbox</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
+                                  class="ri-user-search-fill"></i></span>Partner Preference</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" href="plans.html"><span class="mx-2"><i
+                                  class="fa-solid fa-user-shield"></i></span>Upgrade to Premium</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
+                                  class="fa-solid fa-users"></i></span>Matches</a>
+                          </li>
+                          <!-- <li class="nav-item ">
+                              <a class="nav-link text-dark" href="#"><span class="ml-2"><i class="fa-solid fa-bell"></i></span>Notification</a>
+                            </li>  -->
+              
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">
+                              <span class="mx-2"><i class="fa-solid fa-bell"></i></span>Notification</a>
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu viewer-menu">
+              
+                              <li class="nav-item"><a class="nav-link" id="display-flex" href="#"><img src="assets_1/img/user.jpg"
+                                    class="viewer"><span class="ml-2 viewer-content">Akhil viewed your profile.<span
+                                      class="mx-3 text-primary">4h</span><br><a href="#" class="float_right text-danger">View
+                                      all</a></span> </a></li>
+              
+                            </ul>
+                          </li>
+                         
+                        </ul>
+                        
+                      </div>
+                      
+                    </div>
+                  
+                  </nav>
+                 </div>
+                 <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                 
+                   
+                 
+                  <div class="user-menu">
+                  
+                    <ul class="navbar-nav">
+                
+                      <li class="nav-item dropdown">
+                       
+                        <a class="nav-link" type="button" data-toggle="dropdown">
+                          
+                          <img src="assets_1/img/user.jpg" id="user-icon">
+                          <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="dropdownmenu">
+                          <li class="dropdown-submenu">
+                            <a class=" nav-link test" href="#"><span class="mx-2"> Account Setting</span> <span
+                                class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item"><a class="nav-link" href="editprofile.html">Edit profile</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Privacy Settings</a></li>
+                              <li class="nav-item"><a class="nav-link" href="password_setting.html">Change Password</a></li>
+            
+                            </ul>
+                          </li>
+            
+                          <li class="dropdown-submenu">
+                            <a class="test nav-link" href="#"><span class="mx-2">Settings</span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item"><a class="nav-link" href="#">Hide Profile</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Delete Profile</a></li>
+            
+                            </ul>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="#"><span class="mx-2">Help & Support</span></a></li>
+                          <li class="nav-item"><a class="nav-link" href="login.html"><span class="mx-2">Logout</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                 </div>
+          </div>
+          
+    </div>
+
+</header>
+
+<section class="info mt-1">
+  <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-sm-12 col-12">
+          <div class="p-5">
+            <h2 class="text-center font-weight-bold ">Partner Preference</h2>
+            <h6 class="text-center info-head"><a href="userpage.html" class="text-black">Home</a> <span class="me-2">/</span><span class="ml-1">Partner Preference</span></h6>
+          </div>
+            
+        </div>
+      </div>
+  </div>
+</section>
+<section class="mt-3">
+    <div class="container">
+        <div class="row">
+
+
+                <div class="col-xxl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                    <button class="btn btn-primary filter-button" data-filter="all">All  Matches</button>
+                    <button class="btn btn-primary filter-button" data-filter="NewMatches">New Matches</button>
+                    <button class="btn btn-primary filter-button" data-filter="PremiumMatches">Premium Matches</button>
+                    <button class="btn btn-primary filter-button" data-filter="Nearby">Nearby Matches</button>
+                    <button class="btn btn-primary filter-button" data-filter="Viewed">Viewed by You</button>
+                    <button class="btn btn-primary filter-button" data-filter="Shortlisted">Shortlisted by You</button>
+                    
+                </div>
+                <div class="col-xxl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                      
+          <button type="button" class="btn btn-primary" id="filter" data-bs-toggle="modal" data-bs-target="#myModal">
+           Filter <i class="fa-solid fa-filter"></i>
+          </button>
+                </div>
+
+              <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <!-- <div class="modal-header">
+                      <h4 class="modal-title">Basic Preference</h4>
+                      
+                    </div> -->
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="#" method="Post" id="form-mobile">
+                          <div class="row">
+                            <div class="col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                             <input type="text" placeholder="Age"  id="form-control">
+                            </div>
+                            <div class="col-xxl-2 col-lg-2 col-md-2 col-sm-2 col-2">To</div>
+                            <div class="col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                             <input type="text" placeholder="Age"  id="form-control">
+                            </div>
+                         </div>
+                         <div class="row">
+                          <div class="col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                               <select class="form-control select2" id="dropdown42">
+                                 <option disabled selected="disabled">Select Height</option>
+                                 <option value="4ft 6in">4ft 6in</option>
+                                 <option value="4ft 7in">4ft 7in</option>
+                                 <option value="4ft 8in">4ft 8in</option>
+                                 <option value="4ft 9in">4ft 9in</option>
+                                 <option value="4ft 10in">4ft 10in</option>
+                                 <option value="4ft 11in">4ft 11in</option>
+                                 <option value="5ft ">5ft </option>
+                                 <option value="5ft 6in">4ft 6in</option>
+                                 <option value="5ft 7in">4ft 7in</option>
+                                 <option value="5ft 8in">4ft 8in</option>
+                                 <option value="5ft 9in">4ft 9in</option>
+                                 <option value="5ft 10in">4ft 10in</option>
+                                 <option value="5ft 11in">4ft 11in</option>
+                                 <option value="6ft ">6ft </option>
+                                 <option value="6ft 6in">6ft 6in</option>
+                                 <option value="6ft 7in">6ft 7in</option>
+                                 <option value="6ft 8in">6ft 8in</option>
+                                 <option value="6ft 9in">6ft 9in</option>
+                                 <option value="6ft 10in">6ft 10in</option>
+                                 <option value="6ft 11in">6ft 11in</option>
+                                 <option value="7ft ">7ft </option>
+                               
+                                 
+                                 
+
+                               </select>
+                          </div>
+                          <div class="col-xxl-2 col-lg-2 col-md-2 col-sm-2 col-2">To</div>
+                          <div class="col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                               <select class="form-control select2" id="dropdown41">
+                                 <option disabled selected="disabled">Select Height</option>
+                                 <option value="4ft 6in">4ft 6in</option>
+                                 <option value="4ft 7in">4ft 7in</option>
+                                 <option value="4ft 8in">4ft 8in</option>
+                                 <option value="4ft 9in">4ft 9in</option>
+                                 <option value="4ft 10in">4ft 10in</option>
+                                 <option value="4ft 11in">4ft 11in</option>
+                                 <option value="5ft ">5ft </option>
+                                 <option value="5ft 6in">4ft 6in</option>
+                                 <option value="5ft 7in">4ft 7in</option>
+                                 <option value="5ft 8in">4ft 8in</option>
+                                 <option value="5ft 9in">4ft 9in</option>
+                                 <option value="5ft 10in">4ft 10in</option>
+                                 <option value="5ft 11in">4ft 11in</option>
+                                 <option value="6ft ">6ft </option>
+                                 <option value="6ft 6in">6ft 6in</option>
+                                 <option value="6ft 7in">6ft 7in</option>
+                                 <option value="6ft 8in">6ft 8in</option>
+                                 <option value="6ft 9in">6ft 9in</option>
+                                 <option value="6ft 10in">6ft 10in</option>
+                                 <option value="6ft 11in">6ft 11in</option>
+                                 <option value="7ft ">7ft </option>
+                               
+                                 
+                                 
+
+                               </select>
+                          </div>
+                         </div>
+                         
+                         <div class="row">
+                          <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <select class="form-control select2" id="dropdown40">
+                              <option disabled selected="disabled"> Marital Status</option>
+                              <option>Married</option>
+                              <option>Unmarried</option>
+                              <option>Divorced</option>
+                              <option>Widow</option>
+                            </select>
+                          </div>
+                         
+                         </div>
+                         <div class="row">
+                          <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <select class="form-control select2" id="dropdown39">
+                              <option disabled selected="disabled">Select Mother Tongue</option>
+                              <option>Malayalam</option>
+                              <option>Tamil</option>
+                              <option>Arabic</option>
+                              <option>Urdu</option>
+                              <option>English</option>
+                              <option>Mandarin Chinese</option>
+                              <option>Spanish</option>
+                              <option>Hindi</option>
+                              <option>Bengali</option>
+                              <option>Portuguese</option>
+                              <option>Russian</option>
+                              <option>Japanese</option>
+                              <option>Western Punjabi</option>
+                              <option>Javanese</option>
+                              
+
+                            </select>
+                          </div>
+                         
+                         </div>
+                         <div class="row">
+                          <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <select class="form-control sele select2" id="dropdown38">
+                              <option disabled selected="disabled">Select Religion</option>
+                              <option>Christianity</option>
+                              <option>Islam</option>
+                              <option>Hinduism</option>
+                              <option>Buddhism</option>
+                              <option>Sikhism</option>
+                              <option>Judaism</option>
+                              <option>Folk religions</option>
+                              
+                            </select>
+                          </div>
+                         
+                         </div>
+                         <div class="row">
+                          <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                           <select class="form-control select2" id="dropdown37">
+                             <option disabled selected="disabled">Select Caste</option>
+                             <option>Brahmin</option>
+                             <option>Vaishya</option>
+                             <option>Bangali</option>
+                             <option>Dhobi</option>
+                             <option>Chamar</option>
+                             <option>Bangali</option>
+                            
+                             
+                           </select>
+                          </div>
+                         
+                        </div>
+                        <div class="row">
+                          <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                 <select class="form-control" id="form-control">
+                                   <option disabled selected="disabled">Select Disbaility</option>
+                                   <option>Normal</option>
+                                   <option>disabled</option>
+                                 
+                                 </select>
+                          </div>
+                         
+                       </div>
+                       <div class="row">
+                        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                         <select class="form-control select2" id="dropdown36">
+                           <option disabled selected="disabled">Select Education</option>
+                           <option value="BSC">BSC</option>
+                           <option value="MSC">MSC</option>
+                           <option value="BED">BED</option>
+                           <option value="MED">MED</option>
+                           <option value="BA">BA</option>
+                           <option value="BL">BL</option>
+                           <option value="BE">BE</option>
+                           <option value="DM">DM</option>
+                           <option value="ME">ME</option>
+                           <option value="CA">CA</option>
+                           <option value="B COM">B COM</option>
+                           <option value="M COM">M COM</option>
+                           <option value="BBA">BBA</option>
+                           <option value="MBA">MBA</option>
+                           <option value="SSLC">SSLC</option>
+                           <option value="HSS">HSS</option>
+                           <option value="Diploma">Diploma</option>
+                           <option value="B.Arch">B.Arch</option>
+                           <option value="M.Arch">M.Arch</option>
+                           <option value="MCA">MCA</option>
+                           <option value="PGDCA">PGDCA</option>
+                           <option value="M.Phil">M.Phil</option>
+                           <option value="BFW">BFW</option>
+                           <option value="B.A.M.S">B.A.M.S</option>
+                           <option value="BDS">BDS</option>
+                           <option value="BHMS">BHMS</option>
+                           <option value="BSMS">BSMS</option>
+                           <option value="BVSc">BVSc</option>
+                           <option value="MVSc">MVSc</option>
+                           <option value="MBBS">MBBS</option>
+                           <option value="MDs">MDS</option>
+                           <option value="Md/Ms">MD / MS </option>
+                           <option value="MCh">MCh </option>
+                           <option value="DNB">DNB </option>
+                           <option value="B pharm">B Pharm </option>
+                           <option value="M pharm">M Pharm </option>
+                           <option value="BPT">BPT</option>
+                           <option value="MPT">MPT</option>
+                           <option value="LLM">LLM</option>
+                           <option value="LLB">LLB</option>
+                           <option value="CFA">CFA</option>
+                           <option value="ph.D.">Ph.D.</option>
+                           <option value="Polytechnic">Polytechnic</option>
+                           <option value="Postdoctoral Fellow">Postdoctoral Fellow</option>
+                           <option value="Fellow of National Board"> Fellow of National Board</option>
+                           <option value="Others">Others</option>
+                      </select>
+                        </div>
+                       
+                       </div>
+                       <div class="row">
+                        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                          <select class="form-control select2" id="dropdown35">
+                           <option disabled selected="disabled">Select Employed In</option>
+                           <option value="Goverment">Goverment</option>
+                           <option value="Private">Private</option>
+                           <option value="Business">Business</option>
+                           <option value="Self Employed">Self Employed</option>
+                           <option value="Not Working">Not Working</option>
+                           
+                           
+                         </select>
+                        </div>
+                       
+                       </div>
+                       <div class="row">
+                        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                         <select class="form-control select2" id="dropdown34">
+                           <option disabled selected="disabled">Select Work Location</option>
+                           <option value="India">India</option>
+                           <option value="China">China</option>
+                           <option value="United States">United States</option>
+                           <option value="Russia">Russia</option>
+                           <option value="Germany">	Germany</option>
+                           <option value="United Kingdom">United Kingdom</option>
+                           <option value="Uganda">Uganda</option>
+                           <option value="Canada">	Canada</option>
+                           <option value="Saudi Arabia">Saudi Arabia</option>
+                           <option value="Yemen">Yemen</option>
+                           <option value="Mali">Mali</option>
+                           <option value="Other Countries">Other Countries</option>
+                           
+                         </select>
+                        </div>
+                       
+                       </div>
+                       <div class="row">
+                        <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                         <select class="form-control select2" id="dropdown33">
+                           <option disabled selected="disabled">Select Work Location</option>
+                           <option value="India">India</option>
+                           <option value="China">China</option>
+                           <option value="United States">United States</option>
+                           <option value="Russia">Russia</option>
+                           <option value="Germany">	Germany</option>
+                           <option value="United Kingdom">United Kingdom</option>
+                           <option value="Uganda">Uganda</option>
+                           <option value="Canada">	Canada</option>
+                           <option value="Saudi Arabia">Saudi Arabia</option>
+                           <option value="Yemen">Yemen</option>
+                           <option value="Mali">Mali</option>
+                           <option value="Other Countries">Other Countries</option>
+                           
+                         </select>
+                        </div>
+                       
+                     </div>
+                     
+                       
+                       
+                       
+                        
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer justify-content-center">
+                      <div>
+                        <input type="submit" class="btn btn-danger" value="Filter>
+                        <input type="button" class="btn btn-danger" value="Reset" id="reset-mobile">
+                      </div>
+                      
+                    </div>
+                  </form>
+                  </div>
+                </div>
+
+                      </div>
+                      <br/>
+
+
+
+              <!--  -->
+        </div>
+ 
+    </div>
+    <!--  --><div class="mt-3"></div>
+    <div class="container">
+                  <div class="row">
+                    <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12" id="filter-col">
+                        <div class="card filter-item ">
+                              <!-- filter desktop -->
+                              <form action="#" method="post" id="Form-desk">
+                              <div class="row mt-2">
+                                <div class="col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                 <input type="text" placeholder="Age"  id="form-control">
+                                </div>
+                                <div class="col-xxl-2 col-lg-2 col-md-2 col-sm-2 col-2">To</div>
+                                <div class="col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                 <input type="text" placeholder="Age"  id="form-control">
+                                </div>
+                             </div>
+                             <div class="row mt-2">
+                              <div class="col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                   <select class="form-control select2" id="dropdown_1">
+                                     <option disabled selected="disabled">Height</option>
+                                     <option value="4ft 6in">4ft 6in</option>
+                                     <option value="4ft 7in">4ft 7in</option>
+                                     <option value="4ft 8in">4ft 8in</option>
+                                     <option value="4ft 9in">4ft 9in</option>
+                                     <option value="4ft 10in">4ft 10in</option>
+                                     <option value="4ft 11in">4ft 11in</option>
+                                     <option value="5ft ">5ft </option>
+                                     <option value="5ft 6in">4ft 6in</option>
+                                     <option value="5ft 7in">4ft 7in</option>
+                                     <option value="5ft 8in">4ft 8in</option>
+                                     <option value="5ft 9in">4ft 9in</option>
+                                     <option value="5ft 10in">4ft 10in</option>
+                                     <option value="5ft 11in">4ft 11in</option>
+                                     <option value="6ft ">6ft </option>
+                                     <option value="6ft 6in">6ft 6in</option>
+                                     <option value="6ft 7in">6ft 7in</option>
+                                     <option value="6ft 8in">6ft 8in</option>
+                                     <option value="6ft 9in">6ft 9in</option>
+                                     <option value="6ft 10in">6ft 10in</option>
+                                     <option value="6ft 11in">6ft 11in</option>
+                                     <option value="7ft ">7ft </option>
+                                   
+                                     
+                                     
+    
+                                   </select>
+                              </div>
+                              <div class="col-xxl-2 col-lg-2 col-md-2 col-sm-2 col-2">To</div>
+                              <div class="col-xxl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                   <select class="form-control select2" id="dropdown_2">
+                                     <option disabled selected="disabled">Height</option>
+                                     <option value="4ft 6in">4ft 6in</option>
+                                     <option value="4ft 7in">4ft 7in</option>
+                                     <option value="4ft 8in">4ft 8in</option>
+                                     <option value="4ft 9in">4ft 9in</option>
+                                     <option value="4ft 10in">4ft 10in</option>
+                                     <option value="4ft 11in">4ft 11in</option>
+                                     <option value="5ft ">5ft </option>
+                                     <option value="5ft 6in">4ft 6in</option>
+                                     <option value="5ft 7in">4ft 7in</option>
+                                     <option value="5ft 8in">4ft 8in</option>
+                                     <option value="5ft 9in">4ft 9in</option>
+                                     <option value="5ft 10in">4ft 10in</option>
+                                     <option value="5ft 11in">4ft 11in</option>
+                                     <option value="6ft ">6ft </option>
+                                     <option value="6ft 6in">6ft 6in</option>
+                                     <option value="6ft 7in">6ft 7in</option>
+                                     <option value="6ft 8in">6ft 8in</option>
+                                     <option value="6ft 9in">6ft 9in</option>
+                                     <option value="6ft 10in">6ft 10in</option>
+                                     <option value="6ft 11in">6ft 11in</option>
+                                     <option value="7ft ">7ft </option>
+                                   
+                                     
+                                     
+    
+                                   </select>
+                              </div>
+                             </div>
+                             
+                             <div class="row mt-2">
+                              <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <select class="form-control select2" id="form-control">
+                                  <option disabled selected="disabled"> Marital Status</option>
+                                  <option>Married</option>
+                                  <option>Unmarried</option>
+                                  <option>Divorced</option>
+                                  <option>Widow</option>
+                                </select>
+                              </div>
+                             
+                             </div>
+                             <div class="row mt-2">
+                              <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <select class="form-control select2" id="dropdown_3">
+                                  <option disabled selected="disabled">Select Mother Tongue</option>
+                                  <option>Malayalam</option>
+                                  <option>Tamil</option>
+                                  <option>Arabic</option>
+                                  <option>Urdu</option>
+                                  <option>English</option>
+                                  <option>Mandarin Chinese</option>
+                                  <option>Spanish</option>
+                                  <option>Hindi</option>
+                                  <option>Bengali</option>
+                                  <option>Portuguese</option>
+                                  <option>Russian</option>
+                                  <option>Japanese</option>
+                                  <option>Western Punjabi</option>
+                                  <option>Javanese</option>
+                                  
+    
+                                </select>
+                              </div>
+                             
+                             </div>
+                             <div class="row mt-2">
+                              <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <select class="form-control sele select2" id="dropdown_4">
+                                  <option disabled selected="disabled">Select Religion</option>
+                                  <option>Christianity</option>
+                                  <option>Islam</option>
+                                  <option>Hinduism</option>
+                                  <option>Buddhism</option>
+                                  <option>Sikhism</option>
+                                  <option>Judaism</option>
+                                  <option>Folk religions</option>
+                                  
+                                </select>
+                              </div>
+                             
+                             </div>
+                             <div class="row mt-2">
+                              <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                               <select class="form-control select2" id="dropdown_5">
+                                 <option disabled selected="disabled">Select Caste</option>
+                                 <option>Brahmin</option>
+                                 <option>Vaishya</option>
+                                 <option>Bangali</option>
+                                 <option>Dhobi</option>
+                                 <option>Chamar</option>
+                                 <option>Bangali</option>
+                                
+                                 
+                               </select>
+                              </div>
+                             
+                            </div>
+                            <div class="row mt-2">
+                              <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                     <select class="form-control" id="form-control">
+                                       <option disabled selected="disabled">Select Disbaility</option>
+                                       <option>Normal</option>
+                                       <option>disabled</option>
+                                     
+                                     </select>
+                              </div>
+                             
+                           </div>
+                           <div class="row mt-2">
+                            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                             <select class="form-control select2" id="dropdown_6">
+                               <option disabled selected="disabled">Select Education</option>
+                               <option value="BSC">BSC</option>
+                               <option value="MSC">MSC</option>
+                               <option value="BED">BED</option>
+                               <option value="MED">MED</option>
+                               <option value="BA">BA</option>
+                               <option value="BL">BL</option>
+                               <option value="BE">BE</option>
+                               <option value="DM">DM</option>
+                               <option value="ME">ME</option>
+                               <option value="CA">CA</option>
+                               <option value="B COM">B COM</option>
+                               <option value="M COM">M COM</option>
+                               <option value="BBA">BBA</option>
+                               <option value="MBA">MBA</option>
+                               <option value="SSLC">SSLC</option>
+                               <option value="HSS">HSS</option>
+                               <option value="Diploma">Diploma</option>
+                               <option value="B.Arch">B.Arch</option>
+                               <option value="M.Arch">M.Arch</option>
+                               <option value="MCA">MCA</option>
+                               <option value="PGDCA">PGDCA</option>
+                               <option value="M.Phil">M.Phil</option>
+                               <option value="BFW">BFW</option>
+                               <option value="B.A.M.S">B.A.M.S</option>
+                               <option value="BDS">BDS</option>
+                               <option value="BHMS">BHMS</option>
+                               <option value="BSMS">BSMS</option>
+                               <option value="BVSc">BVSc</option>
+                               <option value="MVSc">MVSc</option>
+                               <option value="MBBS">MBBS</option>
+                               <option value="MDs">MDS</option>
+                               <option value="Md/Ms">MD / MS </option>
+                               <option value="MCh">MCh </option>
+                               <option value="DNB">DNB </option>
+                               <option value="B pharm">B Pharm </option>
+                               <option value="M pharm">M Pharm </option>
+                               <option value="BPT">BPT</option>
+                               <option value="MPT">MPT</option>
+                               <option value="LLM">LLM</option>
+                               <option value="LLB">LLB</option>
+                               <option value="CFA">CFA</option>
+                               <option value="ph.D.">Ph.D.</option>
+                               <option value="Polytechnic">Polytechnic</option>
+                               <option value="Postdoctoral Fellow">Postdoctoral Fellow</option>
+                               <option value="Fellow of National Board"> Fellow of National Board</option>
+                               <option value="Others">Others</option>
+                          </select>
+                            </div>
+                           
+                           </div>
+                           <div class="row mt-2 ">
+                            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                              <select class="form-control select2" id="dropdown_7">
+                               <option disabled selected="disabled">Select Employed In</option>
+                               <option value="Goverment">Goverment</option>
+                               <option value="Private">Private</option>
+                               <option value="Business">Business</option>
+                               <option value="Self Employed">Self Employed</option>
+                               <option value="Not Working">Not Working</option>
+                               
+                               
+                             </select>
+                            </div>
+                           
+                           </div>
+                           <div class="row mt-2">
+                            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                             <select class="form-control select2" id="dropdown_8">
+                               <option disabled selected="disabled">Select Work Location</option>
+                               <option value="India">India</option>
+                               <option value="China">China</option>
+                               <option value="United States">United States</option>
+                               <option value="Russia">Russia</option>
+                               <option value="Germany">	Germany</option>
+                               <option value="United Kingdom">United Kingdom</option>
+                               <option value="Uganda">Uganda</option>
+                               <option value="Canada">	Canada</option>
+                               <option value="Saudi Arabia">Saudi Arabia</option>
+                               <option value="Yemen">Yemen</option>
+                               <option value="Mali">Mali</option>
+                               <option value="Other Countries">Other Countries</option>
+                               
+                             </select>
+                            </div>
+                           
+                           </div>
+                           <div class="row mt-2">
+                            <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                             <select class="form-control select2" id="dropdown_9">
+                               <option disabled selected="disabled">Select Work District</option>
+                               <option value="TamilNadu">TamilNadu</option>
+                               <option value="Kerala">Kerala</option>
+                               
+                               
+                             </select>
+                            </div>
+                           
+                         </div>
+                          <div class="row mt-2">
+                               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <input type="button" class="btn btn-danger" id="reset-desk" value="Reset">
+                               
+                               </div>
+                               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <input type="submit" class="btn btn-danger" value="submit">
+                              </div>
+                          </div>
+                        </form>
+                              <!--  -->
+                        </div>
+                    </div>
+                    <div class="col-xxl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                          <!--  -->
+                          <div class="container" id="matches">
+                            <div class="row">
+                          
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter NewMatches">
+                                    <div class=" card" id="card1">
+                                     <div class="image text-center">
+                                        
+                                                <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid">
+                                             
+                                                
+                                                <!-- Button to Open the Modal -->
+                                                <a type="button" data-toggle="modal" data-target="#upgrade">
+                                                  <i class="fa-solid fa-lock text-primary" id="fa-lock"></i>
+                                                </a>
+
+                                                <!-- The Modal -->
+                                                <div class="modal" id="upgrade">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                    
+                                                      <!-- Modal Header -->
+                                                      <div class="modal-header">
+                                                        <h4 class="modal-title">Upgrade Message</h4>
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                      </div>
+                                                      
+                                                      <!-- Modal body -->
+                                                      <div class="modal-body">
+                                                        Upgrade Your Profile 
+                                                        <a class="btn btn-danger">Upgrade Plan</a>
+                                                      </div>
+                                                      
+                                                     
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                             
+                                     
+                                     </div> 
+                                     <div class="text-center Customer-profile" >
+                                      <h5>Manu<span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                      
+                                      <h6 class="mt-2">E7055083</h6>
+                                      <h6 class="profile-text mt-1">SSLC  | <span class="ml-2">Non IT</span></h6>
+                                      <h6 class=" profile-text mt-1">chirstian | <span class="ml-2">Catholic</span></h6>
+                                      <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                      <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                       <p class="text-dark">Interested in her?
+                                           Connect Now</p>
+                                     
+                                       
+                                       <a class="btn btn-primary1" href="#">Like </a>
+                                    
+                                     
+                                   </div>
+                                   </div>
+                            
+                               
+                             
+                            
+                               
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter NewMatches">
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid">
+                                           
+                                              <!-- Button to Open the Modal -->
+                                              <a type="button" data-toggle="modal" data-target="#upgrade">
+                                                <i class="fa-solid fa-lock text-primary" id="fa-lock"></i>
+                                              </a>
+
+                                              <!-- The Modal -->
+                                              <div class="modal" id="upgrade">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                  
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                      <h4 class="modal-title">Upgrade Message</h4>
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                      Upgrade Your Profile 
+                                                      <a class="btn btn-danger">Upgrade Plan</a>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                  </div>
+                                                </div>
+                                              </div>
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Midhun <span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                  
+                                    <h6 class="mt-2">E7055083</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">IT Software</span></h6>
+                                    <h6 class=" profile-text mt-1">Hindu| <span class="ml-2">Nair</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Alapuzha</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                    
+                                     <a class="btn btn-primary1" href="#">Like </a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                          
+                             
+                           
+                          
+                             
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter PremiumMatches" >
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid-2">
+                                           
+                                            
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Akhil <span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                   
+                                    <h6 class="mt-2">E7058083</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">Non IT</span></h6>
+                                    <h6 class=" profile-text mt-1">Hindu| <span class="ml-2">Nair</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                     <a class="btn btn-primary1 " href="viewprofile.html">About Me</a>
+                                     <a class="btn btn-primary1 mt-2" id="mt-2" href="#">Like</a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                          
+                             
+                           
+                          
+                             
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter PremiumMatches">
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid-2">
+                                           
+                                            
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Amal<span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                   
+                                    <h6 class="mt-2">E7058083</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">Non IT</span></h6>
+                                    <h6 class=" profile-text mt-1">Hindu| <span class="ml-2">Visvakarma</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                     <a class="btn btn-primary1" href="viewprofile.html">About Me</a>
+                                     <a class="btn btn-primary1 mt-2" id="mt-2" href="#">Like</a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                          
+                             
+                           
+                          
+                             
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter Nearby">
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid">
+                                              <!-- Button to Open the Modal -->
+                                              <a type="button" data-toggle="modal" data-target="#upgrade">
+                                                <i class="fa-solid fa-lock text-primary" id="fa-lock"></i>
+                                              </a>
+
+                                              <!-- The Modal -->
+                                              <div class="modal" id="upgrade">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                  
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                      <h4 class="modal-title">Upgrade Message</h4>
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                      Upgrade Your Profile 
+                                                      <a class="btn btn-danger">Upgrade Plan</a>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Rajesh <span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                    
+                                    <h6 class="mt-3">E7058083</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">Non IT</span></h6>
+                                    <h6 class=" profile-text mt-1">chirstian| <span class="ml-2">Catholic</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                     
+                                     <a class="btn btn-primary1" href="#">Like</a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                          
+                             
+                           
+                          
+                             
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter Viewed">
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid">
+                                              <!-- Button to Open the Modal -->
+                                              <a type="button" data-toggle="modal" data-target="#upgrade">
+                                                <i class="fa-solid fa-lock text-primary" id="fa-lock"></i>
+                                              </a>
+
+                                              <!-- The Modal -->
+                                              <div class="modal" id="upgrade">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                  
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                      <h4 class="modal-title">Upgrade Message</h4>
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                      Upgrade Your Profile 
+                                                      <a class="btn btn-danger">Upgrade Plan</a>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Suraj <span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                    
+                                    <h6 class="mt-3">E7058083</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">Non IT</span></h6>
+                                    <h6 class=" profile-text mt-1">chirstian| <span class="ml-2">Catholic</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                     
+                                     <a class="btn btn-primary1" href="#">Like</a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter Viewed">
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid">
+                                              <!-- Button to Open the Modal -->
+                                              <a type="button" data-toggle="modal" data-target="#upgrade">
+                                                <i class="fa-solid fa-lock text-primary" id="fa-lock"></i>
+                                              </a>
+
+                                              <!-- The Modal -->
+                                              <div class="modal" id="upgrade">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                  
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                      <h4 class="modal-title">Upgrade Message</h4>
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                      Upgrade Your Profile 
+                                                      <a class="btn btn-danger">Upgrade Plan</a>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Anish<span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                    
+                                    <h6 class="mt-3">E7056083</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">Non IT</span></h6>
+                                    <h6 class=" profile-text mt-1">chirstian| <span class="ml-2">Catholic</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                     
+                                     <a class="btn btn-primary1" href="#">Like</a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter Viewed">
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid">
+                                              <!-- Button to Open the Modal -->
+                                              <a type="button" data-toggle="modal" data-target="#upgrade">
+                                                <i class="fa-solid fa-lock text-primary" id="fa-lock"></i>
+                                              </a>
+
+                                              <!-- The Modal -->
+                                              <div class="modal" id="upgrade">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                  
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                      <h4 class="modal-title">Upgrade Message</h4>
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                      Upgrade Your Profile 
+                                                      <a class="btn btn-danger">Upgrade Plan</a>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Jalin <span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                    
+                                    <h6 class="mt-3">E7058083</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">Non IT</span></h6>
+                                    <h6 class=" profile-text mt-1">chirstian| <span class="ml-2">Catholic</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                     
+                                     <a class="btn btn-primary1" href="#">Like</a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter Viewed">
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid">
+                                              <!-- Button to Open the Modal -->
+                                              <a type="button" data-toggle="modal" data-target="#upgrade">
+                                                <i class="fa-solid fa-lock text-primary" id="fa-lock"></i>
+                                              </a>
+
+                                              <!-- The Modal -->
+                                              <div class="modal" id="upgrade">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                  
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                      <h4 class="modal-title">Upgrade Message</h4>
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                      Upgrade Your Profile 
+                                                      <a class="btn btn-danger">Upgrade Plan</a>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Arun <span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                    
+                                    <h6 class="mt-3">E7058483</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">Non IT</span></h6>
+                                    <h6 class=" profile-text mt-1">chirstian| <span class="ml-2">Catholic</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                     
+                                     <a class="btn btn-primary1" href="#">Like</a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                                </div>
+                                <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-6 filter Shortlisted">
+                                  <div class=" card" id="card1">
+                                   <div class="image text-center">
+                                      
+                                              <img src="assets_1/img/user.jpg" class="img-fluid" id="img-fluid">
+                                              <!-- Button to Open the Modal -->
+                                              <a type="button" data-toggle="modal" data-target="#upgrade">
+                                                <i class="fa-solid fa-lock text-primary" id="fa-lock"></i>
+                                              </a>
+
+                                              <!-- The Modal -->
+                                              <div class="modal" id="upgrade">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                  
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                      <h4 class="modal-title">Upgrade Message</h4>
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                      Upgrade Your Profile 
+                                                      <a class="btn btn-danger">Upgrade Plan</a>
+                                                    </div>
+                                                    
+                                                   
+                                                    
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                           
+                                   
+                                   </div> 
+                                   <div class="text-center Customer-profile" >
+                                    <h5>Surya <span class="ml-2"><img src="assets_1/img/BLUE TICK.png" class="blue-tick"></span></h5>
+                                    
+                                    <h6 class="mt-3">E9058483</h6>
+                                    <h6 class="profile-text mt-1">BSC  | <span class="ml-2">Non IT</span></h6>
+                                    <h6 class=" profile-text mt-1">chirstian| <span class="ml-2">Catholic</span></h6>
+                                    <h6 class=" profile-text mt-1">Malayalam | <span class="ml-2">Thiruvananthapuram</span></h6>
+                                    <h6 class=" profile-text mt-1">25 Yrs |<span class="ml-2">5"ft 3"in</span></h6>
+                                     <p class="text-dark">Interested in her?
+                                         Connect Now</p>
+                                   
+                                     
+                                     <a class="btn btn-primary1" href="#">Like</a>
+                                  
+                                   
+                                 </div>
+                                  </div>
+                                </div>
+                        </div>
+                          <!--  -->
+                    </div>
+                   </div>
+            </div>
+            </div>
+    <!--  -->
+</section>
+<!-- chatBot -->
+
+<!--  -->
+<footer  class="mt-5" id="footer">
+  
+  <div class="container">
+        <div class="row">
+                       <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+              
+                <h5 class="text-center">About</h5>
+                <p>No1 Marry.com is a part of No1 Marry.com - the pioneers of online matrimony service. Today, we are the most trusted Matrimony website by Brand Trust Report. Millions of happy marriages happened and continue to happen through No.1 Marry.com.</p>
+              
+                
+             </div>
+             <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+             
+               <h5 class="text-center">Quick Link</h5>
+                  <ul>
+                     <li><a href="#">Help & Support </a></li>
+                     <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                     <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                  </ul>
+                  
+             </div>
+             <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+              
+                <h5 class="text-center">Contact Us</h5>
+                <p>AP/X1/73 Agasthyacodu,<br>Anchal, Kollam,<br> India, Kerala
+</p>
+             
+               
+             </div>
+        </div>
+  </div>
+  <foot class="mt-3">
+    <div class="container">
+      <div class="row">
+          <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+               <h6 class="text-center">© 2023 All Rights Reserved By  <a  href="https://www.a2zalphabetsolutionz.com/">A2Z Alphabet Solutionz Pvt.Ltd</a> </h6>
+          </div>
+      </div>
+   </div>
+  </foot>
+  
+</footer>
+
+
+
+<script>
+    $(document).ready(function(){
+
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    
+    if(value == "all")
+    {
+        //$('.filter').removeClass('hidden');
+        $('.filter').show('1000');
+    }
+    else
+    {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+        
+    }
+});
+
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+ <!--pagination  -->
+ <script>
+  $(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  
+  </script>
+    <script>
+  
+      $(document).ready(function()
+      {
+       $('#dropdown22').select2();
+       $('#dropdown23').select2();
+       $('#dropdown23').select2();
+       $('#dropdown24').select2();
+       $('#dropdown25').select2();
+       $('#dropdown26').select2();
+       $('#dropdown27').select2();
+       $('#dropdown28').select2();
+       $('#dropdown29').select2();
+       $('#dropdown30').select2();
+       $('#dropdown31').select2();
+       $('#dropdown32').select2();
+       $('#dropdown33').select2();
+       $('#dropdown34').select2();
+       $('#dropdown35').select2();
+       $('#dropdown36').select2();
+       $('#dropdown37').select2();
+       $('#dropdown38').select2();
+       $('#dropdown39').select2();
+       $('#dropdown40').select2();
+       $('#dropdown41').select2();
+       $('#dropdown42').select2();
+       $('#dropdown_1').select2();
+       $('#dropdown_2').select2();
+       $('#dropdown_3').select2();
+       $('#dropdown_4').select2();
+       $('#dropdown_5').select2();
+       $('#dropdown_6').select2();
+       $('#dropdown_8').select2();
+       $('#dropdown_7').select2();
+       $('#dropdown_9').select2();
+      });
+ 
+</script>
+<!--  -->
+<script src="assets_1/js/bootstrap.bundle.js"></script>
+<script src="assets_1/js/bootstrap.bundle.min.js"></script>
+<script src="assets_1/js/bootstrap.esm.js"></script>
+<script src="assets_1/js/bootstrap.esm.min.js"></script>
+<script src="assets_1/js/bootstrap.esm.min.js"></script>
+<script src="assets_1/js/bootstrap.js"></script>
+<script src="assets_1/js/bootstrap.min.js"></script>
+<!-- <script src="assets/js/normalize.js"></script>
+<script src="assets/js/normalize1.js"></script> -->
+
+    <script>
+  $(document).ready(function() {
+    // Reset form on button click
+    $("#reset-desk").click(function() {
+      $("#Form-desk")[0].reset();
+    });
+    $("#reset-mobile").click(function() {
+      $("#Form-mobile")[0].reset();
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
+

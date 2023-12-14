@@ -23,6 +23,10 @@
   
 </head>
 <style>
+ #hindu
+  {
+    display: none;
+  }
   .submit
   {
     display: none;
@@ -867,7 +871,7 @@
                 <option value="" disabled selected="disabled">Select Religion</option>
                 <option value="Christianity">Christianity</option>
                 <option value="Islam">Islam</option>
-                <option value="Hinduism">Hinduism</option>
+                <option value="Hinduism" class="hindu">hindu</option>
                 <option value="Buddhism">Buddhism</option>
                 <option value="Sikhism">Sikhism</option>
                 <option value="Judaism">Judaism</option>
@@ -879,6 +883,7 @@
              </div>
             
           </div>
+          <div id="hindu">
           <div class="row mt5">
          
             <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
@@ -973,7 +978,7 @@
            
                  </div>
           </div>
-       
+       </div>
         
           <div class="row mt-5">
              <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12 text-center">
@@ -1824,7 +1829,17 @@ window.location.href ="./userpage.html";
     });
   });
 </script> -->
-
+<script>
+   $(document).ready(function(){
+      $(".religion").change(function(){
+        if ($(this).val() === "Hinduism") {
+          $("#hindu").show();
+        } else {
+          $("#hindu").hide(); // Hide if another option is selected
+        }
+      });
+    });
+</script>  
 
 
 </body>
