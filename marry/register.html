@@ -20,7 +20,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- end -->
-  
+
 </head>
 <style>
  #hindu
@@ -1606,9 +1606,12 @@
 
           var random = Math.random();
           if (random < 0.9) {
+            alert(currentImg);
             wrapper.innerHTML +=
               '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i> Profile image updated successfully</div>';
-            triggerInput.value = "";
+            triggerInput.value ="" ;
+           
+          
             setTimeout(function () {
               wrapper.querySelector('[role="alert"]').remove();
             }, 3000);
@@ -1616,7 +1619,7 @@
             holder.querySelector(".pic").src = currentImg;
             wrapper.innerHTML +=
               '<div class="snackbar show" role="alert"><i class="fa fa-times-circle text-danger"></i> There is an error while uploading! Please try again later.</div>';
-            triggerInput.value = "";
+           
             setTimeout(function () {
               wrapper.querySelector('[role="alert"]').remove();
             }, 3000);
@@ -1635,6 +1638,7 @@
     }
   }
 });
+
 document.addEventListener("change", function (event) {
   if (event.target.classList.contains("hello-4")) {
     var triggerInput = event.target;

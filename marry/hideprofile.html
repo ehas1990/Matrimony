@@ -15,6 +15,7 @@
  <link rel="stylesheet" href="assets_1/css/stylemedia.css">
  <link rel="stylesheet" href="assets_1/css/style.css">
  <link rel="stylesheet" href="assets_1/css/media.css">
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <style>
 .inbox-name
 {
@@ -411,7 +412,7 @@
                       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                             <div class=" ">
                                 <h6>1) <span class="me-2">If we find duplicate profiles then we have the right to suspend any of the profile or all of the profile</span></h6>
-                                <a type="button" class="btn btn-primary1 mt-3"  href="#">Hidden Account</a>
+                                <a type="button" class="btn btn-primary1 mt-3" id="hidden-account"  href="#">Hidden Account</a>
                              </div>
                       </div>
                 </div>
@@ -517,43 +518,20 @@ document.getElementById("defaultOpen").click();
   
   </script>
 
+
 <script>
-  var timer;
-
-var compareDate = new Date();
-compareDate.setDate(compareDate.getDate() + 7); //just for this demo today + 7 days
-
-timer = setInterval(function() {
-  timeBetweenDates(compareDate);
-}, 1000);
-
-function timeBetweenDates(toDate) {
-  var dateEntered = toDate;
-  var now = new Date();
-  var difference = dateEntered.getTime() - now.getTime();
-
-  if (difference <= 0) {
-
-    // Timer done
-    clearInterval(timer);
-  
-  } else {
+  $(document).ready(function(){
     
-    var seconds = Math.floor(difference / 1000);
-    var minutes = Math.floor(seconds / 60);
-    var hours = Math.floor(minutes / 60);
-    var days = Math.floor(hours / 24);
-
-    hours %= 24;
-    minutes %= 60;
-    seconds %= 60;
-
-    $("#days").text(days);
-    // $("#hours").text(hours);
-    // $("#minutes").text(minutes);
-    // $("#seconds").text(seconds);
-  }
-}
+    $("#hidden-account").click(function()
+    {
+      Swal.fire({
+  title: "Your Account has been hidden!",
+  text: "You clicked the button!",
+  icon: "success"
+});
+// window.location.href ="./userpage.html";
+    });
+  });
 </script>
 </body>
 </html>

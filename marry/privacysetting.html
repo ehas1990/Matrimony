@@ -15,6 +15,7 @@
  <link rel="stylesheet" href="assets_1/css/stylemedia.css">
  <link rel="stylesheet" href="assets_1/css/style.css">
  <link rel="stylesheet" href="assets_1/css/media.css">
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <style>
 .inbox-name
 {
@@ -411,7 +412,7 @@
                       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                             <div class=" ">
                                 <h6>1) <span class="me-2">If we find duplicate profiles then we have the right to suspend any of the profile or all of the profile</span></h6>
-                                <a type="button" class="btn btn-primary1 mt-3"  href="#">Hidden Account</a>
+                                <a type="button" class="btn btn-primary1 mt-3" id="hidden-profile" href="#">Hidden Profile</a>
                              </div>
                       </div>
                 </div>
@@ -571,6 +572,20 @@ function timeBetweenDates(toDate) {
   }
 }
 </script>
+<script>
+  $(document).ready(function(){
+   
+    $("#hidden-profile").click(function()
+    {
+      Swal.fire({
+  title: "Your Profile has been hidden!",
+  text: "You clicked the button!",
+  icon: "success"
+});
+// window.location.href ="./userpage.html";
+    });
+  });
+  </script>
 </body>
 </html>
 

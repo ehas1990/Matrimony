@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NO:1 MARRY.COM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+ <link rel="stylesheet" href="assets_1/css/stylemedia.css">
+ <link rel="stylesheet" href="assets_1/css/style.css">
+ <link rel="stylesheet" href="assets_1/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets_1/css/profile.css">
+<style>
+   button.chatbtn, button.createbtn {
+    font-size: 13px;
+  }
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-top:2px solid rgb(255 33 33) !important;
+    
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color:#fff;
+    border-bottom:none !important;
+}
+</style>
+</head>
+<body>
+  <header id="header">
+    <div class="container-fluid">
+          <div class="row">
+           
+                 <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                  <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="assets_1/img/logo_1.png" class="navbar-brand"></a>
+                      <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99
+                         
+                        </span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                        <ul class="navbar-nav" id="navbarnav">
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" href="userpage.html"><span class="mx-2"><i
+                                  class="fa-solid fa-house"></i></span>Home </a>
+                          </li>
+                          <!-- <li class="nav-item ">
+                            <a class="nav-link text-dark" id="nav-link" href="inbox.html"><span class="mx-2"><i
+                                  class="fa-solid fa-envelope"></i></span>Inbox</a>
+                          </li> -->
+                          <!-- <li class="nav-item ">
+                            <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
+                                  class="ri-user-search-fill"></i></span>Partner Preference</a>
+                          </li> -->
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" href="plans.html"><span class="mx-2"><i
+                                  class="fa-solid fa-user-shield"></i></span>Upgrade to Premium</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
+                                  class="fa-solid fa-users"></i></span>Matches</a>
+                          </li>
+                          <!-- <li class="nav-item ">
+                              <a class="nav-link text-dark" href="#"><span class="ml-2"><i class="fa-solid fa-bell"></i></span>Notification</a>
+                            </li>  -->
+              
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">
+                              <span class="mx-2"><i class="fa-solid fa-bell"></i></span>Notification</a>
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu viewer-menu">
+              
+                              <li class="nav-item"><a class="nav-link" id="display-flex" href="#"><img src="assets_1/img/user.jpg"
+                                    class="viewer"><span class="ml-2 viewer-content">Akhil viewed your profile.<span
+                                      class="mx-3 text-primary">4h</span><br><a href="#" class="float_right text-danger">View
+                                      all</a></span> </a></li>
+              
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">
+                              <span class="mx-2"><i class="fa-solid fa-envelope"></i></span>Inbox</a>
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu viewer-menu">
+              
+                              <li class="nav-item"><a class="nav-link" id="display-flex" href="#"><img src="assets_1/img/user.jpg"
+                                    class="viewer"><span class="ml-2 viewer-content">Akhil viewed your profile.<span
+                                      class="mx-3 text-primary">4h</span><br><a href="#" class="float_right text-danger">View
+                                      all</a></span> </a></li>
+              
+                            </ul>
+                          </li>
+                         
+                        </ul>
+                        
+                      </div>
+                      
+                    </div>
+                  
+                  </nav>
+                 </div>
+                 <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                 
+                   
+                 
+                  <div class="user-menu">
+                  
+                    <ul class="navbar-nav">
+                
+                      <li class="nav-item dropdown">
+                       
+                        <a class="nav-link" type="button" data-toggle="dropdown">
+                          
+                          <img src="assets_1/img/user.jpg" id="user-icon">
+                          <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="dropdownmenu">
+                          <li class="dropdown-submenu">
+                            <a class=" nav-link test" href="#"><span class="mx-2"> Account Setting</span> <span
+                                class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item"><a class="nav-link" href="editprofile.html">Edit profile</a></li>
+                              <li class="nav-item"><a class="nav-link ">Add Partner Preference </a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Privacy Settings</a></li>
+                              <li class="nav-item"><a class="nav-link" href="password_setting.html">Change Password</a></li>
+            
+                            </ul>
+                          </li>
+            
+                          <li class="dropdown-submenu">
+                            <a class="test nav-link" href="#"><span class="mx-2">Settings</span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item"><a class="nav-link" href="#">Hide Profile</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#">Delete Profile</a></li>
+            
+                            </ul>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="#"><span class="mx-2">Help & Support</span></a></li>
+                          <li class="nav-item"><a class="nav-link" href="login.html"><span class="mx-2">Logout</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                 </div>
+          </div>
+          
+    </div>
+
+</header>
+
+<section class="info mt-1">
+  <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-sm-12 col-12">
+          <div class="p-5">
+            <h2 class="text-center font-weight-bold "> partner Add </h2>
+            <h6 class="text-center info-head"><a href="userpage.html" class="text-black">Home</a> <span class="me-2">/</span><span class="ml-1">partner Add </span></h6>
+          </div>
+            
+        </div>
+      </div>
+  </div>
+</section>
+<section>
+  <div>
+    <div class="profile-header">
+      <div class="profile-img">
+        <img src="assets_1/img/user.jpg" width="200" alt="Profile Image">
+      </div>
+      <div class="profile-nav-info">
+        <h3 class="user-name">Akhil</h3>
+        <div class="address">
+          <p id="state" class="state">21yrs </p>
+          <span id="country" class="country">(12-Oct-1990)</span>
+        </div>
+        <div class="Memberid">
+          <p id="state" class="state">Member ID : </p>
+          <span id="country" class="country">EP123423</span>
+        </div>
+  
+      </div>
+      <div class="profile-option">
+        <div class="notification">
+          <i class="fa fa-bell"></i>
+          <span class="alert-message">3</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="main-bd">
+      <div class="left-side">
+        <div class="profile-side">
+          <p class="user-mail"><i class="fa fa-user"></i>Male</p>
+          <p class="mobile-no"><i class="fa-solid fa-phone-alt"></i> +23470xxxxx700</p>
+          <p class="user-mail"><i class="fa fa-envelope"></i>akhilalpha@gmail.com</p>
+          <div class="user-bio">
+            <h3>Introduction</h3>
+            <p class="bio">
+              Lorem ipsum dolor sit amet, hello how consectetur adipisicing elit. Sint consectetur provident magni yohoho consequuntur, voluptatibus ghdfff exercitationem at quis similique. Optio, amet!
+            </p>
+          </div>
+          <!-- <div class="profile-btn">
+            <button class="chatbtn" id="chatBtn"><i class="fa fa-comment"></i> Chat</button>
+            <button class="createbtn" id="Create-post"><i class="fa fa-plus"></i> Create</button>
+          </div> -->
+          <div class="user-rating">
+            <h3 class="rating">4.5</h3>
+            <div class="rate">
+              <div class="star-outer">
+                <div class="star-inner">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <span class="no-of-user-rate"><span>123</span>&nbsp;&nbsp;reviews</span>
+            </div>
+  
+          </div>
+          <div class="profile-btn">
+            <button class="chatbtn" id="chatBtn">Request Button </button>
+            <button class="createbtn" id="Create-post"> Marriage Support</button>
+          </div>
+        </div>
+  
+      </div>
+      <div class="right-side">
+            <form action="#" method="">
+               <div class="profile-body">
+                            
+                        <div class="profile-posts tab" id="profiletab">
+                            <div class="widget">
+                                <h1>Partner Expectation</h1>    
+                                   
+                                    <div class="card card-headerline justify-content-start">
+                                        
+                                        <div class="card-header">
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Select Profile</label>
+                                                   <input type="text" name="requirement" class="form-control" value="">
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Residence Country</label>
+                                                    <select class="form-control select2 marital" id="dropdown_5" required>
+                                                        <option value="" disabled selected="disabled">Select Residence Country</option>
+                                                        <option value="India">India</option>
+                                                        <option value="Pakistan">Pakistan</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Min Height</label>
+                                                   <select class="form-control height" id="dropdown_8" required>
+                                                    <option value=""  disabled selected="disabled">Select Height Feet/Inches</option>
+                                                    <option value="4ft 6in">4ft 6in</option>
+                                                    <option value="4ft 7in">4ft 7in</option>
+                                                    <option value="4ft 8in">4ft 8in</option>
+                                                    <option value="4ft 9in">4ft 9in</option>
+                                                    <option value="4ft 10in">4ft 10in</option>
+                                                    <option value="4ft 11in">4ft 11in</option>
+                                                    <option value="5ft ">5ft </option>
+                                                    <option value="5ft 6in">4ft 6in</option>
+                                                    <option value="5ft 7in">4ft 7in</option>
+                                                    <option value="5ft 8in">4ft 8in</option>
+                                                    <option value="5ft 9in">4ft 9in</option>
+                                                    <option value="5ft 10in">4ft 10in</option>
+                                                    <option value="5ft 11in">4ft 11in</option>
+                                                    <option value="6ft ">6ft </option>
+                                                    <option value="6ft 6in">6ft 6in</option>
+                                                    <option value="6ft 7in">6ft 7in</option>
+                                                    <option value="6ft 8in">6ft 8in</option>
+                                                    <option value="6ft 9in">6ft 9in</option>
+                                                    <option value="6ft 10in">6ft 10in</option>
+                                                    <option value="6ft 11in">6ft 11in</option>
+                                                    <option value="7ft ">7ft </option>
+                                                  
+                                                    
+                                                    
+                             
+                                               </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Max Height</label>
+                                                   <select class="form-control height" id="dropdown_8" required>
+                                                    <option value=""  disabled selected="disabled">Select Height Feet/Inches</option>
+                                                    <option value="4ft 6in">4ft 6in</option>
+                                                    <option value="4ft 7in">4ft 7in</option>
+                                                    <option value="4ft 8in">4ft 8in</option>
+                                                    <option value="4ft 9in">4ft 9in</option>
+                                                    <option value="4ft 10in">4ft 10in</option>
+                                                    <option value="4ft 11in">4ft 11in</option>
+                                                    <option value="5ft ">5ft </option>
+                                                    <option value="5ft 6in">4ft 6in</option>
+                                                    <option value="5ft 7in">4ft 7in</option>
+                                                    <option value="5ft 8in">4ft 8in</option>
+                                                    <option value="5ft 9in">4ft 9in</option>
+                                                    <option value="5ft 10in">4ft 10in</option>
+                                                    <option value="5ft 11in">4ft 11in</option>
+                                                    <option value="6ft ">6ft </option>
+                                                    <option value="6ft 6in">6ft 6in</option>
+                                                    <option value="6ft 7in">6ft 7in</option>
+                                                    <option value="6ft 8in">6ft 8in</option>
+                                                    <option value="6ft 9in">6ft 9in</option>
+                                                    <option value="6ft 10in">6ft 10in</option>
+                                                    <option value="6ft 11in">6ft 11in</option>
+                                                    <option value="7ft ">7ft </option>
+                                                  
+                                                    
+                                                    
+                             
+                                               </select>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Marital Status</label>
+                                                    <select class="form-control select2 marital" id="dropdown_5" required>
+                                                        <option value="" disabled selected="disabled">Select Marital Status</option>
+                                                        <option value="Married">Married</option>
+                                                        <option value="Unmarried">Unmarried</option>
+                                                        <option value="Divorced">Divorced</option>
+                                                        <option value="Widow">Widow</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Children Acceptable</label>
+                                                    <select class="form-control select2 marital" id="dropdown_5" required>
+                                                        <option value="" disabled selected="disabled">Select Children Acceptable</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                        <option value="Does Not Matter">Does Not Matter</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- 1 -->
+                                            <div class="row mt-3">
+                                                
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Religion</label>
+                                                    <select class="form-control select2 religion" id="dropdown_6" required>
+                                                        <option value="" disabled selected="disabled">Select Religion</option>
+                                                        <option value="Christianity">Christianity</option>
+                                                        <option value="Islam">Islam</option>
+                                                        <option value="Hindu">Hindu</option>
+                                                        <option value="Buddhism">Buddhism</option>
+                                                        <option value="Sikhism">Sikhism</option>
+                                                        <option value="Judaism">Judaism</option>
+                                                        <option value="Folk religions">Folk religions</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Caste</label>
+                                                    <select class="form-control select2 caste" id="dropdown_7" required>
+                                                        <option value="" disabled selected="disabled">Select Caste</option>
+                                                        <option value="Brahmin">Brahmin</option>
+                                                        <option value="Vaishya">Vaishya</option>
+                                                        <option value="Khatik">Khatik</option>
+                                                        <option value="Pasi">Pasi</option>
+                                                        <option value="Kshatriya">Kshatriya</option>
+                                                        <option value="Chamar">Chamar</option>
+                                                        <option value="Bangali">Bangali</option>
+                                                        <option value="Rajput">Rajput</option>
+                                                        <option value="Balmiki">Balmiki</option>
+                                                        <option value="Gurjar">Gurjar</option>
+                                                        <option value="Ad-Dharmi">Ad-Dharmi</option>
+                                                        <option value="Sikligar">Sikligar</option>
+                                                        <option value="Gagra">Gagra</option>
+                                                        <option value="Kapu">Kapu</option>
+                                                        <option value="Dalit">Dalit</option>
+                                                        <option value="Sarera">Sarera</option>
+                                                        <option value="Yadav">Yadav</option>
+                                                        <option value="Ganika">Ganika</option>
+                                                        <option value="Shudra">Shudra</option>
+                                                        
+                                                    </select>
+                                                </div>
+                                            </div>
+                                       
+                                            <!-- 2 -->
+                                            <div class="row mt-3">
+                                                
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Sub Caste</label>
+                                                    <select class="form-control select2 caste" id="dropdown_7" required>
+                                                        <option value="" disabled selected="disabled">Select Caste</option>
+                                                        <option value="Brahmin">Brahmin</option>
+                                                        <option value="Vaishya">Vaishya</option>
+                                                        
+                                                        
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Language</label>
+                                                    <select class="form-control select2 lang" id="dropdown_4" required>
+                                                     <option value="" disabled selected="disabled">Select Language</option>
+                                                     <option value="Malayalam">Malayalam</option>
+                                                     <option value="Tamil">Tamil</option>
+                                                     <option value="Arabic">Arabic</option>
+                                                     <option value="Urdu">Urdu</option>
+                                                     <option value="English">English</option>
+                                                     <option value="Mandarin Chinese">Mandarin Chinese</option>
+                                                     <option value="Spanish">Spanish</option>
+                                                     <option value="Hindi">Hindi</option>
+                                                     <option value="Bengali">Bengali</option>
+                                                     <option value="Portuguese">Portuguese</option>
+                                                     <option value="Russia">Russian</option>
+                                                     <option value="Japanese">Japanese</option>
+                                                     <option value="Western Punjabi">Western Punjabi</option>
+                                                     <option value="Javanese">Javanese</option>
+                                                     
+                        
+                                                </select>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!-- 2 -->
+                                            <div class="row mt-3">
+                                                
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Education</label>
+                                                   <select class="form-control select2 Education" id="dropdown_12" required>
+                                                    <option value="" disabled selected="disabled">Select Education</option>
+                                                    <option value="BSC">BSC</option>
+                                                    <option value="MSC">MSC</option>
+                                                    <option value="BED">BED</option>
+                                                    <option value="MED">MED</option>
+                                                    <option value="BA">BA</option>
+                                                    <option value="BL">BL</option>
+                                                    <option value="BE">BE</option>
+                                                    <option value="DM">DM</option>
+                                                    <option value="ME">ME</option>
+                                                    <option value="CA">CA</option>
+                                                    <option value="B COM">B COM</option>
+                                                    <option value="M COM">M COM</option>
+                                                    <option value="BBA">BBA</option>
+                                                    <option value="MBA">MBA</option>
+                                                    <option value="SSLC">SSLC</option>
+                                                    <option value="HSS">HSS</option>
+                                                    <option value="Diploma">Diploma</option>
+                                                    <option value="B.Arch">B.Arch</option>
+                                                    <option value="M.Arch">M.Arch</option>
+                                                    <option value="MCA">MCA</option>
+                                                    <option value="PGDCA">PGDCA</option>
+                                                    <option value="M.Phil">M.Phil</option>
+                                                    <option value="BFW">BFW</option>
+                                                    <option value="B.A.M.S">B.A.M.S</option>
+                                                    <option value="BDS">BDS</option>
+                                                    <option value="BHMS">BHMS</option>
+                                                    <option value="BSMS">BSMS</option>
+                                                    <option value="BVSc">BVSc</option>
+                                                    <option value="MVSc">MVSc</option>
+                                                    <option value="MBBS">MBBS</option>
+                                                    <option value="MDs">MDS</option>
+                                                    <option value="Md/Ms">MD / MS </option>
+                                                    <option value="MCh">MCh </option>
+                                                    <option value="DNB">DNB </option>
+                                                    <option value="B pharm">B Pharm </option>
+                                                    <option value="M pharm">M Pharm </option>
+                                                    <option value="BPT">BPT</option>
+                                                    <option value="MPT">MPT</option>
+                                                    <option value="LLM">LLM</option>
+                                                    <option value="LLB">LLB</option>
+                                                    <option value="CFA">CFA</option>
+                                                    <option value="ph.D.">Ph.D.</option>
+                                                    <option value="Polytechnic">Polytechnic</option>
+                                                    <option value="Postdoctoral Fellow">Postdoctoral Fellow</option>
+                                                    <option value="Fellow of National Board"> Fellow of National Board</option>
+                                                    <option value="Others">Others</option>
+                                               </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Profession</label>
+                                                    <select class="form-control select2 Occupation" id="dropdown_13" required>
+                                                     <option value="" selected="disabled">Select Profession</option>
+                                                     <option value="Manager">Manager</option>
+                                                     <option value="Supervisor">Supervisor</option>
+                                                      <option value="Officer">Officer</option>
+                                                      <option value="Administrative Professional">Administrative Professional</option>
+                                                      <option value="Executive">Executive</option>
+                                                      <option value="Clerk">Clerk</option>
+                                                      <option value="HR">HR</option>
+                                                      <option value="Secretary/Front Office">Secretary/Front Office</option>
+                                                      <option value="Agriculture & Farming Professional">Agriculture & Farming Professional</option>
+                                                     <option value="Chartered Accountant">Chartered Accountant</option>
+                                                     <option value="Accounts/Finance Professional">Accounts/Finance Professional</option>
+                                                     <option value="Banking Professional">Banking Professional</option>
+                                                     <option value="Auditor">Auditor</option>
+                                                     <option value="Financial Accountant">Financial Accountant</option>
+                                                     <option value="Beauty & Fashion">Beauty & Fashion</option>
+                                                     <option value="BPO & Customer Services">BPO & Customer Services</option>
+                                                     <option value="Civl Services">Civl Services</option>
+                                                     <option value="IT & Hardware">IT & Hardware</option>
+                                                     <option value="IT & Software">IT & Software</option>
+                                                     <option value="IT & Non IT">IT & Non IT</option>
+                                                     <option value="Doctor">Doctor</option>
+                                                   </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Smoking Acceptable</label>
+                                                    <select class="form-control select2 marital" id="dropdown_5" required>
+                                                        <option value="" disabled selected="disabled">Select Smoking Acceptable</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                        <option value="Does Not Matter">Does Not Matter</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Drinking Acceptable</label>
+                                                    <select class="form-control select2 marital" id="dropdown_5" required>
+                                                        <option value="" disabled selected="disabled">Select Drinking Acceptable</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                        <option value="Does Not Matter">Does Not Matter</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Dieting Acceptable</label>
+                                                    <select class="form-control select2 marital" id="dropdown_5" required>
+                                                        <option value="" disabled selected="disabled">Select Dieting Acceptable</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                        <option value="Does Not Matter">Does Not Matter</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Body Type</label>
+                                                    <input type="text" name="body-type"  value="" class="form-control" placeholder="Enter The Body Type">
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Personal Value</label>
+                                                    <input type="text" name="Personal-value"  value="" class="form-control" placeholder="Enter The Personal Value">
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Manglik</label>
+                                                    <select class="form-control select2 marital" id="dropdown_5" required>
+                                                        <option value="" disabled selected="disabled">Select Manglik</option>
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                        <option value="Does Not Matter">Does Not Matter</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Preferred Country</label>
+                                                    <select class="form-control select2 PreferredCountry" id="dropdown_9" required>
+                                                     <option value="" disabled selected="disabled">Select  Preferred Country</option>
+                                                     <option value="India">India</option>
+                                                    <option value="China">China</option>
+                                                    <option value="United States">United States</option>
+                                                    <option value="Russia">Russia</option>
+                                                    <option value="Germany">	Germany</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Uganda">Uganda</option>
+                                                    <option value="Canada">	Canada</option>
+                                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                                    <option value="Yemen">Yemen</option>
+                                                    <option value="Mali">Mali</option>
+                                                    <option value="Other Countries">Other Countries</option>
+                                                   
+                                                     
+                                                     
+                              
+                                                </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Preferred State</label>
+                                                   <select class="form-control select2 WorkState" id="dropdown_16" required>
+                                                    <option value="" disabled selected="disabled">Select Preferred State</option>
+                                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                                    <option value="Kerala">Kerala</option>
+                                                    <option value="Bihar">Bihar</option>
+                                                    
+                                                    
+                                                  </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Family Value</label>
+                                                    <select class="form-control select2 PreferredCountry" id="dropdown_9" required>
+                                                     <option value="" disabled selected="disabled">Select  Preferred Country</option>
+                                                     <option value="India">India</option>
+                                                    <option value="China">China</option>
+                                                    <option value="United States">United States</option>
+                                                    <option value="Russia">Russia</option>
+                                                    <option value="Germany">	Germany</option>
+                                                    <option value="United Kingdom">United Kingdom</option>
+                                                    <option value="Uganda">Uganda</option>
+                                                    <option value="Canada">	Canada</option>
+                                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                                    <option value="Yemen">Yemen</option>
+                                                    <option value="Mali">Mali</option>
+                                                    <option value="Other Countries">Other Countries</option>
+                                                   
+                                                     
+                                                     
+                              
+                                                </select>
+                                                </div>
+                                                <div class="col-lg-6  col-md-6 col-sm-12 col-12">
+                                                    <label class="form-label">Complexion</label>
+                                                <input type="text" value="" name="Complexion" class="form-control" placeholder="Enter Complexion">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <!-- <div class="row mt-4">
+                                                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                     <input type="submit" class="btn btn-primary" value="save">
+                                                </div>
+                                                
+                                          </div>
+                                        </form> -->
+                                    </div>   
+                                   </div>
+                                   
+                                  <div class="row mt-4">
+                                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                         <input type="submit" class="btn btn-primary" value="save">
+                                    </div>
+                                    
+                              </div> 
+                             
+                            </div>
+                    
+                      </div>
+              </div>
+        </form>
+      </div>
+    
+      
+      
+      </div>
+    </div>
+  </div>
+</section>
+                          
+    <div class="mt-4"></div>                   
+    <footer  class="mt-5" id="footer">
+  
+      <div class="container">
+            <div class="row">
+                           <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+                  
+                    <h5 class="text-center">About</h5>
+                    <p>No1 Marry.com is a part of No1 Marry.com - the pioneers of online matrimony service. Today, we are the most trusted Matrimony website by Brand Trust Report. Millions of happy marriages happened and continue to happen through No.1 Marry.com.</p>
+                  
+                    
+                 </div>
+                 <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+                 
+                   <h5 class="text-center">Quick Link</h5>
+                      <ul>
+                         <li><a href="#">Help & Support </a></li>
+                         <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                         <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                      </ul>
+                      
+                 </div>
+                 <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+                  
+                    <h5 class="text-center">Contact Us</h5>
+                    <p>AP/X1/73 Agasthyacodu,<br>Anchal, Kollam,<br> India, Kerala
+    </p>
+                 
+                   
+                 </div>
+            </div>
+      </div>
+      <foot class="mt-3">
+        <div class="container">
+          <div class="row">
+              <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                   <h6 class="text-center">© 2023 All Rights Reserved By  <a  href="https://www.a2zalphabetsolutionz.com/">A2Z Alphabet Solutionz Pvt.Ltd</a> </h6>
+              </div>
+          </div>
+       </div>
+      </foot>
+      
+    </footer>
+
+
+
+<script>
+  // Initialize Bootstrap components
+  $(document).ready(function () {
+    $('[data-bs-toggle="collapse"]').collapse();
+  });
+</script>
+
+  <script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
+</script>
+<!--  -->
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.esm.js"></script>
+<script src="assets/js/bootstrap.esm.min.js"></script>
+<script src="assets/js/bootstrap.esm.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/normalize.js"></script>
+<script src="assets/js/normalize1.js"></script>
+
+<script>
+    baguetteBox.run('.grid-gallery', {
+		animation: 'slideIn'
+	});
+</script>
+<script>
+    $(document).ready(function() {
+
+// required elements
+var imgPopup = $('.img-popup');
+var imgCont  = $('.container__img-holder');
+var popupImage = $('.img-popup img');
+var closeBtn = $('.close-btn');
+
+// handle events
+imgCont.on('click', function() {
+  var img_src = $(this).children('img').attr('src');
+  imgPopup.children('img').attr('src', img_src);
+  imgPopup.addClass('opened');
+});
+
+$(imgPopup, closeBtn).on('click', function() {
+  imgPopup.removeClass('opened');
+  imgPopup.children('img').attr('src', '');
+});
+
+popupImage.on('click', function(e) {
+  e.stopPropagation();
+});
+
+});
+</script>
+<script>
+  $(".nav ul li").click(function() {
+  $(this)
+    .addClass("active")
+    .siblings()
+    .removeClass("active");
+});
+
+const tabBtn = document.querySelectorAll(".nav ul li");
+const tab = document.querySelectorAll(".tab");
+
+function tabs(panelIndex) {
+  tab.forEach(function(node) {
+    node.style.display = "none";
+  });
+  tab[panelIndex].style.display = "block";
+}
+tabs(0);
+
+let bio = document.querySelector(".bio");
+const bioMore = document.querySelector("#see-more-bio");
+const bioLength = bio.innerText.length;
+
+function bioText() {
+  bio.oldText = bio.innerText;
+
+  bio.innerText = bio.innerText.substring(0, 100) + "...";
+  bio.innerHTML += `<span onclick='addLength()' id='see-more-bio'>See More</span>`;
+}
+//        console.log(bio.innerText)
+
+bioText();
+
+function addLength() {
+  bio.innerText = bio.oldText;
+  bio.innerHTML +=
+    "&nbsp;" + `<span onclick='bioText()' id='see-less-bio'>See Less</span>`;
+  document.getElementById("see-less-bio").addEventListener("click", () => {
+    document.getElementById("see-less-bio").style.display = "none";
+  });
+}
+if (document.querySelector(".alert-message").innerText > 9) {
+  document.querySelector(".alert-message").style.fontSize = ".7rem";
+}
+
+</script>
+<script src="assets_1/js/profileview.js"></script>
+<script>
+  // JavaScript to handle image preview
+  $(document).ready(function() {
+      $("#images").change(function() {
+          $('#image-preview').html("");
+          var total_file = document.getElementById("images").files.length;
+          for (var i = 0; i < total_file; i++) {
+              $('#image-preview').append("<img src='" + URL.createObjectURL(event.target.files[i]) + "'>");
+          }
+      });
+  });
+</script>
+
+</body>
+</html>
+
+
+
