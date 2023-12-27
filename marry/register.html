@@ -1512,9 +1512,20 @@
              </div>
       </div>
 </section>
-
+<script>
+  $(document).ready(function(){
+     $(".religion").change(function(){
+       if ($(this).val() == 1) {
+         $("#hindu").show();
+       } else {
+         $("#hindu").hide(); // Hide if another option is selected
+       }
+     });
+   });
+</script> 
 
 <script>
+  
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -1567,6 +1578,7 @@
 </script>
 
 <script>
+
   document.addEventListener("change", function (event) {
   if (event.target.classList.contains("uploadProfileInput")) {
     var triggerInput = event.target;
@@ -1593,7 +1605,8 @@
       reader.onloadend = function () {
         holder.classList.add("uploadInProgress");
         holder.querySelector(".pic").src = this.result;
-
+        triggerInput.files = this.result;
+// alert(this.result);
         var loader = document.createElement("div");
         loader.classList.add("upload-loader");
         loader.innerHTML =
@@ -1606,12 +1619,9 @@
 
           var random = Math.random();
           if (random < 0.9) {
-            alert(currentImg);
             wrapper.innerHTML +=
               '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i> Profile image updated successfully</div>';
-            triggerInput.value ="" ;
-           
-          
+            triggerInput.value = "";
             setTimeout(function () {
               wrapper.querySelector('[role="alert"]').remove();
             }, 3000);
@@ -1619,7 +1629,7 @@
             holder.querySelector(".pic").src = currentImg;
             wrapper.innerHTML +=
               '<div class="snackbar show" role="alert"><i class="fa fa-times-circle text-danger"></i> There is an error while uploading! Please try again later.</div>';
-           
+            triggerInput.value = "";
             setTimeout(function () {
               wrapper.querySelector('[role="alert"]').remove();
             }, 3000);
@@ -1638,7 +1648,6 @@
     }
   }
 });
-
 document.addEventListener("change", function (event) {
   if (event.target.classList.contains("hello-4")) {
     var triggerInput = event.target;
@@ -1665,7 +1674,7 @@ document.addEventListener("change", function (event) {
       reader.onloadend = function () {
         holder.classList.add("uploadInProgress");
         holder.querySelector(".hello-3").src = this.result;
-
+        triggerInput.files = this.result;
         var loader = document.createElement("div");
         loader.classList.add("upload-loader");
         loader.innerHTML =
@@ -1734,7 +1743,7 @@ document.addEventListener("change", function (event) {
       reader.onloadend = function () {
         holder.classList.add("uploadInProgress");
         holder.querySelector(".hello-33").src = this.result;
-
+        triggerInput.files = this.result;
         var loader = document.createElement("div");
         loader.classList.add("upload-loader");
         loader.innerHTML =
@@ -1845,6 +1854,21 @@ window.location.href ="./userpage.html";
     });
 </script>  
 
+<script>
+  function validateMobileNumber(input) {
+    // Remove non-numeric characters
+    var numericValue = input.value.replace(/\D/g, '');
+
+    // Ensure the length is not more than 10 digits
+    if (numericValue.length > 11) {
+        numericValue = numericValue.slice(0, 11);
+    }
+
+    // Update the input value
+    input.value = numericValue;
+}
+
+  </script>
 
 </body>
 </html>
