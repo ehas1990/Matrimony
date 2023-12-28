@@ -12,7 +12,7 @@ $(document).ready(function () {
       Mobile_number == "" ||
       E_mail == "" ||
       IsEmail(E_mail) == false
-      
+|| Mobile_number.length<10    
     ) {
       if (Select_Profile== "") {
         $(".Select_Profile").addClass("is-invalid");
@@ -47,7 +47,16 @@ $(document).ready(function () {
         $("#errorMobile_number").html("Enter the Contact Number!");
         $("#errorMobile_number").css("color", "red");
         event.preventDefault();
-      } else {
+      }
+      else if (Mobile_number.length<10) {
+       
+        $(".Mobile_number").addClass("is-invalid");
+        $("#errorMobile_number").html("Enter Correct Number!");
+        $("#errorMobile_number").css("color", "red");
+        event.preventDefault();
+      }
+
+       else {
         $(".Mobile_number").removeClass("is-invalid");
         $(".Mobile_number").addClass("is-valid");
         $("#errorMobile_number").html("Looks good!");
@@ -108,7 +117,7 @@ $(document).ready(function () {
       password == "" ||
       conformpassword == "" ||
       password != conformpassword
-
+      || mobile.length<10    
      ) {
       if (gender == "") {
         $(".form-select").addClass("is-invalid");
@@ -143,7 +152,16 @@ $(document).ready(function () {
         $("#errormobile").html("Enter the Contact Number!");
         $("#errormobile").css("color", "red");
         event.preventDefault();
-      } else {
+      } 
+      else if (mobile.length<10) {
+       
+        $("#mobile").addClass("is-invalid");
+        $("#errorMobile_number").html("Enter Correct Number!");
+        $("#errorMobile_number").css("color", "red");
+        event.preventDefault();
+      }
+
+      else {
         $("#mobile").removeClass("is-invalid");
         $("#mobile").addClass("is-valid");
         $("#errormobile").html("Looks good!");
