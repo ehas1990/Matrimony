@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>No1 Marry.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="assets/css/select2.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.0/js/select2.min.js"></script>
+  <link rel="stylesheet" href="assets/css/stylemedia.css" rel="stylesheet">
+</head>
+<style>
+    #address,#contactno
+    {
+        display: flex;
+        list-style-type: none;
+    }
+    #address a,#contactno a
+    {
+       
+       
+        text-decoration: none;
+        color: #000;
+    }
+    a{
+      text-decoration: none;
+        color: #000;
+    }
+    li
+    {
+      list-style-type: none;
+    }
+ .card
+   {
+    height: 103%;
+   }
+</style>
+<body>
+    <header id="header_1">
+        <div class="container-fluid">
+              <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                        
+                           <img src="assets_1/img/logo_1.png" id="nav-brand">
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                        
+                      <ul id="nav-lang">
+                         <li><a href="login.html" class="btn btn-primary" id="login-btn">LOG IN</a></li>
+                        
+                         <li class="nav-item dropdown">
+                           <form action="" method="post">
+                            <select id="lang-dropdown" class="bg-white">
+                              <option disabled selected="disabled">Language</option>
+                              <option>Malayalam</option>
+                              <option>Tamil</option>
+                              <option>Arabic</option>
+                              <option>Urdu</option>
+                              <option>English</option>
+                              <option>Mandarin Chinese</option>
+                              <option>Spanish</option>
+                              <option>Hindi</option>
+                              <option>Bengali</option>
+                              <option>Portuguese</option>
+                              <option>Russian</option>
+                              <option>Japanese</option>
+                              <option>Western Punjabi</option>
+                              <option>Javanese</option>
+                              
+    
+                         </select>
+                           </form>
+                          </li>
+                         
+                      </ul>
+                    
+                 </div>
+              </div>
+        </div>
+  
+    </header>
+
+    <section class="info mt-1">
+      <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-sm-12 col-12">
+              <div class="p-5">
+                <h2 class="text-center font-weight-bold ">Contact</h2>
+               
+              </div>
+                
+            </div>
+          </div>
+      </div>
+    </section>
+<section>
+    <div class="container" id="contactpage">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="card p-lg-4 p-1">
+                    
+                    <div class="address">
+                      <h5>Conctact Number </h5>
+                            <ul id="contactno">
+                              <li>
+                                <i class="fa-solid fa-phone"></i>
+                              </li>
+                              <li>
+                                <span class="ml-3"><a href="tel:+919744281443">+91 9744281443</a>  </span> |
+                                 <span class="ml-2">  <a href="tel:+919744281443">+91 9744281443</a></span>
+                              </li>
+                            </ul>
+                           
+                            
+                    </div>
+                    <div class="address mt-3">
+                      <h5>Email </h5>
+                            <ul id="address">
+                                    <li>
+                                      <i class="fa-solid fa-envelope"></i>
+                                    </li>
+                                    <li>
+                                
+                                    <span class="ml-3">
+                                      info@noonemarry.com
+                                    </span>  
+                                    </li>
+                            </ul>
+                    </div>
+                    </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="col-mt-1">
+            <form action="{{ route('contact') }}" method="POST">
+              <!-- @csrf -->
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <input type="text" value="" class="form-control" placeholder="Enter Name">
+                </div>
+                
+              </div>
+              <div class="row mt-3">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                  <input type="email" value="" class="form-control" placeholder="Enter Email">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="col-mt">
+                  <input type="tel" value="" class="form-control" placeholder="Enter Phone">
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                      <textarea rows="4" cols="50" class="form-control" placeholder="Messege" ></textarea>
+                </div>
+                
+              </div>
+              <div class="row mt-3">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="btngroup float-right">
+                     
+                      <input type="submit" value="Send" class="btn btn-primary">  
+                    </div>
+              </div>
+              
+  
+            
+          </div>
+        </div>
+     </div>
+</section>
+
+<footer  class="mt-5" id="footer">
+  
+   <div class="container">
+         <div class="row">
+                        <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+               
+                 <h5 class="text-center">About</h5>
+                 <p>No1 Marry.com is a part of No1 Marry.com - the pioneers of online matrimony service. Today, we are the most trusted Matrimony website by Brand Trust Report. Millions of happy marriages happened and continue to happen through No.1 Marry.com.</p>
+               
+                 
+              </div>
+              <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+              
+                <h5 class="text-center">Quick Link</h5>
+                   <ul>
+                      <li><a href="#">Help & Support </a></li>
+                      <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                      <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                   </ul>
+                   
+              </div>
+              <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-4">
+               
+                 <h5 class="text-center">Contact Us</h5>
+                 <p>AP/X1/73 Agasthyacodu,<br>Anchal, Kollam,<br> India, Kerala
+ </p>
+              
+                
+              </div>
+         </div>
+   </div>
+ 
+   
+ </footer>
+
+
+
+
+<script src="assets/js/register.js"></script>
+
+</body>
+</html>
