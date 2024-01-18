@@ -4,6 +4,7 @@
   <title>NO:1 MARRY.COM</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -87,121 +88,352 @@
     background-color:#fff;
     border-bottom:none !important;
 }
+/* new Navbar */
+.brand-logo
+{
+    width:45%;
+    margin-top: 2%;
+}
+#nav-left
+{
+    display: flex;
+    
+}
+.nav-brand-col
+{
+    width: 20%;
+}
+.nav-col
+{
+   
+    width: 60%;
+    background: #18bdff;
+    border-radius: 9px;
+}
+.nav-col  ul 
+{
+    display: flex;
+   
+}
+.nav-col li 
+{    list-style-type: none;
+    margin-left: 6%;
+    color: #fff;
+    margin-top: 2%;
+   
+}
+.nav-col li a
+{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.nav-col2
+{
+    width: 20%;
+}
+.nav-col2  ul 
+{
+    display: flex;
+   
+}
+.nav-col2 li
+{
+    
+    list-style-type: none;
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.nav-col2 li a
+{
+    text-decoration: none;
+    color: #000;
+    
+}
+.mobile-brand-col
+{
+width: 20%;
+}
+#mobile-left
+{
+    display: flex;
+}
+.mobile-col
+{
+    width: 60%;
+}
+.mobile-col li 
+{    list-style-type: none;
+    
+    color: #fff;
+    margin-top: 2%;
+   
+}
+.mobile-col a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.mobile-col2 
+{
+    width: 20%;
+}
+.mobile-col2 ul
+{
+    display: flex;
+}
+.mobile-col2 li 
+{
+    list-style-type: none;
+    margin-left: 6%;
+    margin-top: 2%;
+    
+}
+.mobile-col2 li  a
+{
+   text-decoration: none;
+    margin-left: 6%;
+    margin-top: 2%;
+    color: #000;
+    
+}
+#mobile-toogle
+{
+  
+   position: absolute;
+    background: #18bdff;
+    border-radius: 9px;
+    height:50%;
+   width: 80%;
+      display: none;
+      z-index: 999;
+}
+
+.fa-toggle-off
+{
+    display: none;
+}
+#mobile
+{
+    display: none ;
+}
+@media only screen 
+  and (min-device-width: 210px) 
+  and (max-device-width:320px)
+{
+    #mobile-toogle {
+    position: absolute;
+    background: #18bdff;
+    border-radius: 9px;
+    height: 50%;
+    width: 100%;
+    display: none;
+    z-index: 999;
+    margin-left: -20%;
+}
+
+    #header
+    {
+        display: none !important;
+    }
+    #mobile
+    {
+        display: block !important;
+    }
+    .mobile-col2 li {
+    list-style-type: none;
+    margin-left: 12%;
+    margin-top: 2%;
+}
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+{
+    #mobile-toogle {
+    position: absolute;
+    background: #18bdff;
+    border-radius: 9px;
+    height: 50%;
+    width: 100%;
+    display: none;
+    z-index: 999;
+    margin-left: -20%;
+}
+
+    #header
+    {
+        display: none !important;
+    }
+    #mobile
+    {
+        display: block !important;
+    }
+    .mobile-col2 li {
+    list-style-type: none;
+    margin-left: 12%;
+    margin-top: 2%;
+}
+}
+@media only screen 
+  and (min-device-width:480px) 
+  and (max-device-width:620px)
+{
+    #mobile-toogle {
+    position: absolute;
+    background: #18bdff;
+    border-radius: 9px;
+    height: 50%;
+    width: 100%;
+    display: none;
+    z-index: 999;
+    margin-left: -20%;
+}
+    #header
+    {
+        display: none !important;
+    }
+    #mobile
+    {
+        display: block !important;
+    }
+    .mobile-col2 li {
+    list-style-type: none;
+    margin-left: 12%;
+    margin-top: 2%;
+}
+}
+@media only screen 
+  and (min-device-width:620px) 
+  and (max-device-width:720px)
+  {
+
+    #mobile-toogle {
+    position: absolute;
+    background: #18bdff;
+    border-radius: 9px;
+    height: 50%;
+    width: 100%;
+    display: none;
+    z-index: 999;
+    margin-left: -20%;
+}
+    #header
+    {
+        display: none !important;
+    }
+    #mobile
+    {
+        display: block !important;
+    }
+    .mobile-col2 li {
+    list-style-type: none;
+    margin-left: 12%;
+    margin-top: 2%;
+}
+  }
+@media only screen 
+  and (min-device-width:720px) 
+  and (max-device-width:820px)
+  {
+    #mobile-toogle {
+    position: absolute;
+    background: #18bdff;
+    border-radius: 9px;
+    height: 50%;
+    width: 100%;
+    display: none;
+    z-index: 999;
+    margin-left: -20%;
+}
+    #header
+    {
+        display: none !important;
+    }
+    #mobile
+    {
+        display: block !important;
+    }
+}
+@media only screen 
+  and (min-device-width:820px) 
+  and (max-device-width:1200px)
+  {
+
+#mobile
+{
+    display: none !important;
+}
+
+
+
+}
+
+
 
 </style>
 </head>
 <body>
   <header id="header">
-    <div class="container-fluid">
-          <div class="row">
-           
-                 <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-                  <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><img src="assets_1/img/logo_1.png" class="navbar-brand"></a>
-                      <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                          99
-                         
-                        </span>
-                      </button>
-                      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-                       
-                        <ul class="navbar-nav" id="navbarnav">
-                          <li class="nav-item ">
-                            <a class="nav-link text-dark" href="userpage.html"><span class="mx-2"><i
-                                  class="fa-solid fa-house"></i></span>Home </a>
-                          </li>
-                          <li class="nav-item ">
-                            <a class="nav-link text-dark" id="nav-link" href="inbox.html"><span class="mx-2"><i
-                                  class="fa-solid fa-envelope"></i></span>Inbox</a>
-                          </li>
-                          <li class="nav-item ">
-                            <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
-                                  class="ri-user-search-fill"></i></span>Partner Preference</a>
-                          </li>
-                          <li class="nav-item ">
-                            <a class="nav-link text-dark" href="plans.html"><span class="mx-2"><i
-                                  class="fa-solid fa-user-shield"></i></span>Upgrade to Premium</a>
-                          </li>
-                          <li class="nav-item ">
-                            <a class="nav-link text-dark" href="matches.html"><span class="mx-2"><i
-                                  class="fa-solid fa-users"></i></span>Matches</a>
-                          </li>
-                          <!-- <li class="nav-item ">
-                              <a class="nav-link text-dark" href="#"><span class="ml-2"><i class="fa-solid fa-bell"></i></span>Notification</a>
-                            </li>  -->
+    <nav id="nav-left">
+        <div class="nav-brand-col">
+            <a>
+                <img src="assets_1/img/logo.jpg" class="brand-logo">
+            </a>
+        </div>
+        
+        <div class="nav-col">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Active Members</a></li>
+                <li><a href="#">Upgrade  to Premium</a></li>
+                <li><a href="#">Matchex</a></li>
+            </ul>
+        </div>
+        <div class="nav-col2">
+            <ul>
+                <li><a href="#"><i class="fa fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i></a></a></li>
+                <li><a href="#"><i class="fa fa-solid fa-lock"></i></a></a></li>
               
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">
-                              <span class="mx-2"><i class="fa-solid fa-bell"></i></span>Notification</a>
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu viewer-menu">
-              
-                              <li class="nav-item"><a class="nav-link" id="display-flex" href="#"><img src="assets_1/img/user.jpg"
-                                    class="viewer"><span class="ml-2 viewer-content">Akhil viewed your profile.<span
-                                      class="mx-3 text-primary">4h</span><br><a href="#" class="float_right text-danger">View
-                                      all</a></span> </a></li>
-              
-                            </ul>
-                          </li>
-                         
-                        </ul>
-                        
-                      </div>
-                      
-                    </div>
-                  
-                  </nav>
-                 </div>
-                 <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
-                 
-                   
-                 
-                  <div class="user-menu">
-                  
-                    <ul class="navbar-nav">
-                
-                      <li class="nav-item dropdown">
-                       
-                        <a class="nav-link" type="button" data-toggle="dropdown">
-                          
-                          <img src="assets_1/img/user.jpg" id="user-icon">
-                          <span class="caret"></span></a>
-                        <ul class="dropdown-menu" id="dropdownmenu">
-                          <li class="dropdown-submenu">
-                            <a class=" nav-link test" href="#"><span class="mx-2"> Account Setting</span> <span
-                                class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li class="nav-item"><a class="nav-link" href="editprofile.html">Edit profile</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">Privacy Settings</a></li>
-                              <li class="nav-item"><a class="nav-link" href="password_setting.html">Change Password</a></li>
-            
-                            </ul>
-                          </li>
-            
-                          <li class="dropdown-submenu">
-                            <a class="test nav-link" href="#"><span class="mx-2">Settings</span> <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li class="nav-item"><a class="nav-link" href="#">Hide Profile</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">Delete Profile</a></li>
-            
-                            </ul>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#"><span class="mx-2">Help & Support</span></a></li>
-                          <li class="nav-item"><a class="nav-link" href="login.html"><span class="mx-2">Logout</span></a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                 </div>
-          </div>
-          
-    </div>
+            </ul>
+        </div>
+    </nav>
 
 </header>
+<header id="mobile">
+    <nav id="mobile-left">
+        <div class="mobile-brand-col">
+            <a>
+                <img src="assets_1/img/logo.jpg" class="brand-logo">
+            </a>
+        </div>
+        
+        <div class="mobile-col">
+            <span>
+                <i class="fa fa-solid  fa-toggle-on"></i>
+             </span>
+             <span>
+                <i class="fa fa-solid  fa-toggle-off"></i>
+             </span>
+            <ul id="mobile-toogle">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Active Members</a></li>
+                <li><a href="#">Upgrade  to Premium</a></li>
+                <li><a href="#">Matchex</a></li>
+            </ul>
+        </div>
+        <div class="mobile-col2">
+            <ul>
+                <li><a href="#"><i class="fa fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i></a></a></li>
+                <li><a href="#"><i class="fa fa-solid fa-lock"></i></a></a></li>
+              
+            </ul>
+        </div>
+    </nav>
 
+</header>
 <section class="info mt-1">
   <div class="container">
       <div class="row">
@@ -1657,26 +1889,25 @@
       </foot>
       
     </footer>
+    <script>
+        $(document).ready(function(){
+            $(".fa-toggle-on").click(function(){
+                $(".fa-toggle-off").show();
+                $(".fa-toggle-on").hide();
+                $("#mobile-toogle").show();
+                
+            });
+            $(".fa-toggle-off").click(function(){
+                $(".fa-toggle-on").show();
+                $(".fa-toggle-off").hide();
+                $("#mobile-toogle").hide();
+                
+            });
+        });
+    </script>
 
 
 
-<script>
-  // Initialize Bootstrap components
-  $(document).ready(function () {
-    $('[data-bs-toggle="collapse"]').collapse();
-  });
-</script>
-
-  <script>
-$(document).ready(function(){
-  $('.dropdown-submenu a.test').on("click", function(e){
-    $(this).next('ul').toggle();
-    e.stopPropagation();
-    e.preventDefault();
-  });
-});
-
-</script>
 
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
