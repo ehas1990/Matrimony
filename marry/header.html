@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -176,11 +177,12 @@ width: 20%;
 }
 .mobile-col2 
 {
-    width: 20%;
+    width: 50%;
 }
 .mobile-col2 ul
 {
     display: flex;
+    justify-content: end;
 }
 .mobile-col2 li 
 {
@@ -209,7 +211,7 @@ width: 20%;
       z-index: 999;
 }
 
-.fa-toggle-off
+.bi-x-circle-fill
 {
     display: none;
 }
@@ -217,19 +219,24 @@ width: 20%;
 {
     display: none ;
 }
+.mobilebrand-logo
+{
+  width: 100%;
+  margin-top: 2%;
+}
 @media only screen 
   and (min-device-width: 210px) 
   and (max-device-width:320px)
 {
-    #mobile-toogle {
+  #mobile-toogle {
     position: absolute;
     background: #18bdff;
     border-radius: 9px;
-    height: 50%;
-    width: 100%;
+    height: 26%;
+    width: 62%;
     display: none;
     z-index: 999;
-    margin-left: -20%;
+    /* margin-left: -20%; */
 }
 
     #header
@@ -250,15 +257,15 @@ width: 20%;
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
 {
-    #mobile-toogle {
+  #mobile-toogle {
     position: absolute;
     background: #18bdff;
     border-radius: 9px;
-    height: 50%;
-    width: 100%;
+    height: 26%;
+    width: 62%;
     display: none;
     z-index: 999;
-    margin-left: -20%;
+    /* margin-left: -20%; */
 }
 
     #header
@@ -279,15 +286,15 @@ width: 20%;
   and (min-device-width:480px) 
   and (max-device-width:620px)
 {
-    #mobile-toogle {
+  #mobile-toogle {
     position: absolute;
     background: #18bdff;
     border-radius: 9px;
-    height: 50%;
-    width: 100%;
+    height: 26%;
+    width: 62%;
     display: none;
     z-index: 999;
-    margin-left: -20%;
+    /* margin-left: -20%; */
 }
     #header
     {
@@ -312,11 +319,11 @@ width: 20%;
     position: absolute;
     background: #18bdff;
     border-radius: 9px;
-    height: 50%;
-    width: 100%;
+    height: 26%;
+    width: 62%;
     display: none;
     z-index: 999;
-    margin-left: -20%;
+    /* margin-left: -20%; */
 }
     #header
     {
@@ -340,11 +347,11 @@ width: 20%;
     position: absolute;
     background: #18bdff;
     border-radius: 9px;
-    height: 50%;
-    width: 100%;
+    height: 26%;
+    width: 62%;
     display: none;
     z-index: 999;
-    margin-left: -20%;
+    /* margin-left: -20%; */
 }
     #header
     {
@@ -405,35 +412,38 @@ width: 20%;
     <nav id="mobile-left">
         <div class="mobile-brand-col">
             <a>
-                <img src="assets_1/img/logo.jpg" class="brand-logo">
+                <img src="assets_1/img/logo.jpg" class="mobilebrand-logo">
             </a>
         </div>
         
-        <div class="mobile-col">
-            <span>
-                <i class="fa fa-solid  fa-toggle-on"></i>
-             </span>
-             <span>
-                <i class="fa fa-solid  fa-toggle-off"></i>
-             </span>
-            <ul id="mobile-toogle">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Active Members</a></li>
-                <li><a href="#">Upgrade  to Premium</a></li>
-                <li><a href="#">Matchex</a></li>
-            </ul>
-        </div>
         <div class="mobile-col2">
             <ul>
+                <li><a><span>
+                  <i class="fa fa-solid  fa-bars"></i>
+               </span>
+               <span>
+                <i class="bi bi-x-circle-fill"></i>
+               </span></a></li>
                 <li><a href="#"><i class="fa fa-solid fa-bell"></i></a></li>
                 <li><a href="#"><i class="fa fa-envelope"></i></a></a></li>
                 <li><a href="#"><i class="fa fa-solid fa-lock"></i></a></a></li>
+                <li><a href="#"><i class="fa fa-solid fa-user"></i></a></a></li>
               
             </ul>
         </div>
     </nav>
 
 </header>
+
+<div class="mobile-col">
+            
+  <ul id="mobile-toogle">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Active Members</a></li>
+      <li><a href="#">Upgrade  to Premium</a></li>
+      <li><a href="#">Matchex</a></li>
+  </ul>
+</div>
 <section class="info mt-1">
   <div class="container">
       <div class="row">
@@ -1891,15 +1901,15 @@ width: 20%;
     </footer>
     <script>
         $(document).ready(function(){
-            $(".fa-toggle-on").click(function(){
-                $(".fa-toggle-off").show();
-                $(".fa-toggle-on").hide();
+            $(".fa-bars").click(function(){
+                $(".bi-x-circle-fill").show();
+                $(".fa-bars").hide();
                 $("#mobile-toogle").show();
                 
             });
-            $(".fa-toggle-off").click(function(){
-                $(".fa-toggle-on").show();
-                $(".fa-toggle-off").hide();
+            $(".bi-x-circle-fill").click(function(){
+                $(".fa-bars").show();
+                $(".bi-x-circle-fill").hide();
                 $("#mobile-toogle").hide();
                 
             });
