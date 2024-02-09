@@ -22,6 +22,99 @@
 
 
 <style>
+  @media only screen 
+  and (min-device-width: 210px) 
+  and (max-device-width:320px)
+{
+
+  .upload-button
+{
+  margin-top: -2% !important;
+    margin-left:19%;
+    position: absolute;
+    z-index: 9999;
+}
+
+
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+{
+  .upload-button
+{
+  margin-top: -7% !important;
+    margin-left:19%;
+    position: absolute;
+    z-index: 9999;
+}
+}
+@media only screen 
+  and (min-device-width:480px) 
+  and (max-device-width:620px)
+{
+  .upload-button
+{
+  margin-top: -7% !important;
+    margin-left:15% !important;
+    position: absolute;
+    z-index: 9999;
+}
+}
+@media only screen 
+  and (min-device-width:620px) 
+  and (max-device-width:720px)
+  {
+    .upload-button
+{
+  margin-top: -7% !important;
+    margin-left:13% !important;
+    position: absolute;
+    z-index: 9999;
+}
+  }
+@media only screen 
+  and (min-device-width:720px) 
+  and (max-device-width:820px)
+  {
+    .upload-button
+{
+  margin-top: -7% !important;
+    margin-left:10% !important;
+    position: absolute;
+    z-index: 9999;
+}
+
+}
+@media only screen 
+  and (min-device-width:820px) 
+  and (max-device-width:1200px)
+  {
+
+
+    .upload-button {
+    margin-top: 14% !important;
+    margin-left: 23% !important;
+    position: absolute;
+    z-index: 9999;
+}
+
+
+}
+
+
+
+  .file-upload {
+    display: none;
+}
+.upload-button
+{
+  margin-top: 10%;
+    margin-left:19%;
+    position: absolute;
+    z-index: 9999;
+}
+
   .inbox-name
 {
   margin-left: 5%;
@@ -221,8 +314,17 @@
   <div>
    
     <div class="profile-header">
+      
       <div class="profile-img">
-        <img src="assets_1/img/user.jpg" width="200" alt="Profile Image">
+       
+        <div class="circle">
+          <img class="profile-pic" src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg">
+   
+        </div>
+        <div class="p-image">
+          <i class="fa fa-2x fa-camera upload-button"></i>
+           <input class="file-upload" type="file" accept="image/*"/>
+        </div>
       </div>
       <div class="profile-nav-info">
         <h3 class="user-name">Akhil <span class="ml-2"><img src="./assets_1/img/crown.png" width="45px" height="45px"></span></h3>
@@ -1983,6 +2085,32 @@ function timeBetweenDates(toDate) {
 });
   });
   });
+  </script>
+  <script>
+    $(document).ready(function() {
+
+    
+var readURL = function(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.profile-pic').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+$(".file-upload").on('change', function(){
+    readURL(this);
+});
+
+$(".upload-button").on('click', function() {
+   $(".file-upload").click();
+});
+});
   </script>
 <script src="assets_1/jquery.dataTables.js"></script>
 <script src="assets_1/jquery.dataTables.min.js"></script>
