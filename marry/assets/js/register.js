@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // $(".text-fill").hide();
   $(".profilebtn_1").click(function (event) {
     var Select_Profile = $(".Select_Profile").find(":selected").val();
     const EnterName= $(".EnterName").val();
@@ -11,18 +10,16 @@ $(document).ready(function () {
       EnterName == "" ||
       Mobile_number == "" ||
       E_mail == "" ||
-      IsEmail(E_mail) == false
-      
+      IsEmail(E_mail) == false || Mobile_number.length < 8 || Mobile_number.length > 10
     ) {
-      if (Select_Profile== "") {
+       if (Select_Profile == "") {
         $(".Select_Profile").addClass("is-invalid");
-        $("#errorSelect_Profile").html("Select The Select Profile!");
+        $("#errorSelect_Profile").html("Enter the EnterName!");
         $("#errorSelect_Profile").css("color", "red");
         event.preventDefault();
       } else {
         $(".Select_Profile").removeClass("is-invalid");
         $(".Select_Profile").addClass("is-valid");
-
         $("#errorSelect_Profile").html("Looks good!");
         $("#errorSelect_Profile").css("color", "green");
       }
@@ -44,10 +41,18 @@ $(document).ready(function () {
       if (Mobile_number == "") {
        
         $(".Mobile_number").addClass("is-invalid");
-        $("#errorMobile_number").html("Enter the Contact Number!");
+        $("#errorMobile_number").html("Enter the 10 digit Mobile Number!");
         $("#errorMobile_number").css("color", "red");
         event.preventDefault();
-      } else {
+      } 
+       else if (Mobile_number.length < 8 || Mobile_number.length > 10) {
+       
+        $(".Mobile_number").addClass("is-invalid");
+        $("#errorMobile_number").html("Enter the 10 digit Mobile Number!");
+        $("#errorMobile_number").css("color", "red");
+        event.preventDefault();
+      }
+      else {
         $(".Mobile_number").removeClass("is-invalid");
         $(".Mobile_number").addClass("is-valid");
         $("#errorMobile_number").html("Looks good!");
@@ -93,22 +98,23 @@ $(document).ready(function () {
   $(".profilebtn1").click(function (event) {
     var gender = $(".form-select").find(":selected").val();
 
-    var datepicker = $("#datepicker").val();
+    var dob = $(".dob").val();
 
     // const code = $(".code").val();
-    const mobile = $(".mobile").val();
+    // const mobile = $(".mobile").val();
   
     const password = $(".password").val();
     const conformpassword = $(".conformpassword").val();
     if (
       gender == "" ||
-      datepicker == "" ||
+    dob == "" ||
       // code == "" ||
-      mobile == "" ||
+    //   mobile == "" ||
       password == "" ||
       conformpassword == "" ||
-      password != conformpassword
-
+      password != conformpassword ||
+      password.length<6  ||
+      conformpassword .length<6
      ) {
       if (gender == "") {
         $(".form-select").addClass("is-invalid");
@@ -122,33 +128,41 @@ $(document).ready(function () {
         $("#errorgender").html("Looks good!");
         $("#errorgender").css("color", "green");
       }
-      if (datepicker == "") {
-        $("#datepicker").addClass("is-invalid");
-        $("#errordob").html("Enter the Date of Birth!");
-        $("#errordob").css("color", "red");
+      if (dob =="") {
+         $(".dob").addClass("is-invalid");
+         $("#errordob").html("Enter the Date of Birth!");
+         $("#errordob").css("color", "red");
         event.preventDefault();
       } else {
-        $("#datepicker").removeClass("is-invalid");
-        $("#datepicker").addClass("is-valid");
-        $("#errordob").html("Looks good!");
+        $(".dob").removeClass("is-invalid");
+        $("dob ").addClass("is-valid");
+         $("#errordob").html("Looks good!");
         $("#errordob").css("color", "green");
       }
       // if (code == "") {
       //   alert("Country Code is required");
       //   event.preventDefault();
       // }
-      if (mobile == "") {
+    //   if (mobile == "") {
        
-        $("#mobile").addClass("is-invalid");
-        $("#errormobile").html("Enter the Contact Number!");
-        $("#errormobile").css("color", "red");
-        event.preventDefault();
-      } else {
-        $("#mobile").removeClass("is-invalid");
-        $("#mobile").addClass("is-valid");
-        $("#errormobile").html("Looks good!");
-        $("#errormobile").css("color", "green");
-        }
+    //     $("#mobile").addClass("is-invalid");
+    //     $("#errormobile").html("Enter the Contact Number!");
+    //     $("#errormobile").css("color", "red");
+    //     event.preventDefault();
+    //   } 
+    //   else if (mobile.length<10) {
+       
+    //     $("#mobile").addClass("is-invalid");
+    //     $("#errorMobile_number").html("Enter Correct Number!");
+    //     $("#errorMobile_number").css("color", "red");
+    //     event.preventDefault();
+    //   }
+    //   else {
+    //     $("#mobile").removeClass("is-invalid");
+    //     $("#mobile").addClass("is-valid");
+    //     $("#errormobile").html("Looks good!");
+    //     $("#errormobile").css("color", "green");
+    //     }
        
       
       if (password ==="") {
@@ -156,7 +170,12 @@ $(document).ready(function () {
         $("#errorpassword").html("Enter the Password!");
         $("#errorpassword").css("color", "red");
         event.preventDefault();
-      } else {
+      } else if(password.length<6) {
+         $("#password").addClass("is-invalid");
+        $("#errorpassword").html("Enter the Password minmum 6 charecters!");
+        $("#errorpassword").css("color", "red");
+        event.preventDefault();
+      }else{
         $("#password").removeClass("is-invalid");
         $("#password").addClass("is-valid");
         $("#errorpassword").html("Looks good!");
@@ -166,12 +185,12 @@ $(document).ready(function () {
     
     if (conformpassword === "") {
       $("#conformpassword").addClass("is-invalid");
-      $("#errorconformpassword").html("Enter the conform password!");
+      $("#errorconformpassword").html("Enter the conform password(Min:6 character)!");
       $("#errorconformpassword").css("color", "red");
       event.preventDefault();
     } else if(password != conformpassword){
       $("#conformpassword").addClass("is-invalid");
-      $("#errorconformpassword").html("The conform password is not matching!");
+      $("#errorconformpassword").html("Password doesn't Match(Min:6 character)!");
       $("#errorconformpassword").css("color", "red");
       event.preventDefault();
     }else{
@@ -201,6 +220,7 @@ $(document).ready(function () {
   });
 
 
+
 $(document).ready(function () {
   $(".profilebtn2").click(function (event) {
     var lang = $(".lang").find(":selected").val();
@@ -213,9 +233,7 @@ $(document).ready(function () {
     if (
       lang == "" ||
       marital == "" ||
-      religion == "" ||
-      caste == "" ||
-      jadhagam == ""
+      religion == "" 
     ) {
         if (lang == "") {
         $(".lang").addClass("is-invalid");
@@ -253,30 +271,6 @@ $(document).ready(function () {
         $("#errorreligions").html("Looks good!");
         $("#errorreligions").css("color", "green");
       }
-      if (caste == "") {
-        $(".caste").addClass("is-invalid");
-        $("#errorcaste").html("Select The Caste!");
-        $("#errorcaste").css("color", "red");
-        event.preventDefault();
-      } else {
-        $(".caste").removeClass("is-invalid");
-        $(".caste").addClass("is-valid");
-
-        $("#errorcaste").html("Looks good!");
-        $("#errorcaste").css("color", "green");
-      }
-      if (jadhagam == "") {
-        $(".jadhagam ").addClass("is-invalid");
-        $("#errorjadhagam").html("Select The Jadhagam!");
-        $("#errorjadhagam").css("color", "red");
-        event.preventDefault();
-      } else {
-        $(".jadhagam ").removeClass("is-invalid");
-        $(".jadhagam ").addClass("is-valid");
-
-        $("#errorjadhagam").html("Looks good!");
-        $("#errorjadhagam").css("color", "green");
-      }
     } else {
       $("#collapse_One").hide();
       $("#collapseOne").hide();
@@ -293,28 +287,43 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".profilebtn3").click(function (event) {
-    var height = $(".height").find(":selected").val();
+    // var height = $(".height").find(":selected").val();
+     var height = $("#height").val();
+      var weight = $(".weight").val();
     var Disbaility = $(".Disbaility").find(":selected").val();
     var familystatus = $(".familystatus").find(":selected").val();
     var familytype = $(".familytype").find(":selected").val();
     if (
       height == "" ||
+      weight == "" ||
       Disbaility == "" ||
      familystatus == "" ||
       familytype == ""
     ){
-      if ( height == "") {
-        $(".height").addClass("is-invalid");
-        $("#errorheight").html("Select The  Height!");
+      if ( height =="") {
+        $("#height").addClass("is-invalid");
+        $("#errorheight").html("Enter The  Height!");
         $("#errorheight").css("color", "red");
         event.preventDefault();
       } else {
-        $(".height").removeClass("is-invalid");
-        $(".height").addClass("is-valid");
-
-        $("#errorheight").html("Looks good!");
+        $("#height").removeClass("is-invalid");
+        $("#height").addClass("is-valid");
+        $("#errorheight").html("looks good");
         $("#errorheight").css("color", "green");
       }
+            if ( weight == "") {
+        $(".weight").addClass("is-invalid");
+        $("#errorweight").html("Enter The  Weight!");
+        $("#errorweight").css("color", "red");
+        event.preventDefault();
+      } else {
+        $(".weight").removeClass("is-invalid");
+        $(".weight").addClass("is-valid");
+
+        $("#errorweight").html("Looks good!");
+        $("#errorweight").css("color", "green");
+      }
+      
       if (  Disbaility  == "") {
         $(".Disbaility ").addClass("is-invalid");
         $("#errorDisbaility").html("Select The   Disbaility!");
@@ -469,148 +478,169 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $(".profilebtn5").click(function ( event) {
+     var YourCountry = $(".YourCountry").find(":selected").val();
+var YourState = $(".YourState").find(":selected").val();
+var District = $(".District").find(":selected").val();
+const pincode = $(".pincode").val();
+
+if (
+YourCountry == "" ||
+YourState == "" ||
+District == "" ||
+pincode == ""
+
+){
+if ( YourCountry == "") {
+$(".YourCountry").addClass("is-invalid");
+$("#errorYourCountry").html("Select Your Country!");
+$("#errorYourCountry").css("color", "red");
+event.preventDefault();
+} else {
+$(".YourCountry").removeClass("is-invalid");
+$(".YourCountry").addClass("is-valid");
+
+$("#errorYourCountry").html("Looks good!");
+$("#errorYourCountry").css("color", "green");
+}
+if ( YourState == "") {
+$(".YourState").addClass("is-invalid");
+$("#errorYourState").html("Select Your State!");
+$("#errorYourState").css("color", "red");
+event.preventDefault();
+} else {
+$(".YourState").removeClass("is-invalid");
+$(".YourState").addClass("is-valid");
+
+$("#errorYourState").html("Looks good!");
+$("#errorYourState").css("color", "green");
+}
+if ( District == "") {
+$(".District").addClass("is-invalid");
+$("#errorDistrict").html("Select Your District!");
+$("#errorDistrict").css("color", "red");
+event.preventDefault();
+} else {
+$(".District").removeClass("is-invalid");
+$(".District").addClass("is-valid");
+
+$("#errorDistrict").html("Looks good!");
+$("#errorDistrict").css("color", "green");
+}
+if ( pincode == "") {
+$(".pincode").addClass("is-invalid");
+$("#errorpincode").html("Enter The Location!");
+$("#errorpincode").css("color", "red");
+event.preventDefault();
+} else {
+$(".pincode").removeClass("is-invalid");
+$(".pincode").addClass("is-valid");
+
+$("#errorpincode").html("Looks good!");
+$("#errorpincode").css("color", "green");
+}
+}
+else{
+$("#collapse_One").hide();
+$("#collapseOne").hide();
+$("#collapseThree").hide();
+$("#collapseFour").hide();
+$("#collapseFive").hide();
+$("#collapseSix").show();
+$("#collapseTwo").hide();
+$("#collapseSeven").show();
+
+  $(".progressbar").attr("style","--value:82");
+}
+  });
+});
+$(document).ready(function () {
+  $(".profilebtn6").click(function (event) {
     var SelectProfile = $(".SelectProfile").find(":selected").val();
-   
-    if (
-      SelectProfile == ""
-     
-    ){
-      if ( SelectProfile == "") {
-        $(".SelectProfile").addClass("is-invalid");
-        $("#errorSelectProfile").html("Select The Profile!");
-        $("#errorSelectProfile").css("color", "red");
-        event.preventDefault();
-      } else {
-        $(".SelectProfile").removeClass("is-invalid");
-        $(".SelectProfile").addClass("is-valid");
+    var hello = $("#hello-55").val();
 
-        $("#errorSelectProfile").html("Looks good!");
-        $("#errorSelectProfile").css("color", "green");
-      }
-      }else
-      {
+    if (SelectProfile == "") {
+      $(".SelectProfile").addClass("is-invalid");
+      $("#errorSelectProfile").html("Select The Profile!");
+      $("#errorSelectProfile").css("color", "red");
+      event.preventDefault();
+    } else {
+      $(".SelectProfile").removeClass("is-invalid");
+      $(".SelectProfile").addClass("is-valid");
+      $("#errorSelectProfile").html("Looks good!");
+      $("#errorSelectProfile").css("color", "green");
+    }
 
-    $("#collapse_One").hide();
-    $("#collapseOne").hide();
-    $("#collapseThree").hide();
-    $("#collapseFour").hide();
-    $("#collapseFive").hide();
-    $("#collapseTwo").hide();
-    $("#collapseSeven").hide();
-    $("#collapseSix").show();
-    $(".progressbar").attr("style","--value:76");
-      }
+    // Validation for hello (file input)
+    var fileInput = $("#hello-55");
+    var fileName = fileInput.val();
+    var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+
+    if (fileName == "") {
+      fileInput.addClass("is-invalid");
+      $("#errorhello-55").html("Upload Your Profile!");
+      $("#errorhello-55").css("color", "red");
+      event.preventDefault();
+    } else if (!allowedExtensions.exec(fileName)) {
+      fileInput.addClass("is-invalid");
+      $("#errorhello-55").html("Please upload a valid image file (JPG, JPEG, PNG)!");
+      $("#errorhello-55").css("color", "red");
+      event.preventDefault();
+    } else {
+      fileInput.removeClass("is-invalid");
+      fileInput.addClass("is-valid");
+      $("#errorhello-55").html("Looks good!");
+      $("#errorhello-55").css("color", "green");
+    }
+
+    // Other validations...
+
+    // If all validations pass, proceed with the actions
+    if (SelectProfile != "" && fileName != "" && allowedExtensions.exec(fileName)) {
+      $("#collapse_One").hide();
+      $("#collapseOne").hide();
+      $("#collapseThree").hide();
+      $("#collapseFour").hide();
+      $("#collapseFive").hide();
+      $("#collapseTwo").hide();
+      $("#collapseSeven").hide();
+      $("#collapseSix").show();
+      $(".progressbar").attr("style", "--value:98");
+    }
   });
 });
-$(document).ready(function () {
 
-  $(".profilebtn6").click(function (event) {
-    var YourCountry = $(".YourCountry").find(":selected").val();
-    var  YourState = $(".YourState").find(":selected").val();
-    var District = $(".District").find(":selected").val();
-    const pincode = $(".pincode").val();
-   
-    if (
-      YourCountry == "" ||
-      YourState == "" ||
-      District == "" ||
-      pincode == "" 
-     
-    ){
-      if ( YourCountry == "") {
-        $(".YourCountry").addClass("is-invalid");
-        $("#errorYourCountry").html("Select Your Country!");
-        $("#errorYourCountry").css("color", "red");
-        event.preventDefault();
-      } else {
-        $(".YourCountry").removeClass("is-invalid");
-        $(".YourCountry").addClass("is-valid");
+// $(document).ready(function () {
 
-        $("#errorYourCountry").html("Looks good!");
-        $("#errorYourCountry").css("color", "green");
-      }
-      if (  YourState == "") {
-        $(".YourState").addClass("is-invalid");
-        $("#errorYourState").html("Select Your State!");
-        $("#errorYourState").css("color", "red");
-        event.preventDefault();
-      } else {
-        $(".YourState").removeClass("is-invalid");
-        $(".YourState").addClass("is-valid");
-
-        $("#errorYourState").html("Looks good!");
-        $("#errorYourState").css("color", "green");
-      }
-      if (  District == "") {
-        $(".District").addClass("is-invalid");
-        $("#errorDistrict").html("Select Your District!");
-        $("#errorDistrict").css("color", "red");
-        event.preventDefault();
-      } else {
-        $(".District").removeClass("is-invalid");
-        $(".District").addClass("is-valid");
-
-        $("#errorDistrict").html("Looks good!");
-        $("#errorDistrict").css("color", "green");
-      }
-      if (  pincode == "") {
-        $(".pincode").addClass("is-invalid");
-        $("#errorpincode").html("Enter The Location!");
-        $("#errorpincode").css("color", "red");
-        event.preventDefault();
-      } else {
-        $(".pincode").removeClass("is-invalid");
-        $(".pincode").addClass("is-valid");
-
-        $("#errorpincode").html("Looks good!");
-        $("#errorpincode").css("color", "green");
-      }
-      }
-      else{
-    $("#collapse_One").hide();
-    $("#collapseOne").hide();
-    $("#collapseThree").hide();
-    $("#collapseFour").hide();
-    $("#collapseFive").hide();
-    $("#collapseSix").hide();
-    $("#collapseTwo").hide();
-    $("#collapseSeven").show();
-    $(".progressbar").attr("style","--value:88");
-      }
-  });
-});
-$(document).ready(function () {
-
-  $(".profilebtn6").click(function (event) {
-    var IDproof1 = $(".IDproof1").find(":selected").val();
+//   $(".profilebtn6").click(function (event) {
+//     var IDproof1 = $(".IDproof1").find(":selected").val();
   
    
-    if (
-      IDproof1== ""
+//     if (
+//       IDproof1== ""
      
      
-    ){
-      if ( IDproof1 == "") {
-        $(".IDproof1").addClass("is-invalid");
-        $("#errorIDproof1").html("Select Your ID Proof!");
-        $("#errorIDproof1").css("color", "red");
-        event.preventDefault();
-        alert("sucessfully registered Account");
-      } else {
-        $(".IDproof1").removeClass("is-invalid");
-        $(".IDproof1").addClass("is-valid");
+//     ){
+//       if ( IDproof1 == "") {
+//         $(".IDproof1").addClass("is-invalid");
+//         $("#errorIDproof1").html("Select Your ID Proof!");
+//         $("#errorIDproof1").css("color", "red");
+//         event.preventDefault();
+//         alert("sucessfully registered Account");
+//       } else {
+//         $(".IDproof1").removeClass("is-invalid");
+//         $(".IDproof1").addClass("is-valid");
 
-        $("#errorIDproof1").html("Looks good!");
-        $("#errorIDproof1").css("color", "green");
-        $(".progressbar").attr("style","--value:100");
-      }
-    }
-      else{
+//         $("#errorIDproof1").html("Looks good!");
+//         $("#errorIDproof1").css("color", "green");
+//         $(".progressbar").attr("style","--value:100");
+//       }
+//     }
+//       else{
 
    
-      }
-  });
-});
+//       }
+//   });
+// });
 
 function IsEmail(email) {
   var regex =
@@ -622,3 +652,4 @@ function IsEmail(email) {
       return true;
   }
 }
+
